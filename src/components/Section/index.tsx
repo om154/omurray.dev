@@ -2,37 +2,35 @@ import cn from 'classnames';
 import { ChildrenProp } from '../../utils/props';
 
 interface SectionProps {
-  style?: object
   alignTop?: boolean
   className?: string
+  fullScreen?: boolean
 }
 
 const Section = (
   {
-    children, className, style, alignTop
+    children, className, alignTop, fullScreen
   }: SectionProps & ChildrenProp
 ) => (
   <section
-    id="hero"
     className={cn(
-      'flex flex-col items-center h-screen min-h-screen px-8 py-6 border-b-0 md:px-24 box-border',
+      'flex flex-col items-center px-8 py-6 border-b-0 md:px-24 box-border',
       {
         'justify-center': !alignTop,
-        'justify-start': alignTop
+        'justify-start': alignTop,
+        'h-screen min-h-screen': fullScreen
       },
       className
     )}
-    // style={{ inset: 0, zIndex: -1 }}
-    style={style}
   >
     {children}
   </section>
 );
 
 Section.defaultProps = {
-  style: {},
   className: '',
-  alignTop: false
+  alignTop: false,
+  fullScreen: false
 };
 
 export default Section;

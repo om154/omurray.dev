@@ -1,0 +1,45 @@
+{
+  "extends": [
+    "airbnb-typescript",
+    "airbnb/hooks",
+    "plugin:jest/recommended",
+    "plugin:jest/style"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 11,
+    "project": "./tsconfig.json"
+  },
+  "plugins": ["jest", "jest-formatting", "simple-import-sort", "jest"],
+  "rules": {
+    "@typescript-eslint/comma-dangle": "off",
+    "@typescript-eslint/no-unused-vars": ["warn"],
+    "import/prefer-default-export": "off",
+    "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
+    "react/jsx-props-no-spreading": "off",
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off",
+    "jsx-a11y/label-has-associated-control": [
+      "error",
+      {
+        "required": {
+          "some": ["nesting", "id"]
+        }
+      }
+    ],
+    "jest-formatting/padding-around-describe-blocks": 2,
+    "jest-formatting/padding-around-test-blocks": 2,
+    "jest/no-conditional-expect": ["off"],
+    "jest/valid-expect-in-promise": ["off"],
+    "jest/no-try-expect": ["off"],
+    "jest/expect-expect": ["off"],
+    "simple-import-sort/imports": "off",
+    "simple-import-sort/exports": "off"
+  },
+  "ignorePatterns": ["/*.js"],
+  "env": {
+    "browser": true,
+    "es6": true,
+    "jest": true
+  }
+}

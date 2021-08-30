@@ -1,23 +1,19 @@
 import Section from '../Section';
-import gitHubIconLight120px from '../../assets/GitHub-Mark-Light-120px-plus.png';
-import linkedInIconWhite128px from '../../assets/In-White-128.png';
-
-const GitHubIcon = () => (
-  <img src={gitHubIconLight120px} alt="GitHub" />
-);
-
-const LinkedInIcon = () => (
-  <img src={linkedInIconWhite128px} alt="LinkedIn" />
-);
+import { ReactComponent as LinkedInLogo } from '../../assets/linkedin-logo.svg';
+import { ReactComponent as GitHubLogo } from '../../assets/github-logo.svg';
+import { ReactComponent as TwitterLogo } from '../../assets/twitter-logo.svg';
 
 const Footer = () => (
-  <Section alignTop className="text-white bg-neutral-800">
+  <Section alignTop className="text-neutral-000 bg-neutral-800">
     <div className="box-border flex justify-center w-full px-4 mx-auto text-center">
-      <a className="w-6 h-6 m-2 md:w-8 md:h-8" href={process.env.REACT_APP_GITHUB_URL}>
-        <GitHubIcon />
+      <a className="flex w-5 h-5 m-2" href={process.env.REACT_APP_TWITTER_URL} target="_blank" rel="noreferrer">
+        <TwitterLogo className="fill-current" />
       </a>
-      <a className="w-6 h-6 m-2 md:w-8 md:h-8" href={process.env.REACT_APP_LINKEDIN_URL}>
-        <LinkedInIcon />
+      <a className="flex w-5 h-5 m-2" href={process.env.REACT_APP_GITHUB_URL} target="_blank" rel="noreferrer">
+        <GitHubLogo className="fill-current" />
+      </a>
+      <a className="flex w-5 h-5 m-2" href={process.env.REACT_APP_LINKEDIN_URL} target="_blank" rel="noreferrer">
+        <LinkedInLogo className="fill-current" />
       </a>
     </div>
   </Section>

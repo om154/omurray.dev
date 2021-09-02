@@ -53,7 +53,6 @@ const AboutMe = () => (
           to find me drinking coffee, and in the evenings sharing a bottle of natural
           wine with friends.
         </P>
-
       </AboutMeHero>
     </div>
   </Section>

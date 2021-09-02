@@ -1,4 +1,3 @@
-import Button from '../Button';
 import Section from '../Section';
 import { H1 } from '../shared/Text';
 
@@ -19,11 +18,6 @@ const Greeting = () => (
         I&apos;m a
         software engineer who loves building great products.
       </H1>
-      <div className="flex justify-center mt-8 md:mt-5 md:justify-start">
-        <Button>
-          Get to know me
-        </Button>
-      </div>
     </div>
   </Section>
 );

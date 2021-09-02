@@ -2,6 +2,7 @@ import Section from '../Section';
 import { H2, P } from '../shared/Text';
 import oliverImg from '../../assets/oliver.jpeg';
 import ShippitPill from '../Pill/ShippitPill';
+import AccenturePill from '../Pill/AccenturePill';
 import AboutMeHero from '../Hero/AboutMe';
 
 function calculateAge(birthday : string) {
@@ -39,8 +40,9 @@ const AboutMe = () => (
           to find me drinking coffee, and in the evenings sharing a bottle of natural
           wine with friends.
         </P>
-        <div className="flex justify-center mt-4">
-          <ShippitPill />
+        <div className="flex flex-col items-center mt-4 space-x-2 lg:space-x-0 lg:flex-row lg:justify-around">
+          <ShippitPill className="my-1 lg:m-0" />
+          <AccenturePill className="my-1 lg:my-0 lg:ml-1" />
         </div>
       </AboutMeHero>
     </div>

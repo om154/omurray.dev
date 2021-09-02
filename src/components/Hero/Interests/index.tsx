@@ -2,15 +2,15 @@ import { ChildrenProp } from '../../../utils/props';
 import { HeroProps } from '../props';
 
 const InterestsHero = ({ imgPath, children }: HeroProps & ChildrenProp) => (
-  <div className="flex flex-col px-6 py-6 rounded-lg shadow-lg bg-primary-100 md:justify-around md:flex-row md:space-x-6">
-    <div className="flex flex-col justify-center order-last mt-4 md:m-0 md:w-1/2 md:order-first">
+  <div className="flex flex-col px-6 py-6 rounded-lg shadow-lg bg-primary-100 lg:justify-around lg:flex-row lg:space-x-6 md:px-12 md:py-12 xl:max-w-5xl xl:m-auto">
+    <div className="flex flex-col justify-center order-last mt-4 lg:m-0 lg:w-1/2 lg:order-first">
       <div>
         {children}
       </div>
     </div>
     {imgPath !== '' && (
-    <div className="flex justify-center order-first max-h-full md:w-1/2 md:order-last">
-      <img className="object-cover object-center max-w-full " src={imgPath} alt="Oliver" />
+    <div className="flex justify-center order-first max-h-full lg:w-1/2 lg:order-last">
+      <img className="object-cover object-center max-w-full rounded-md " src={imgPath} alt="Oliver" />
     </div>
     )}
 

@@ -1,3 +1,4 @@
+import { v4 as uuidv4 } from 'uuid';
 import InterestsHero from '../../Hero/Interests';
 import { H3, P } from '../../shared/Text';
 
@@ -18,7 +19,7 @@ const Item = ({ item: { title, paragraphs, imagePath } }: ItemProps) => (
         {title}
       </H3>
       <div>
-        {paragraphs.map((paragraph : string) => <P className="mt-6">{paragraph}</P>)}
+        {paragraphs.map((paragraph: string) => <P key={uuidv4()} className="mt-6">{paragraph}</P>)}
       </div>
     </div>
   </InterestsHero>

@@ -1,3 +1,4 @@
+import { v4 as uuidv4 } from 'uuid';
 import Section from '../Section';
 import { H2 } from '../shared/Text';
 import Item, { InterestItem } from './Item';
@@ -43,7 +44,7 @@ const Interests = () => (
       <H2 className="mt-0 mb-2 font-bold text-primary-800">Interests</H2>
     </div>
     <div className="box-border w-full mx-auto space-y-6 md:my-6">
-      {items.map((item: InterestItem) => <Item item={item} />)}
+      {items.map((item: InterestItem) => <Item key={uuidv4()} item={item} />)}
     </div>
   </Section>
 );

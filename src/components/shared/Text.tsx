@@ -22,9 +22,17 @@ H2.defaultProps = {
 };
 
 export const H3 = ({ children, className }: TextProps & ChildrenProp) => (
-  <h3 className={cn('box-border text-lg leading-tight tracking-tight md:text-3xl', className)}>{children}</h3>
+  <h3 className={cn('box-border text-lg leading-tight tracking-tight md:text-2xl', className)}>{children}</h3>
 );
 
 H3.defaultProps = {
+  className: ''
+};
+
+export const H4 = ({ children, className }: TextProps & ChildrenProp) => (
+  <h3 className={cn('box-border text-lg leading-tight tracking-tight md:text-xl', className)}>{children}</h3>
+);
+
+H4.defaultProps = {
   className: ''
 };

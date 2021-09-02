@@ -6,9 +6,9 @@ const Greeting = () => (
   <Section fullScreen className="bg-white">
     <div className="box-border w-full px-4 mx-auto text-center text-gray-800 md:text-left">
       <H1 className="mt-0 font-bold">
-        Hey there, my name is
+        Hey, my name is
         <span
-          className="box-border ml-2 text-danger-400"
+          className="box-border ml-2 text-primary-600"
         >
           Oliver
         </span>

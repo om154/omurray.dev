@@ -2,7 +2,7 @@ import Section from '../Section';
 import { H2 } from '../shared/Text';
 import oliverImg from '../../assets/oliver.jpeg';
 import ShippitPill from '../Pills/ShippitPill';
-import Hero from '../Hero';
+import AboutMeHero from '../Hero/AboutMe';
 
 function calculateAge(birthday : string) {
   const dateOfBirth = new Date(birthday);
@@ -15,12 +15,12 @@ function calculateAge(birthday : string) {
 }
 
 const AboutMe = () => (
-  <Section alignTop className="bg-purple-400 text-neutral-000">
-    <div className="box-border w-full px-4 mx-auto">
+  <Section alignTop className="bg-primary-600 text-neutral-100">
+    <div className="box-border w-full mx-auto">
       <div className="text-center">
         <H2 className="mt-0 mb-2 font-bold">About Me</H2>
       </div>
-      <Hero imgPath={oliverImg}>
+      <AboutMeHero imgPath={oliverImg}>
         <p className="text-sm leading-4 md:leading-6 md:text-md lg:text-lg font-regular">
           I&apos;m a
           {' '}
@@ -42,7 +42,7 @@ const AboutMe = () => (
         <div className="flex justify-center mt-4 md:mt-2">
           <ShippitPill />
         </div>
-      </Hero>
+      </AboutMeHero>
     </div>
   </Section>
 );

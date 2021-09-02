@@ -1,10 +1,7 @@
-import { ChildrenProp } from '../../utils/props';
+import { ChildrenProp } from '../../../utils/props';
+import { HeroProps } from '../props';
 
-interface HeroProps {
-  imgPath?: string
-}
-
-const Hero = ({ imgPath, children }: HeroProps & ChildrenProp) => (
+const AboutMeHero = ({ imgPath, children }: HeroProps & ChildrenProp) => (
   <div className="flex flex-col md:space-x-4 md:mt-6 md:mb-6 md:justify-around md:flex-row">
     {imgPath !== '' && (
     <div className="flex justify-center">
@@ -19,8 +16,8 @@ const Hero = ({ imgPath, children }: HeroProps & ChildrenProp) => (
   </div>
 );
 
-Hero.defaultProps = {
+AboutMeHero.defaultProps = {
   imgPath: ''
 };
 
-export default Hero;
+export default AboutMeHero;

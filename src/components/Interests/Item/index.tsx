@@ -1,4 +1,4 @@
-import Hero from '../../Hero';
+import InterestsHero from '../../Hero/Interests';
 import { H3 } from '../../shared/Text';
 
 export interface InterestItem {
@@ -12,16 +12,16 @@ interface ItemProps {
 }
 
 const Item = ({ item: { title, paragraphs, imagePath } }: ItemProps) => (
-  <Hero imgPath={imagePath}>
+  <InterestsHero imgPath={imagePath}>
     <div>
-      <H3>
+      <H3 className="font-bold text-primary-800">
         {title}
       </H3>
       <div>
-        {paragraphs.map((paragraph : string) => <p>{paragraph}</p>)}
+        {paragraphs.map((paragraph : string) => <p className="mt-6 text-sm leading-4 md:leading-6 md:text-md lg:text-lg font-regular">{paragraph}</p>)}
       </div>
     </div>
-  </Hero>
+  </InterestsHero>
 );
 
 export default Item;

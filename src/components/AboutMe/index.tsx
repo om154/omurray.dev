@@ -30,20 +30,30 @@ const AboutMe = () => (
           year old Software Engineer currently living in Melbourne.
           I work in one of the Engineering Squads at
           {' '}
-          <a className="no-underline" href="https://www.shippit.com/" target="_blank" rel="noreferrer">Shippit</a>
-          . Our mission is to build
+          <a className="no-underline hover:underline" href="https://www.shippit.com/" target="_blank" rel="noreferrer">Shippit</a>
+          {' '}
+          - our mission is to build
           the network that brings people & goods together in the leanest way possible.
         </P>
-        <P className="mt-4">
-          In my spare time I like to go running, cycling and dining out at some of
+        <P className="mt-2">
+          Prior to that, I spent time working at
+          {' '}
+          <a className="no-underline hover:underline" href="https://www.accenture.com/" target="_blank" rel="noreferrer">Accenture</a>
+          {' '}
+          building large-scale web applications to help enterprise clients manage
+          & analyse their data.
+        </P>
+        <div className="flex flex-col items-center my-4 space-x-2 md:my-6 lg:space-x-0 lg:flex-row lg:justify-around">
+          <ShippitPill className="my-1 lg:m-0" />
+          <AccenturePill className="my-1 lg:my-0 lg:ml-1" />
+        </div>
+        <P>
+          In my spare time I like to go running, cycling and once enjoyed dining out at some of
           Melbourne&apos;s great cafes, bars & restaurants. In the mornings, you&apos;re likely
           to find me drinking coffee, and in the evenings sharing a bottle of natural
           wine with friends.
         </P>
-        <div className="flex flex-col items-center mt-4 space-x-2 lg:space-x-0 lg:flex-row lg:justify-around">
-          <ShippitPill className="my-1 lg:m-0" />
-          <AccenturePill className="my-1 lg:my-0 lg:ml-1" />
-        </div>
+
       </AboutMeHero>
     </div>
   </Section>

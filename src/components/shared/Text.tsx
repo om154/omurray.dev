@@ -6,7 +6,7 @@ interface TextProps {
 }
 
 export const H1 = ({ children, className }: TextProps & ChildrenProp) => (
-  <h2 className={cn('box-border text-2xl leading-tight tracking-tight md:text-5xl', className)}>{children}</h2>
+  <h2 className={cn('box-border text-3xl leading-tight tracking-tight md:text-5xl xl:text-6xl', className)}>{children}</h2>
 );
 
 H1.defaultProps = {

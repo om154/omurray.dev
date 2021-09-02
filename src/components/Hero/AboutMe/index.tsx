@@ -8,7 +8,7 @@ const AboutMeHero = ({ imgPath, children }: HeroProps & ChildrenProp) => (
       <img className="object-cover object-center w-48 md:w-72 lg:w-96 xl:w-3/4" src={imgPath} alt="Oliver" />
     </div>
     )}
-    <div className="flex flex-col justify-center mt-2 md:m-0">
+    <div className="flex flex-col justify-center mt-4 md:m-0">
       <div className="md:w-72 lg:w-96 xl:w-1/2">
         {children}
       </div>

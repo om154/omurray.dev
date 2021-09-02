@@ -40,11 +40,11 @@ const items: InterestItem[] = [
 ];
 
 const Interests = () => (
-  <Section alignTop className="bg-white text-neutral-800">
-    <div className="box-border w-full mx-auto">
-      <div className="text-center">
-        <H2 className="mt-0 mb-2 font-bold text-primary-800">Interests</H2>
-      </div>
+  <Section alignTop className="bg-neutral-300 text-primary-900">
+    <div className="text-center">
+      <H2 className="mt-0 mb-2 font-bold text-primary-800">Interests</H2>
+    </div>
+    <div className="box-border w-full mx-auto space-y-6 md:my-6">
       {items.map((item: InterestItem) => <Item item={item} />)}
     </div>
   </Section>

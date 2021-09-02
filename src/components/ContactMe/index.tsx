@@ -1,21 +1,19 @@
 import Section from '../Section';
 import { H2 } from '../shared/Text';
+import EmailPill from '../Pill/EmailPill';
 
 const ContactMe = () => (
-  <Section className="bg-primary-700 text-neutral-000">
+  <Section className="bg-primary-600 text-white">
     <div className="box-border w-full px-4 mx-auto">
       <div className="text-left">
         <H2 className="mt-0 mb-2 font-bold">Contact Me</H2>
       </div>
-      <p className="text-sm leading-4 font-regular">
-        Want to chat about an idea? Or better, do you have a wine or coffee recommendation? 👀
+      <p className="text-sm leading-4 font-regular md:text-md">
+        Want to chat about an idea? Or better, if have a wine or coffee recommendation... 👀
       </p>
-      <p className="text-sm leading-4 font-regular">
-        You can contact me at 📫
-        {' '}
-        <a href={`mailto:${process.env.REACT_APP_USER_EMAIL_ADDRESS}`}>{process.env.REACT_APP_USER_EMAIL_ADDRESS}</a>
-      </p>
-
+      <div className="flex justify-center mt-4">
+        <EmailPill />
+      </div>
     </div>
   </Section>
 );

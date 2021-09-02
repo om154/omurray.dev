@@ -1,6 +1,5 @@
 const lightColor = {
   neutral: {
-    '000': '#FFFFFF',
     100: '#F9FAFB',
     200: '#F6F8F9',
     300: '#EFF2F5',
@@ -13,7 +12,6 @@ const lightColor = {
     1000: '#181F27'
   },
   primary: { // dodger blue
-    '000': '#4895EF',
     50: '#FFFFFF',
     100: '#FFFFFF',
     200: '#D5E6FB',
@@ -27,7 +25,6 @@ const lightColor = {
     1000: '#051A33'
   },
   'royal-blue': {
-    '000': '#4361EE',
     50: '#FFFFFF',
     100: '#FEFEFF',
     200: '#CFD7FB',
@@ -41,7 +38,6 @@ const lightColor = {
   },
 
   'sky-blue': {
-    '000': '#4CC9F0',
     50: '#FFFFFF',
     100: '#FFFFFF',
     200: '#D9F4FC',
@@ -54,7 +50,6 @@ const lightColor = {
     900: '#095167'
   },
   violet: {
-    '000': '#B5179E',
     50: '#F6BBEE',
     100: '#F4A4E8',
     200: '#EE77DC',
@@ -67,7 +62,6 @@ const lightColor = {
     900: '#000000'
   },
   pink: {
-    '000': '#F72585',
     50: '#FFFFFF',
     100: '#FEEAF3',
     200: '#FCB9D8',
@@ -80,7 +74,6 @@ const lightColor = {
     900: '#4D0325'
   },
   purple: {
-    '000': '#560BAD',
     50: '#CCA4F9',
     100: '#BE8CF8',
     200: '#A35CF5',
@@ -91,7 +84,9 @@ const lightColor = {
     700: '#26054D',
     800: '#0E021D',
     900: '#000000'
-  }
+  },
+  white: '#FFFFFF',
+  black: '#000000'
 };
 
 module.exports.lightColor = lightColor;

@@ -1,7 +1,7 @@
 import Section from '../Section';
 import { H2 } from '../shared/Text';
 import oliverImg from '../../assets/oliver.jpeg';
-import ShippitPill from '../Pills/ShippitPill';
+import ShippitPill from '../Pill/ShippitPill';
 import AboutMeHero from '../Hero/AboutMe';
 
 function calculateAge(birthday : string) {
@@ -21,7 +21,7 @@ const AboutMe = () => (
         <H2 className="mt-0 mb-2 font-bold">About Me</H2>
       </div>
       <AboutMeHero imgPath={oliverImg}>
-        <p className="text-sm leading-4 md:leading-6 md:text-md lg:text-lg font-regular">
+        <p className="leading-4 text-md md:leading-6 md:text-md lg:text-lg font-regular">
           I&apos;m a
           {' '}
           {calculateAge(process.env.REACT_APP_DATE_OF_BIRTH!)}
@@ -33,13 +33,13 @@ const AboutMe = () => (
           . Our mission is to build
           the network that brings people & goods together in the leanest way possible.
         </p>
-        <p className="mt-2 text-sm leading-4 md:leading-6 md:text-md lg:text-lg font-regular">
+        <p className="mt-2 leading-4 text-md md:leading-6 md:text-md lg:text-lg font-regular">
           In my spare time I like to go running, cycling and dining out at some of
           Melbourne&apos;s great cafes, bars & restaurants. In the mornings, you&apos;re likely
           to find me drinking coffee, and in the evenings sharing a bottle of natural
           wine with friends.
         </p>
-        <div className="flex justify-center mt-4 md:mt-2">
+        <div className="flex justify-center mt-4">
           <ShippitPill />
         </div>
       </AboutMeHero>

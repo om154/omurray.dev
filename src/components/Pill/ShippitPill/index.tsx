@@ -15,7 +15,7 @@ const ShippitPill = ({ className }: ShippitPillProps) => (
     <a className="flex ml-2 mr-1 text-white" href="https://www.shippit.com/" target="_blank" rel="noreferrer">
       <ExternalLinkIcon className="w-5 h-5 fill-current" />
     </a>
-    <a className="flex ml-2 mr-1text-white" href="https://www.linkedin.com/company/shippit" target="_blank" rel="noreferrer">
+    <a className="flex ml-2 mr-1 text-white" href="https://www.linkedin.com/company/shippit" target="_blank" rel="noreferrer">
       <LinkedInLogo className="w-5 h-5 fill-current" />
     </a>
     <a className="flex ml-2" href="https://www.crunchbase.com/organization/shippt" target="_blank" rel="noreferrer">

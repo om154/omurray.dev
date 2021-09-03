@@ -3,7 +3,10 @@ const { lightColor } = require('./src/themes/color');
 
 module.exports = {
   mode: 'jit',
-  purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
+  purge: [
+    './src/**/*.{js,jsx,ts,tsx}',
+    './public/index.html'
+  ],
   darkMode: 'class',
   theme: {
     fontFamily: {

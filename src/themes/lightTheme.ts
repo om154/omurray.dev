@@ -9,7 +9,7 @@ const lightTheme = {
   space: sizes,
   radii: sizes,
   colors,
-  // fontSizes,
+  fontSizes,
   fontWeights,
 };
 export default lightTheme;

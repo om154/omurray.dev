@@ -27,7 +27,7 @@ const AboutMe = () => (
           {' '}
           {calculateAge(process.env.REACT_APP_DATE_OF_BIRTH!)}
           {' '}
-          year old Software Engineer currently living in Melbourne.
+          year old Software Engineer currently living in Melbourne, Australia.
           I work in one of the Engineering Squads at
           {' '}
           <a className="no-underline hover:underline" href="https://www.shippit.com/" target="_blank" rel="noreferrer">Shippit</a>
@@ -48,10 +48,10 @@ const AboutMe = () => (
           <AccenturePill className="my-1 lg:my-0 lg:ml-1" />
         </div>
         <P>
-          In my spare time I like to go running, cycling and once enjoyed dining out at some of
-          Melbourne&apos;s great cafes, bars & restaurants. In the mornings, you&apos;re likely
-          to find me drinking coffee, and in the evenings sharing a bottle of natural
-          wine with friends.
+          In my spare time I like to go running, cycling and enjoy dining out at some of
+          Melbourne&apos;s great cafes, bars & restaurants (when I can). In the mornings,
+          you&apos;re likely to find me drinking coffee, and in the evenings sharing a
+          bottle of wine over a meal with friends 😁
         </P>
       </AboutMeHero>
     </div>

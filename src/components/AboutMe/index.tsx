@@ -24,10 +24,8 @@ const AboutMe = () => (
       <AboutMeHero imgPath={oliverImg}>
         <P>
           I&apos;m a
-          {' '}
-          {calculateAge(process.env.REACT_APP_DATE_OF_BIRTH!)}
-          {' '}
-          year old Software Engineer currently living in Melbourne, Australia.
+          {process.env.REACT_APP_DATE_OF_BIRTH && ` ${calculateAge(process.env.REACT_APP_DATE_OF_BIRTH)} year old `}
+          Software Engineer currently living in Melbourne, Australia.
           I work in one of the Engineering Squads at
           {' '}
           <a className="no-underline hover:underline" href="https://www.shippit.com/" target="_blank" rel="noreferrer">Shippit</a>

@@ -12,7 +12,7 @@ interface ShippitPillProps {
 const ShippitPill = ({ className }: ShippitPillProps) => (
   <Pill className={cn('bg-white', className)}>
     <ShippitLogo className="w-16 h-5 mr-2" />
-    <a className="flex ml-2 mr-1 text-neutral-800" href="https://www.shippit.com/" target="_blank" rel="noreferrer">
+    <a className="flex ml-2 mr-1 text-neutral-800" href="https://www.shippit.com/" data-testid="shippit-external-link" target="_blank" rel="noreferrer">
       <ExternalLinkIcon className="w-5 h-5 fill-current" />
     </a>
     <a className="flex ml-2 mr-1 text-[#0a66c2]" href="https://www.linkedin.com/company/shippit" target="_blank" rel="noreferrer">

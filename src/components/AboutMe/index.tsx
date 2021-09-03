@@ -5,8 +5,13 @@ import ShippitPill from '../Pill/ShippitPill';
 import AccenturePill from '../Pill/AccenturePill';
 import AboutMeHero from '../Hero/AboutMe';
 
-function calculateAge(birthday : string) {
-  const dateOfBirth = new Date(birthday);
+export function calculateAge(birthday: string) {
+  const splitDate = birthday.split('-');
+  const birthYear = Number(splitDate[2]);
+  const birthMonth = Number(splitDate[1]);
+  const birthDay = Number(splitDate[0]);
+
+  const dateOfBirth = new Date(birthYear, birthMonth, birthDay);
   const monthDiff = Date.now() - dateOfBirth.getTime();
   const ageDate = new Date(monthDiff);
 

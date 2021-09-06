@@ -9,7 +9,7 @@ const ContactMe = () => (
         <H2 className="mt-0 mb-2 font-bold">Contact Me</H2>
       </div>
       <P>
-        Want to chat about an idea? Or better, if you have a wine or coffee recommendation... 👀
+        Want to chat about an idea? Or, I’ll always welcome a wine or coffee recommendation! 🍷
       </P>
       <div className="flex justify-center mt-4">
         <EmailPill />

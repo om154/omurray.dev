@@ -4,6 +4,7 @@ import oliverImg from '../../assets/oliver.jpeg';
 import ShippitPill from '../Pill/ShippitPill';
 import AccenturePill from '../Pill/AccenturePill';
 import AboutMeHero from '../Hero/AboutMe';
+import GlimpsePill from '../Pill/GlimpsePill';
 
 export function calculateAge(birthday: string) {
   const splitDate = birthday.split('-');
@@ -28,33 +29,45 @@ const AboutMe = () => (
       </div>
       <AboutMeHero imgPath={oliverImg}>
         <P>
-          I&apos;m a
+          Hey 👋🏻 I&apos;m Oliver, a
           {process.env.REACT_APP_DATE_OF_BIRTH && ` ${calculateAge(process.env.REACT_APP_DATE_OF_BIRTH)} year old `}
           Software Engineer from Melbourne, Australia.
-          I work in one of the Engineering Squads at
+          I am working hard to video chat more social at
+          {' '}
+          <a className="no-underline hover:underline" href="https://www.joinglimpse.com/" target="_blank" rel="noreferrer">Glimpse</a>
+          .
+          We want to make online events and socialising seamless and enjoyable.
+          Just think about what it&apos;s like trying to socialise on a Zoom call with 100 people,
+          or worse, 1,000! We&apos;re addressing this.
+        </P>
+        <div className="flex flex-col items-center my-4 space-x-2 md:my-6 lg:mb-4 lg:space-x-0 lg:flex-row lg:justify-around">
+          <GlimpsePill className="my-1 lg:m-0" />
+        </div>
+        <P>
+          Previously, I worked for
           {' '}
           <a className="no-underline hover:underline" href="https://www.shippit.com/" target="_blank" rel="noreferrer">Shippit</a>
-          {' '}
-          - our mission is to build
-          the network that brings people & goods together in the leanest way possible.
-        </P>
-        <P className="mt-2">
-          I arrived at Shippit after spending time at
+          , a Sydney-based start-up
+          creating the network that brings
+          people & goods together in the leanest way possible.
+          I also spent time at
           {' '}
           <a className="no-underline hover:underline" href="https://www.accenture.com/" target="_blank" rel="noreferrer">Accenture</a>
           {' '}
-          building large-scale web
-          applications to help clients effectively capture, manage and analyse their data.
+          developing large-scale web
+          applications to help their clients effectively capture, manage and analyse their data.
         </P>
-        <div className="flex flex-col items-center my-4 space-x-2 md:my-6 lg:space-x-0 lg:flex-row lg:justify-around">
-          <ShippitPill className="my-1 lg:m-0" />
-          <AccenturePill className="my-1 lg:my-0 lg:ml-1" />
+        <div className="my-4 md:my-6">
+
+          <div className="flex flex-col items-center space-x-2 lg:space-x-0 lg:flex-row lg:justify-around">
+            <ShippitPill className="my-1 lg:m-0" />
+            <AccenturePill className="my-1 lg:my-0 lg:ml-1" />
+          </div>
         </div>
         <P>
-          In my spare time I like to run, cycle and dine out at some of
-          Melbourne&apos;s great cafes, bars & restaurants. In the mornings you’ll find me
-          drinking coffee, and in the evenings sharing a
-          bottle of wine over a meal with friends.
+          In my spare time I like to travel and I particularly enjoy running and dining out at
+          great cafes & restaurants. In the mornings you’ll find me
+          drinking coffee, and in the evenings sharing a bottle of wine over a meal with friends.
         </P>
       </AboutMeHero>
     </div>

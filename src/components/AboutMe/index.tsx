@@ -25,26 +25,26 @@ const AboutMe = () => (
   <Section alignTop className="bg-primary-600 text-neutral-100">
     <div className="box-border w-full mx-auto xl:max-w-5xl">
       <div className="text-center">
-        <H2 className="mt-0 mb-2 font-bold">About Me</H2>
+        <H2 className="mt-0 font-bold">About Me</H2>
       </div>
       <AboutMeHero imgPath={oliverImg}>
         <P>
           Hey 👋🏻 I&apos;m Oliver, a
           {process.env.REACT_APP_DATE_OF_BIRTH && ` ${calculateAge(process.env.REACT_APP_DATE_OF_BIRTH)} year old `}
           Software Engineer from Melbourne, Australia.
-          I am working hard to video chat more social at
+          I am working to make video chat more social at
           {' '}
           <a className="no-underline hover:underline" href="https://www.joinglimpse.com/" target="_blank" rel="noreferrer">Glimpse</a>
           .
-          We want to make online events and socialising seamless and enjoyable.
+          We intend to make online events and socialising seamless and enjoyable.
           Just think about what it&apos;s like trying to socialise on a Zoom call with 100 people,
           or worse, 1,000! We&apos;re addressing this.
         </P>
-        <div className="flex flex-col items-center my-4 space-x-2 md:my-6 lg:mb-4 lg:space-x-0 lg:flex-row lg:justify-around">
+        <div className="flex flex-col items-center my-3 space-x-2 md:my-6 lg:space-x-0 lg:flex-row lg:justify-around">
           <GlimpsePill className="my-1 lg:m-0" />
         </div>
         <P>
-          Previously, I worked for
+          Previously I worked in Engineering at
           {' '}
           <a className="no-underline hover:underline" href="https://www.shippit.com/" target="_blank" rel="noreferrer">Shippit</a>
           , a Sydney-based start-up
@@ -57,9 +57,8 @@ const AboutMe = () => (
           developing large-scale web
           applications to help their clients effectively capture, manage and analyse their data.
         </P>
-        <div className="my-4 md:my-6">
-
-          <div className="flex flex-col items-center space-x-2 lg:space-x-0 lg:flex-row lg:justify-around">
+        <div className="my-3 md:my-6">
+          <div className="flex flex-col items-center space-x-2 space-y-2 lg:space-y-0 lg:space-x-0 lg:flex-row lg:justify-around">
             <ShippitPill className="my-1 lg:m-0" />
             <AccenturePill className="my-1 lg:my-0 lg:ml-1" />
           </div>

@@ -5,6 +5,7 @@ import ShippitPill from '../Pill/ShippitPill';
 import AccenturePill from '../Pill/AccenturePill';
 import AboutMeHero from '../Hero/AboutMe';
 import GlimpsePill from '../Pill/GlimpsePill';
+import TwinePill from '../Pill/TwinePill';
 
 export function calculateAge(birthday: string) {
   const splitDate = birthday.split('-');
@@ -31,14 +32,22 @@ const AboutMe = () => (
         <P>
           Hey 👋🏻 I&apos;m Oliver, a
           {process.env.REACT_APP_DATE_OF_BIRTH && ` ${calculateAge(process.env.REACT_APP_DATE_OF_BIRTH)} year old `}
-          Software Engineer from Melbourne, Australia.
-          I am working to make video chat more social at
+          Software Engineer originally from Melbourne, Australia. Now, I work for
+          {' '}
+          <a className="no-underline hover:underline" href="https://www.twine.us/" target="_blank" rel="noreferrer">twine</a>
+          ! We&apos;re a fully-remote company focused on helping foster connection in remote teams.
+          {' '}
+          We hope to make it fun and engaging to socialize and onboard events at work, all remotely.
+          At the moment, companies seem to be adapting old tools to a new environment.
+          {' '}
+          We&apos;d like to address that!
+          <div className="flex flex-col items-center my-3 space-x-2 md:my-6 lg:space-x-0 lg:flex-row lg:justify-around">
+            <TwinePill className="my-1 lg:m-0" />
+          </div>
+          I started out working on this problem at
           {' '}
           <a className="no-underline hover:underline" href="https://www.joinglimpse.com/" target="_blank" rel="noreferrer">Glimpse</a>
-          .
-          We intend to make online events and socialising seamless and enjoyable.
-          Just think about what it&apos;s like trying to socialise on a Zoom call with 100 people,
-          or worse, 1,000! We&apos;re addressing this.
+          , but excitingly twine acquired us in February of 2022!
         </P>
         <div className="flex flex-col items-center my-3 space-x-2 md:my-6 lg:space-x-0 lg:flex-row lg:justify-around">
           <GlimpsePill className="my-1 lg:m-0" />

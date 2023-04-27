@@ -10,7 +10,7 @@ export const H1 = ({ children, className }: TextProps & ChildrenProp) => (
 );
 
 export const H2 = ({ children, className }: TextProps & ChildrenProp) => (
-  <h2 className={cn('box-border text-xl leading-tight tracking-tight md:text-4xl', className)}>{children}</h2>
+  <h2 className={cn('box-border text-2xl leading-tight tracking-tight md:text-4xl', className)}>{children}</h2>
 );
 
 export const H3 = ({ children, className }: TextProps & ChildrenProp) => (

@@ -2,7 +2,7 @@ import { ChildrenProp } from '../../../utils/props';
 import { HeroProps } from '../props';
 
 const AboutMeHero = ({ imgPath, children }: HeroProps & ChildrenProp) => (
-  <div className="flex flex-col px-6 py-6 md:space-x-4 md:p-0 md:mt-6 md:mb-6 md:justify-around md:flex-row">
+  <div className="flex flex-col py-4 md:py-6 md:px-6 md:space-x-4 md:p-0 md:mt-6 md:mb-6 md:justify-around md:flex-row">
     {imgPath !== '' && (
     <div className="flex justify-center">
       <img className="object-cover object-center w-full rounded-md md:w-96 lg:w-96 xl:w-3/4" src={imgPath} alt="Oliver" />

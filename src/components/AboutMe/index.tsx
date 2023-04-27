@@ -67,7 +67,7 @@ const AboutMe = () => (
           applications to help their clients effectively capture, manage and analyse their data.
         </P>
         <div className="my-3 md:my-6">
-          <div className="flex flex-col items-center space-x-2 space-y-2 lg:space-y-0 lg:space-x-0 lg:flex-row lg:justify-around">
+          <div className="flex flex-col items-center space-y-2 md:space-x-2 lg:space-y-0 lg:space-x-0 lg:flex-row lg:justify-around">
             <ShippitPill className="my-1 lg:m-0" />
             <AccenturePill className="my-1 lg:my-0 lg:ml-1" />
           </div>

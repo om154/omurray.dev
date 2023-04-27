@@ -11,16 +11,20 @@ interface TwinePillProps {
 
 const TwinePill = ({ className }: TwinePillProps) => (
   <Pill className={cn('bg-white', className)}>
-    <TwineLogo className="h-4 mr-2 fill-current" />
-    <a className="flex ml-2 mr-1 text-neutral-800" href="https://www.twine.us/" data-testid="glimpse-external-link" target="_blank" rel="noreferrer">
-      <ExternalLinkIcon className="w-5 h-5 fill-current" />
-    </a>
-    <a className="flex ml-2 mr-1 text-[#0a66c2]" href="https://www.linkedin.com/company/wearetwine" target="_blank" rel="noreferrer">
-      <LinkedInLogo className="w-5 h-5 fill-current" />
-    </a>
-    <a className="flex ml-2" href="https://www.crunchbase.com/organization/twine-121c" target="_blank" rel="noreferrer">
-      <CrunchbaseLogo className="w-5 h-5 fill-current" />
-    </a>
+    <div className='flex row'>
+      <TwineLogo className="h-8 p-1 fill-current md:p-0 md:h-4 md:mr-2" />
+    </div>
+    <div className='flex row'>
+      <a className="flex ml-2 mr-1 text-neutral-800" href="https://www.twine.us/" data-testid="glimpse-external-link" target="_blank" rel="noreferrer">
+        <ExternalLinkIcon className="w-5 h-5 fill-current" />
+      </a>
+      <a className="flex ml-2 mr-1 text-[#0a66c2]" href="https://www.linkedin.com/company/wearetwine" target="_blank" rel="noreferrer">
+        <LinkedInLogo className="w-5 h-5 fill-current" />
+      </a>
+      <a className="flex ml-2" href="https://www.crunchbase.com/organization/twine-121c" target="_blank" rel="noreferrer">
+        <CrunchbaseLogo className="w-5 h-5 fill-current" />
+      </a>
+    </div>
   </Pill>
 );
 

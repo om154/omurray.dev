@@ -10,23 +10,20 @@
     "ecmaVersion": 11,
     "project": "./tsconfig.json"
   },
-  "plugins": ["jest", "jest-formatting", "simple-import-sort", "jest"],
+  "plugins": [
+    "jest",
+    "jest-formatting",
+    "simple-import-sort",
+    "jest",
+    "import"
+  ],
   "rules": {
     "@typescript-eslint/comma-dangle": "off",
     "@typescript-eslint/no-unused-vars": ["warn"],
     "import/prefer-default-export": "off",
-    "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
     "react/jsx-props-no-spreading": "off",
     "react/jsx-uses-react": "off",
     "react/react-in-jsx-scope": "off",
-    "jsx-a11y/label-has-associated-control": [
-      "error",
-      {
-        "required": {
-          "some": ["nesting", "id"]
-        }
-      }
-    ],
     "jest-formatting/padding-around-describe-blocks": 2,
     "jest-formatting/padding-around-test-blocks": 2,
     "jest/no-conditional-expect": ["off"],

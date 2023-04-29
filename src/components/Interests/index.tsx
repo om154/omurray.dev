@@ -4,6 +4,8 @@ import Item, { InterestItem } from './Item';
 import coffeeImg from '../../assets/img/acoffee.jpeg';
 import wineImg from '../../assets/img/susucaru.jpeg';
 import runningImg from '../../assets/img/running.jpeg';
+import Navigation from '../Navigation';
+import PageContainer from '../shared/PageContainer';
 
 const items: InterestItem[] = [
   {
@@ -36,12 +38,15 @@ const items: InterestItem[] = [
 ];
 
 const Interests = () => (
-  <Section alignTop className="bg-neutral-300 text-primary-900">
-    <div className="box-border w-full mx-auto space-y-6 md:my-6">
-      {items.map((item: InterestItem) => <Item key={uuidv4()} item={item} />)}
-    </div>
-    <div className="h-4" />
-  </Section>
+  <PageContainer>
+    <Navigation />
+    <Section alignTop className="bg-neutral-300 text-primary-900">
+      <div className="box-border w-full mx-auto space-y-6 md:my-6">
+        {items.map((item: InterestItem) => <Item key={uuidv4()} item={item} />)}
+      </div>
+      <div className="h-4" />
+    </Section>
+  </PageContainer>
 );
 
 export default Interests;

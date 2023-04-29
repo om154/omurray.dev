@@ -1,5 +1,5 @@
 import Section from '../Section';
-import { H2, P } from '../shared/Text';
+import { P } from '../shared/Text';
 import oliverImg from '../../assets/oliver.jpeg';
 import ShippitPill from '../Pill/ShippitPill';
 import AccenturePill from '../Pill/AccenturePill';

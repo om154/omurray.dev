@@ -1,5 +1,5 @@
 import Section from '../Section';
-import { H2, P } from '../shared/Text';
+import { P } from '../shared/Text';
 import EmailPill from '../Pill/EmailPill';
 import Navigation from '../Navigation';
 import PageContainer from '../shared/PageContainer';

@@ -7,16 +7,18 @@ import PageContainer from '../shared/PageContainer';
 const ContactMe = () => (
   <PageContainer>
     <Navigation />
-    <Section className="text-white bg-primary-600">
-      <div className="box-border w-full px-4 mx-auto xl:max-w-5xl">
+    <Section>
+      <div className="box-border w-full">
         <div className="text-left">
-          <H2 className="mt-0 mb-2 font-bold">Reach Out</H2>
+          <h2 className="font-serif text-6xl font-extralight text-neutral-900 md:text-8xl">Contact me</h2>
         </div>
-        <P>
-          Want to chat about an idea? Or, I’ll always welcome a wine or coffee recommendation! 🍷
-        </P>
-        <div className="flex justify-center mt-4">
-          <EmailPill />
+        <div className="box-border w-full px-4">
+          <P>
+            Want to chat about an idea? Or, I’ll always welcome a wine or coffee recommendation! 🍷
+          </P>
+          <div className="flex justify-start mt-8">
+            <EmailPill />
+          </div>
         </div>
       </div>
     </Section>

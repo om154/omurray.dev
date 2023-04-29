@@ -27,10 +27,10 @@ export function calculateAge(birthday: string) {
 const AboutMe = () => (
   <PageContainer>
     <Navigation />
-    <Section alignTop className="bg-primary-600 text-neutral-100">
-      <div className="box-border w-full mx-auto xl:max-w-5xl">
-        <div className="text-center">
-          <H2 className="mt-0 font-bold">About Me</H2>
+    <Section alignTop>
+      <div className="box-border w-full">
+        <div className="text-left">
+          <h2 className="font-serif text-6xl font-extralight text-neutral-900 md:text-8xl">About Me</h2>
         </div>
         <AboutMeHero imgPath={oliverImg}>
           <P>

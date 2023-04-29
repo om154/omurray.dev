@@ -40,11 +40,16 @@ const items: InterestItem[] = [
 const Interests = () => (
   <PageContainer>
     <Navigation />
-    <Section alignTop className="bg-neutral-300 text-primary-900">
-      <div className="box-border w-full mx-auto space-y-6 md:my-6">
-        {items.map((item: InterestItem) => <Item key={uuidv4()} item={item} />)}
+    <Section alignTop>
+      <div className="box-border w-full">
+        <div className="text-left">
+          <h2 className="font-serif text-6xl font-extralight text-neutral-900 md:text-8xl">My interests</h2>
+        </div>
+        <div className="box-border w-full mx-auto space-y-6 md:my-6">
+          {items.map((item: InterestItem) => <Item key={uuidv4()} item={item} />)}
+        </div>
+        <div className="h-4" />
       </div>
-      <div className="h-4" />
     </Section>
   </PageContainer>
 );

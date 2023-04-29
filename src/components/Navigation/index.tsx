@@ -1,5 +1,6 @@
 import classNames from 'classnames';
 import { Link, useLocation } from 'react-router-dom';
+import Footer from '../Footer';
 
 interface ListItemProps {
   title: string
@@ -24,13 +25,16 @@ const Navigation = () => {
   return (
     <div className="sticky top-0 z-10 flex items-center justify-center px-1 py-4 isolate md:justify-between">
       <nav className='relative flex px-1 py-2 border rounded-lg shadow-md border-neutral-200 bg-white/70 backdrop-blur-md'>
-        <ul className='flex flex-row gap-2 list-none '>
+        <ul className='flex flex-row gap-2 list-none'>
           <LinkListItem title="Home" path="/" active={location.pathname === '/'} />
           <LinkListItem title="About me" path="/about" active={location.pathname === '/about'} />
           <LinkListItem title="My interests" path="/interests" active={location.pathname === '/interests'} />
           <LinkListItem title="Contact me" path="/contact" active={location.pathname === '/contact'} />
         </ul>
       </nav>
+      <div>
+        <Footer />
+      </div>
     </div>
   );
 };

@@ -35,25 +35,25 @@ const AboutMe = () => (
           Software Engineer originally from Melbourne, Australia. Now, I work for
           {' '}
           <a className="no-underline hover:underline" href="https://www.twine.us/" target="_blank" rel="noreferrer">twine</a>
-          ! We&apos;re a fully-remote company focused on helping foster connection in remote teams.
+          ! We&apos;re focused on helping connect remote teams, and are fully remote ourselves!
           {' '}
-          We hope to make it fun and engaging to socialize and onboard events at work, all remotely.
-          At the moment, companies seem to be adapting old tools to a new environment.
+          We hope to make remote work fun and engaging by connecting employees at key moments such as onboarding, all hands and other events, all remotely.
+          Many companies struggle to work effectively when not in the office.
           {' '}
-          We&apos;d like to address that!
+          We&apos;d like to change that!
           <div className="flex flex-col items-center my-3 space-x-2 md:my-6 lg:space-x-0 lg:flex-row lg:justify-around">
             <TwinePill className="my-1 lg:m-0" />
           </div>
           I started out working on this problem at
           {' '}
           <a className="no-underline hover:underline" href="https://www.joinglimpse.com/" target="_blank" rel="noreferrer">Glimpse</a>
-          , but excitingly twine acquired us in February of 2022!
+          , but we teamed up when twine acquired us in early 2022.
         </P>
         <div className="flex flex-col items-center my-3 space-x-2 md:my-6 lg:space-x-0 lg:flex-row lg:justify-around">
           <GlimpsePill className="my-1 lg:m-0" />
         </div>
         <P>
-          Previously I worked in Engineering at
+          In the past I worked in Engineering at
           {' '}
           <a className="no-underline hover:underline" href="https://www.shippit.com/" target="_blank" rel="noreferrer">Shippit</a>
           , a Sydney-based start-up
@@ -64,7 +64,7 @@ const AboutMe = () => (
           <a className="no-underline hover:underline" href="https://www.accenture.com/" target="_blank" rel="noreferrer">Accenture</a>
           {' '}
           developing large-scale web
-          applications to help their clients effectively capture, manage and analyse their data.
+          applications to help their clients effectively capture, manage and analyze data.
         </P>
         <div className="my-3 md:my-6">
           <div className="flex flex-col items-center space-y-2 md:space-x-2 lg:space-y-0 lg:space-x-0 lg:flex-row lg:justify-around">
@@ -74,8 +74,8 @@ const AboutMe = () => (
         </div>
         <P>
           In my spare time I like to travel and I particularly enjoy running and dining out at
-          great cafes & restaurants. In the mornings you’ll find me
-          drinking coffee, and in the evenings sharing a bottle of wine over a meal with friends.
+          great cafes & restaurants. As I mentioned, in the mornings you’ll find me
+          drinking coffee at home or at a cafe, and in the evenings sharing a bottle of wine over a meal with friends.
         </P>
       </AboutMeHero>
     </div>

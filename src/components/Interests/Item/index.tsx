@@ -19,7 +19,7 @@ const Item = ({ item: { title, paragraphs, imagePath } }: ItemProps) => (
         {title}
       </H2>
       <div>
-        {paragraphs.map((paragraph: string) => <P key={uuidv4()} className="mt-6">{paragraph}</P>)}
+        {paragraphs.map((paragraph: string) => <P key={uuidv4()} className="mt-4 md:mt-6">{paragraph}</P>)}
       </div>
     </div>
   </InterestsHero>

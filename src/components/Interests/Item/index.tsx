@@ -1,6 +1,6 @@
 import { v4 as uuidv4 } from 'uuid';
 import InterestsHero from '../../Hero/Interests';
-import { H3, P } from '../../shared/Text';
+import { H2, P } from '../../shared/Text';
 
 export interface InterestItem {
   title: string
@@ -15,9 +15,9 @@ interface ItemProps {
 const Item = ({ item: { title, paragraphs, imagePath } }: ItemProps) => (
   <InterestsHero imgPath={imagePath}>
     <div>
-      <H3 className="font-bold text-center text-primary-800 md:text-left">
+      <H2 className="font-bold text-center text-primary-800 md:text-left">
         {title}
-      </H3>
+      </H2>
       <div>
         {paragraphs.map((paragraph: string) => <P key={uuidv4()} className="mt-6">{paragraph}</P>)}
       </div>

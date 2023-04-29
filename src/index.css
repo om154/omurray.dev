@@ -2,10 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  @apply text-md bg-primary-900;
-  margin: 0;
-  font-family: 'Roboto', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@layer base {
+  html {
+    font-family: Inter, Roboto, sans-serif;
+  }
+}
+
+@font-face {
+  font-family: 'Fraunces';
+  src: url('/static/fonts/Fraunces[SOFT,WONK,opsz,wght].woff2') format('woff2');
+  font-style: normal;
+  font-display: swap;
 }

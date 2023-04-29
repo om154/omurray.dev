@@ -9,7 +9,7 @@ interface GlimpsePillProps {
   className?: string
 }
 
-const GlimpseLogo = () => <img className="h-8 p-1 md:p-0 smd:h-6 md:mr-2 " src={glimpseLogoImg} alt="Glimpse" />;
+const GlimpseLogo = () => <img className="h-6 p-1 md:p-0 smd:h-6 md:mr-2 " src={glimpseLogoImg} alt="Glimpse" />;
 
 const GlimpsePill = ({ className }: GlimpsePillProps) => (
   <Pill className={cn('bg-white', className)}>

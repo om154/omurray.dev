@@ -6,11 +6,11 @@ interface TextProps {
 }
 
 export const H1 = ({ children, className }: TextProps & ChildrenProp) => (
-  <h1 className={cn('font-serif font-light box-border text-3xl leading-tight tracking-tight md:text-4xl', className)}>{children}</h1>
+  <h1 className={cn('font-serif font-light box-border text-2xl leading-tight tracking-tight md:text-4xl', className)}>{children}</h1>
 );
 
 export const H2 = ({ children, className }: TextProps & ChildrenProp) => (
-  <h2 className={cn('font-serif font-regular box-border text-2xl leading-tight tracking-tight md:text-4xl', className)}>{children}</h2>
+  <h2 className={cn('font-serif font-regular box-border text-xl leading-tight tracking-tight md:text-4xl', className)}>{children}</h2>
 );
 
 export const H3 = ({ children, className }: TextProps & ChildrenProp) => (

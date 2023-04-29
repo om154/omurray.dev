@@ -30,7 +30,7 @@ const AboutMe = () => (
     <Section alignTop>
       <div className="box-border w-full">
         <div className="text-left">
-          <h2 className="font-serif text-6xl font-extralight text-neutral-900 md:text-8xl">About Me</h2>
+          <h2 className="font-serif text-3xl font-extralight text-neutral-900 md:text-8xl">About Me</h2>
         </div>
         <AboutMeHero imgPath={oliverImg}>
           <P>

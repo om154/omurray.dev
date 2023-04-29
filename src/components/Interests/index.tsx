@@ -42,9 +42,9 @@ const Interests = () => (
     <Navigation />
     <Section alignTop>
       <div className="w-full text-left">
-        <h2 className="font-serif text-6xl font-extralight text-neutral-900 md:text-8xl">My interests</h2>
+        <h2 className="font-serif text-3xl font-extralight text-neutral-900 md:text-8xl">My interests</h2>
       </div>
-      <div className='box-border grid grid-cols-1 gap-4 py-10 sm:grid-flow-row-dense sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
+      <div className='box-border grid grid-cols-1 gap-4 py-4 md:py-10 sm:grid-flow-row-dense sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
         {items.map((item: InterestItem) => <Item key={uuidv4()} item={item} />)}
       </div>
     </Section>

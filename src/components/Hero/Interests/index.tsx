@@ -2,7 +2,7 @@ import { ChildrenProp } from '../../../utils/props';
 import { HeroProps } from '../props';
 
 const InterestsHero = ({ imgPath, children }: HeroProps & ChildrenProp) => (
-  <div className="aspect-[1] sm:col-span-2 flex flex-col px-6 py-4 overflow-hidden rounded-lg shadow-lg bg-primary-100 lg:justify-around lg:flex-row lg:space-x-6 md:px-12 md:py-8 xl:max-w-5xl xl:m-auto">
+  <div className="md:aspect-[1] sm:col-span-2 flex flex-col px-6 py-4 overflow-hidden rounded-lg shadow-lg bg-primary-100 lg:justify-around lg:flex-row lg:space-x-6 md:px-12 md:py-8 xl:max-w-5xl xl:m-auto">
     <div className="flex flex-col justify-center order-last mt-4 lg:m-0 lg:w-1/2 lg:order-first">
       <div>
         {children}

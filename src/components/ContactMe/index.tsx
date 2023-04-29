@@ -12,7 +12,7 @@ const ContactMe = () => (
         <div className="text-left">
           <h2 className="font-serif text-6xl font-extralight text-neutral-900 md:text-8xl">Contact me</h2>
         </div>
-        <div className="box-border w-full px-4">
+        <div className="box-border w-full px-4 pt-10">
           <P>
             Want to chat about an idea? Or, I’ll always welcome a wine or coffee recommendation! 🍷
           </P>

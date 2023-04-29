@@ -36,44 +36,58 @@ const AboutMe = () => (
           <P>
             Hey 👋🏻 I&apos;m Oliver, a
             {process.env.REACT_APP_DATE_OF_BIRTH && ` ${calculateAge(process.env.REACT_APP_DATE_OF_BIRTH)} year old `}
-            Software Engineer originally from Melbourne, Australia. Now, I work for
+            Software Engineer originally from Melbourne, Australia. I'm currently working on connecting remote teams at
             {' '}
             <a className="no-underline hover:underline" href="https://www.twine.us/" target="_blank" rel="noreferrer">twine</a>
-            ! We&apos;re focused on helping connect remote teams, and are fully remote ourselves!
-            {' '}
-            We hope to make remote work fun and engaging by connecting employees at key moments such as onboarding, all hands and other events, all remotely.
-            Many companies struggle to work effectively when not in the office.
-            {' '}
-            We&apos;d like to change that!
-            <div className="flex flex-col items-center my-3 space-x-2 md:my-6 lg:space-x-0 lg:flex-row lg:justify-around">
-              <TwinePill className="my-1 lg:m-0" />
+            ! Here's some of my work experience -
+          </P>
+          <div className='grid grid-cols-1 gap-4 pb-6 mt-4 sm:grid-flow-row-dense lg:grid-cols-2'>
+            <div className='flex flex-col justify-between p-5 font-sans rounded-lg aspect-squar bg-neutral-400'>
+              <P>
+                At twine we&apos;re focused on helping connect remote teams, and are fully remote ourselves!
+                {' '}
+                Our platform makes remote work fun & engaging by connecting employees at key moments such as onboarding, all hands and other events.
+                <div className="flex flex-col items-center mt-3 space-x-2 lg:space-x-0 lg:flex-row lg:justify-around">
+                  <TwinePill className="my-1 lg:m-0" />
+                </div>
+              </P>
             </div>
-            I started out working on this problem at
-            {' '}
-            <a className="no-underline hover:underline" href="https://www.joinglimpse.com/" target="_blank" rel="noreferrer">Glimpse</a>
-            , but we teamed up when twine acquired us in early 2022.
-          </P>
-          <div className="flex flex-col items-center my-3 space-x-2 md:my-6 lg:space-x-0 lg:flex-row lg:justify-around">
-            <GlimpsePill className="my-1 lg:m-0" />
-          </div>
-          <P>
-            In the past I worked in Engineering at
-            {' '}
-            <a className="no-underline hover:underline" href="https://www.shippit.com/" target="_blank" rel="noreferrer">Shippit</a>
-            , a Sydney-based start-up
-            creating the network that brings
-            people & goods together in the leanest way possible.
-            I also spent time at
-            {' '}
-            <a className="no-underline hover:underline" href="https://www.accenture.com/" target="_blank" rel="noreferrer">Accenture</a>
-            {' '}
-            developing large-scale web
-            applications to help their clients effectively capture, manage and analyze data.
-          </P>
-          <div className="my-3 md:my-6">
-            <div className="flex flex-col items-center space-y-2 md:space-x-2 lg:space-y-0 lg:space-x-0 lg:flex-row lg:justify-around">
-              <ShippitPill className="my-1 lg:m-0" />
-              <AccenturePill className="my-1 lg:my-0 lg:ml-1" />
+            <div className='flex flex-col justify-between p-5 font-sans rounded-lg aspect-squar bg-neutral-400'>
+              <div className='leading-6 tracking-tight'>
+                I started out working on the problem of connection for remote teams at
+                {' '}
+                <a className="inline-block no-underline hover:underline" href="https://www.joinglimpse.com/" target="_blank" rel="noreferrer">Glimpse</a>
+                , but we teamed up when twine acquired us in early 2022.
+              </div>
+              <div className="flex flex-col items-center mt-3 space-x-2 lg:space-x-0 lg:flex-row lg:justify-around">
+                <GlimpsePill className="mt-1 lg:m-0" />
+              </div>
+            </div>
+            <div className='flex flex-col justify-between p-5 font-sans rounded-lg aspect-squar bg-neutral-400'>
+              <P>
+                In the past I worked in Engineering at
+                {' '}
+                <a className="no-underline hover:underline" href="https://www.shippit.com/" target="_blank" rel="noreferrer">Shippit</a>
+                , a Sydney-based start-up
+                creating the network that brings
+                people & goods together in the leanest way possible.
+              </P>
+              <div className="flex flex-col items-center mt-3 space-y-2 md:space-x-2 lg:space-y-0 lg:space-x-0 lg:flex-row lg:justify-around">
+                <ShippitPill className="my-1 lg:m-0" />
+              </div>
+            </div>
+            <div className='flex flex-col justify-between p-5 font-sans rounded-lg aspect-squar bg-neutral-400'>
+              <P>
+                I also spent time at
+                {' '}
+                <a className="no-underline hover:underline" href="https://www.accenture.com/" target="_blank" rel="noreferrer">Accenture</a>
+                {' '}
+                developing large-scale web
+                applications to help their clients effectively capture, manage and analyze data.
+              </P>
+              <div className="flex flex-col items-center mt-3 space-y-2 md:space-x-2 lg:space-y-0 lg:space-x-0 lg:flex-row lg:justify-around">
+                <AccenturePill className="my-1 lg:my-0 lg:ml-1" />
+              </div>
             </div>
           </div>
           <P>

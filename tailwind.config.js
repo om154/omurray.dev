@@ -3,7 +3,7 @@ const { lightColor } = require('./src/themes/color');
 
 module.exports = {
   mode: 'jit',
-  purge: [
+  content: [
     './src/**/*.{js,jsx,ts,tsx}',
     './public/index.html'
   ],

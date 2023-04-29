@@ -10,8 +10,11 @@ const EmailPill = ({ className }: EmailPillProps) => {
   return (
     <a href={`mailto:${process.env.REACT_APP_USER_EMAIL_ADDRESS}`} className={cn('inline-block px-3 py-2 font-bold bg-white rounded-lg shadow-md text-primary-900', className)}>
       <div className="flex items-center my-1">
-        <span className="mr-1 font-serif font-bold leading-tight no-underline select-none text-md md:text-lg">
-          { `📫  ${process.env.REACT_APP_USER_EMAIL_ADDRESS}`}
+        <span className="mr-2 font-serif leading-tight no-underline select-none font-regular text-md md:text-lg">
+          📫
+        </span>
+        <span className="mr-1 font-serif leading-tight no-underline select-none font-regular text-md md:text-lg">
+          { `${process.env.REACT_APP_USER_EMAIL_ADDRESS}`}
         </span>
       </div>
     </a>

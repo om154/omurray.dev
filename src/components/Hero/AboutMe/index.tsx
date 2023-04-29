@@ -9,7 +9,7 @@ const AboutMeHero = ({ imgPath, children }: HeroProps & ChildrenProp) => (
     </div>
     )}
     <div className="flex flex-col items-center justify-center mt-4 md:m-0">
-      <div className="">
+      <div className="px-4 md:px-0">
         {children}
       </div>
     </div>

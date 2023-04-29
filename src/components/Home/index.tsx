@@ -40,7 +40,7 @@ const Home = () => {
         <div className='px-1 pb-2 rounded-lg aspect-square bg-neutral-300'>
           {/* TODO: add content */}
         </div>
-        <div className='class="aspect-[2] sm:col-span-2 px-1 pb-2 bg-neutral-600 rounded-lg'>
+        <div className='aspect-[2] sm:col-span-2 px-1 pb-2 rounded-lg bg-neutral-600'>
           {/* TODO: add content */}
         </div>
         <div className='px-1 pb-2 rounded-lg aspect-square bg-neutral-400'>

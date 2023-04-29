@@ -12,11 +12,15 @@ const Greeting = () => (
         >
           Oliver
         </span>
-        {' '}👋🏻 Welcome to my website!
+        {' '}👋🏻 welcome to my website!
       </H1>
       <H1 className="mt-0">
-        I&apos;m a
-        software engineer who loves building great products.
+        I&apos;m a{' '}
+        <span
+          className="text-primary-600"
+        >
+          software engineer
+        </span> who loves building great products.
       </H1>
     </div>
     <div className="box-border w-full max-w-5xl px-4 mx-auto mt-6 text-center text-primary-900 md:text-left">

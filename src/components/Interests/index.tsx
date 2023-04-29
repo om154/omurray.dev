@@ -7,7 +7,7 @@ import runningImg from '../../assets/img/running.jpeg';
 
 const items: InterestItem[] = [
   {
-    title: 'Sports',
+    title: 'Sports 🏃🏻‍♂️',
     paragraphs: [
       'I have really been enjoyined running lately 🏃🏻‍♂️ I also recently tried out hiking & trail running after years on the road ⛰️',
       'I ran the Melbourne Marathon Festival, including the 10km and the Half Marathon. One day I aspire to complete a marathon!',

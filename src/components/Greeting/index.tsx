@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Greeting = () => (
   <Section className="items-center h-full bg-transparent">
-    <div className="box-border w-full max-w-5xl px-4 mx-auto text-left text-primary-900">
+    <div className="box-border w-full max-w-5xl mx-auto text-left lg:px-4 text-primary-900">
       <H1 className="mt-0">
         Hey, my name is
         {' '}
@@ -23,7 +23,7 @@ const Greeting = () => (
         </Link> who loves building great products.
       </H1>
     </div>
-    <div className="box-border w-full max-w-5xl px-4 mx-auto mt-6 text-left text-primary-900">
+    <div className="box-border w-full max-w-5xl mx-auto mt-6 text-left lg:px-4 text-primary-900">
       <H1 className="mt-0">
         In my spare time I enjoy{' '}
         <Link
@@ -43,7 +43,7 @@ const Greeting = () => (
         >natural wine 🍊</Link>
       </H1>
     </div>
-    <div className="box-border w-full max-w-5xl px-4 mx-auto mt-6 text-left text-primary-900">
+    <div className="box-border w-full max-w-5xl mx-auto mt-6 text-left lg:px-4 text-primary-900">
       <H1 className="mt-0">
         I travel a lot, so I also spend plenty of time exploring and meeting people in <Link
           to='/travel'

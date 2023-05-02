@@ -2,7 +2,7 @@ import cn from 'classnames';
 import { ReactComponent as CrunchbaseLogo } from '../../../assets/crunchbase-logo.svg';
 import { ReactComponent as LinkedInLogo } from '../../../assets/linkedin-logo.svg';
 import { ReactComponent as ExternalLinkIcon } from '../../../assets/external-link-icon.svg';
-import { ReactComponent as ShippitLogo } from '../../../assets/shippit.svg';
+import shippitLogo from '../../../assets/img/shippit.png';
 import Pill from '..';
 
 interface ShippitPillProps {
@@ -12,7 +12,7 @@ interface ShippitPillProps {
 const ShippitPill = ({ className }: ShippitPillProps) => (
   <Pill className={cn('bg-white', className)}>
     <div className='flex row'>
-      <ShippitLogo className="w-16 h-9 md:h-5 md:mr-2" />
+      <img src={shippitLogo} className="w-auto h-10 md:h-6 md:mr-2" alt='shippit-logo' />
     </div>
     <div className='flex row'>
       <a className="flex ml-2 mr-1 text-neutral-800" href="https://www.shippit.com/" data-testid="shippit-external-link" target="_blank" rel="noreferrer">

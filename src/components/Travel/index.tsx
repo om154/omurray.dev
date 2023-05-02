@@ -31,7 +31,6 @@ const Travel = () => (
               <li>Oaxaca, Mexico 🇲🇽</li>
               <li>Portland, OR 🇺🇸</li>
               <li>Bend, OR 🇺🇸</li>
-              <li>Seattle, WA 🇺🇸</li>
               <li>Vancouver, BC 🇨🇦</li>
               <li>Seattle, WA 🇺🇸</li>
               <li>Boulder, CO 🇺🇸</li>

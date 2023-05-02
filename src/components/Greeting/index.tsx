@@ -3,7 +3,7 @@ import { H1 } from '../shared/Text';
 import { Link } from 'react-router-dom';
 
 const Greeting = () => (
-  <Section className="items-center h-full">
+  <Section className="items-center h-full bg-transparent">
     <div className="box-border w-full max-w-5xl px-4 mx-auto text-left text-primary-900">
       <H1 className="mt-0">
         Hey, my name is

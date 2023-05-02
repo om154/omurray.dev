@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <PageContainer>
       <Navigation />
-      <div className='grid grid-cols-1 gap-4 pb-12 sm:grid-flow-row-dense sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
+      <div className='grid grid-cols-1 gap-4 sm:grid-flow-row-dense sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
         <div className='h-full row-span-2 sm:col-span-2 lg:aspect-square'>
           <Greeting />
         </div>

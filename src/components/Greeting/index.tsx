@@ -9,7 +9,7 @@ const Greeting = () => (
         Hey, my name is
         {' '}
         <span
-          className="text-primary-600 hover:underline underline-offset-4 decoration-primary-500"
+          className="text-primary-600"
         >
           Oliver 👋🏻{' '}
         </span>

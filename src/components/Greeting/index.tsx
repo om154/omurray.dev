@@ -9,7 +9,7 @@ const Greeting = () => (
         Hey, my name is
         {' '}
         <span
-          className="text-primary-600"
+          className="text-primary-600 hover:underline underline-offset-4 decoration-primary-500"
         >
           Oliver
         </span>
@@ -17,7 +17,7 @@ const Greeting = () => (
         I&apos;m a{' '}
         <Link
           to='/about'
-          className="text-primary-600"
+          className="text-primary-600 hover:underline underline-offset-4 decoration-primary-500"
         >
           software engineer
         </Link> who loves building great products.
@@ -28,26 +28,26 @@ const Greeting = () => (
         In my spare time I enjoy{' '}
         <Link
           to='/interests'
-          className="text-primary-600"
+          className="text-primary-600 hover:underline underline-offset-4 decoration-primary-500"
         >running
         </Link> and <Link
           to='/interests'
-          className="text-primary-600"
+          className="text-primary-600 hover:underline underline-offset-4 decoration-primary-500"
         >hiking
         </Link> ⛰️ In the morning, you can find me drinking <Link
           to='/interests'
-          className="text-primary-600"
+          className="text-primary-600 hover:underline underline-offset-4 decoration-primary-500"
         >filter coffee</Link> ☕️ or in the evening, <Link
           to='/interests'
-          className="text-primary-600"
+          className="text-primary-600 hover:underline underline-offset-4 decoration-primary-500"
         >natural wine</Link> 🍊
       </H1>
     </div>
     <div className="box-border w-full max-w-5xl px-4 mx-auto mt-6 text-center text-primary-900 md:text-left">
       <H1 className="mt-0">
         I travel a lot, so I also spend plenty of time exploring and meeting people in <Link
-          to='/interests'
-          className="text-primary-600"
+          to='/travel'
+          className="text-primary-600 hover:underline underline-offset-4 decoration-primary-500"
         >new places</Link> 🌎
       </H1>
     </div>

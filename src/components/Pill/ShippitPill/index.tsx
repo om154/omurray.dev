@@ -12,7 +12,7 @@ interface ShippitPillProps {
 const ShippitPill = ({ className }: ShippitPillProps) => (
   <Pill className={cn('bg-white', className)}>
     <div className='flex row'>
-      <img src={shippitLogo} className="w-auto h-10 md:h-6 md:mr-2" alt='shippit-logo' />
+      <img src={shippitLogo} className="w-auto h-9 md:h-6 md:mr-2" alt='shippit-logo' />
     </div>
     <div className='flex row'>
       <a className="flex ml-2 mr-1 text-neutral-800" href="https://www.shippit.com/" data-testid="shippit-external-link" target="_blank" rel="noreferrer">

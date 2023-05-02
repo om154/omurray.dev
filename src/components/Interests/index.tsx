@@ -11,25 +11,25 @@ const items: InterestItem[] = [
   {
     title: 'Sports 🏃🏻‍♂️',
     paragraphs: [
-      'I have really been enjoyined running lately 🏃🏻‍♂️ I also recently tried out hiking & trail running after years on the road ⛰️',
-      'I ran the Melbourne Marathon Festival, including the 10km and the Half Marathon. One day I aspire to complete a marathon!',
-      'When I lived in Melbourne, I umpired Australian Rules football first locally, and for two years at the Victorian State League. 🏉',
+      'Lately, I have really enjoyed running 🏃🏻‍♂️ I also recently tried hiking, and trail running after years on the road! ⛰️',
+      'In the past I have run at the Melbourne Marathon Festival, including the 10km and the Half Marathon. One day I aspire to complete a marathon!',
+      'When I lived in Melbourne, I umpired Australian Rules football including two years at the Victorian State League. 🏉',
     ],
     imagePath: runningImg
   },
   {
     title: 'Coffee  ☕️',
     paragraphs: [
-      "I have always liked coffee, but it wasn't until trying filter coffee that I really experienced some of Melbourne's finest coffee roasters. I love to learn about the intricacies of coffee brewing and roasting.",
-      'Pour over filters produce a very light, clean cup of coffee and it tends to be much less acidic than espresso. It\'s now a daily habit to wake up and make a cup of filter coffee!',
-      'Some of my favourite coffee roasters in Melbourne are: Market Lane, Acoffee, Seven Seeds & Methodist. I am always looking for suggestions, so please pass them on!'
+      "I have always loved coffee, but learning to make pour over coffee opened up a whole new experiences of Melbourne's finest coffee roasters. I love to learn about the intricacies of coffee brewing and roasting.",
+      'Pour over filters produce a very light, clean cup of coffee and they tend to be much less acidic than espresso. It\'s now a daily habit to make pour over using a v60, even whilst traveling!',
+      'Some of my favourite coffee roasters in Melbourne are: Market Lane, Acoffee, Seven Seeds & Methodist. I am always looking for suggestions, so please share!'
     ],
     imagePath: coffeeImg
   },
   {
     title: 'Natural Wine  🍷',
     paragraphs: [
-      'The phrase \'natural wine\' generally refers to wine made with minimal intervention. Really, this means avoiding pesticides, chemicals and any other additives. Natural winemakers also tend not to filter their wines, resulting in a cloudy and unique, orange-looking colour 🍊.',
+      'The phrase \'natural wine\' generally refers to wine made with minimal intervention. This means avoiding using pesticides, chemicals and any other additives. Natural winemakers also tend not to filter their wines, resulting in a cloudy and unique, orange-looking colour 🍊',
       'Most are made to drink (not to cellar) and often taste crisp, fresh & fruity... sometimes a bit crazy!',
       "There are dozens, but some  Australian producers I've liked are Lucy M, Brave New and Momento Mori. Try them and you'll see what I mean! ✌🏻"
     ],

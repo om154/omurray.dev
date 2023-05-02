@@ -83,18 +83,13 @@ const AboutMe = () => (
                 <a className="no-underline hover:underline" href="https://www.accenture.com/" target="_blank" rel="noreferrer">Accenture</a>
                 {' '}
                 developing large-scale web
-                applications to help their clients effectively capture, manage and analyze data.
+                applications to help their clients effectively capture, manage and analyze their data.
               </P>
               <div className="flex flex-col items-center mt-3 space-y-2 md:space-x-2 lg:space-y-0 lg:space-x-0 lg:flex-row lg:justify-around">
                 <AccenturePill className="my-1 lg:my-0 lg:ml-1" />
               </div>
             </div>
           </div>
-          <P>
-            In my spare time I like to travel and I particularly enjoy running and dining out at
-            great cafes & restaurants. As I mentioned, in the mornings you’ll find me
-            drinking coffee at home or at a cafe, and in the evenings sharing a bottle of wine over a meal with friends.
-          </P>
         </AboutMeHero>
       </div>
     </Section>

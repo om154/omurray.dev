@@ -1,5 +1,6 @@
 import Section from '../Section';
 import { H1 } from '../shared/Text';
+import { Link } from 'react-router-dom';
 
 const Greeting = () => (
   <Section className="items-center h-full rounded-lg bg-neutral-300">
@@ -14,34 +15,40 @@ const Greeting = () => (
         </span>
         {' '}👋🏻 Welcome to my website!{' '}
         I&apos;m a{' '}
-        <span
+        <Link
+          to='/about'
           className="text-primary-600"
         >
           software engineer
-        </span> who loves building great products.
+        </Link> who loves building great products.
       </H1>
     </div>
     <div className="box-border w-full max-w-5xl px-4 mx-auto mt-6 text-center text-primary-900 md:text-left">
       <H1 className="mt-0">
         In my spare time I enjoy{' '}
-        <span
+        <Link
+          to='/interests'
           className="text-primary-600"
         >running
-        </span> and <span
+        </Link> and <Link
+          to='/interests'
           className="text-primary-600"
         >hiking
-        </span> ⛰️ In the morning, you can find me drinking <span
+        </Link> ⛰️ In the morning, you can find me drinking <Link
+          to='/interests'
           className="text-primary-600"
-        >filter coffee</span> ☕️ or in the evening, <span
+        >filter coffee</Link> ☕️ or in the evening, <Link
+          to='/interests'
           className="text-primary-600"
-        >natural wine</span> 🍊
+        >natural wine</Link> 🍊
       </H1>
     </div>
     <div className="box-border w-full max-w-5xl px-4 mx-auto mt-6 text-center text-primary-900 md:text-left">
       <H1 className="mt-0">
-        I travel a lot, so I also spend plenty of time exploring and meeting people in <span
+        I travel a lot, so I also spend plenty of time exploring and meeting people in <Link
+          to='/interests'
           className="text-primary-600"
-        >new places</span> 🌎
+        >new places</Link> 🌎
       </H1>
     </div>
   </Section>

@@ -7,6 +7,7 @@ import Interests from './components/Interests';
 import ContactMe from './components/ContactMe';
 import Home from './components/Home';
 import ErrorPage from './components/ErrorPage';
+import Travel from './components/Travel';
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
   {
     path: '/contact',
     element: <ContactMe />
+  },
+  {
+    path: '/travel',
+    element: <Travel />
   }
 ]);
 

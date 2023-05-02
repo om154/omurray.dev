@@ -28,6 +28,7 @@ const Navigation = () => {
         <ul className='flex flex-row list-none'>
           <LinkListItem title="Home" path="/" active={location.pathname === '/'} />
           <LinkListItem title="About" path="/about" active={location.pathname === '/about'} />
+          <LinkListItem title="Travel" path="/travel" active={location.pathname === '/travel'} />
           <LinkListItem title="Interests" path="/interests" active={location.pathname === '/interests'} />
           <LinkListItem title="Contact" path="/contact" active={location.pathname === '/contact'} />
         </ul>

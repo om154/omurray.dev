@@ -10,7 +10,7 @@ const ContactMe = () => (
     <Section>
       <div className="box-border w-full">
         <div className="text-left">
-          <h2 className="font-serif text-3xl font-extralight text-neutral-900 md:text-8xl">Contact me</h2>
+          <h2 className="font-serif text-3xl font-extralight text-neutral-900 md:text-8xl">Reach out</h2>
         </div>
         <div className="box-border w-full pt-4 ">
           <P>

@@ -39,8 +39,20 @@ const Travel = () => (
               <li>Melbourne, Australia 🇦🇺</li>
               <li>Tokyo, Japan 🇯🇵</li>
               <li>Sapporo, Japan 🇯🇵</li>
-              <li>Istanbul, Türkiye 🇹🇷</li>
               <li>Cape Town, South Africa 🇿🇦</li>
+              <li>Istanbul, Türkiye 🇹🇷</li>
+              <li>Bordeaux, France 🇫🇷</li>
+              <li>Paris, France 🇫🇷</li>
+              <li>Lisbon, Portugal 🇵🇹</li>
+              <li>Cascais, Portugal 🇵🇹</li>
+              <li>Ericeira, Portugal 🇵🇹</li>
+              <li>Oslo, Norway 🇳🇴</li>
+              <li>Lofoten, Norway 🇳🇴</li>
+              <li>Bergen, Norway 🇳🇴</li>
+              <li>Rome, Italy 🇮🇹</li>
+              <li>Berlin, Germany 🇩🇪</li>
+              <li>Copenhagen, Denmark 🇩🇰</li>
+              <li>Stockholm, Sweden 🇸🇪</li>
             </ul>
           </P>
           <P>Expect to see more about my travels here in the near future!</P>

@@ -12,7 +12,7 @@ const items: InterestItem[] = [
       'In the past I have run at the Melbourne Marathon Festival, including the 10km and the Half Marathon. One day I aspire to complete a marathon!',
       'When I lived in Melbourne, I umpired Australian Rules football including two years at the Victorian State League. 🏉',
     ],
-    imagePath: '/static/img/acoffee.jpeg'
+    imagePath: '/static/img/running.jpeg'
   },
   {
     title: 'Coffee  ☕️',
@@ -21,7 +21,7 @@ const items: InterestItem[] = [
       'Pour over filters produce a very light, clean cup of coffee and they tend to be much less acidic than espresso. It\'s now a daily habit to make pour over using a v60, even whilst traveling!',
       'Some of my favourite coffee roasters in Melbourne are: Market Lane, Acoffee, Seven Seeds & Methodist. I am always looking for suggestions, so please share!'
     ],
-    imagePath: '/static/img/running.jpeg'
+    imagePath: '/static/img/acoffee.jpeg'
   },
   {
     title: 'Natural Wine  🍷',
@@ -41,7 +41,7 @@ const Interests = () => (
       <div className="w-full text-left">
         <h2 className="font-serif text-3xl font-extralight text-neutral-900 md:text-8xl">Interests</h2>
       </div>
-      <div className='box-border grid grid-cols-1 gap-4 mt-4 md:grid-flow-row-dense md:grid-cols-1 xl:grid-cols-4'>
+      <div className='box-border grid grid-cols-1 gap-4 mt-4 md:grid-flow-row-dense md:auto-rows-fr md:grid-cols-1 xl:grid-cols-4'>
         {items.map((item: InterestItem) => <Item key={uuidv4()} item={item} />)}
       </div>
     </Section>

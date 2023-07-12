@@ -42,7 +42,7 @@ const AboutMe = () => (
             ! Here's some of my work experience -
           </P>
           <div className='grid grid-cols-1 gap-4 pb-6 mt-4 sm:grid-flow-row-dense lg:grid-cols-2'>
-            <div className='flex flex-col justify-between p-5 font-sans rounded-lg aspect-squar bg-neutral-400'>
+            <div className='flex flex-col justify-between p-5 font-sans rounded-lg aspect-squar bg-neutral-100'>
               <P>
                 At twine we&apos;re focused on helping connect remote teams, and are fully remote ourselves!
                 {' '}
@@ -52,7 +52,7 @@ const AboutMe = () => (
                 </div>
               </P>
             </div>
-            <div className='flex flex-col justify-between p-5 font-sans rounded-lg aspect-squar bg-neutral-400'>
+            <div className='flex flex-col justify-between p-5 font-sans rounded-lg aspect-squar bg-neutral-100'>
               <div className='leading-6 tracking-tight'>
                 I started out working on the problem of connection for remote teams at
                 {' '}
@@ -63,7 +63,7 @@ const AboutMe = () => (
                 <GlimpsePill className="mt-1 lg:m-0" />
               </div>
             </div>
-            <div className='flex flex-col justify-between p-5 font-sans rounded-lg aspect-squar bg-neutral-400'>
+            <div className='flex flex-col justify-between p-5 font-sans rounded-lg aspect-squar bg-neutral-100'>
               <P>
                 In the past I worked in Engineering at
                 {' '}
@@ -76,7 +76,7 @@ const AboutMe = () => (
                 <ShippitPill className="my-1 lg:m-0" />
               </div>
             </div>
-            <div className='flex flex-col justify-between p-5 font-sans rounded-lg aspect-squar bg-neutral-400'>
+            <div className='flex flex-col justify-between p-5 font-sans rounded-lg aspect-squar bg-neutral-100'>
               <P>
                 I also spent time at
                 {' '}

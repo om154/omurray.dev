@@ -11,7 +11,7 @@ interface AccenturePillProps {
 const AccenturePill = ({ className }: AccenturePillProps) => (
   <Pill className={cn('bg-white', className)}>
     <div className='flex row'>
-      <AccentureLogo className="w-20 h-9 md:h-5 md:mr-2" />
+      <AccentureLogo className="w-20 h-8 md:h-5 md:mr-2" />
     </div>
     <div className='flex row'>
       <a className="flex ml-2 mr-1 text-neutral-800" href="https://www.accenture.com/" data-testid="accenture-external-link" target="_blank" rel="noreferrer">

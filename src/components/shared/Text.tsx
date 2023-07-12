@@ -22,7 +22,7 @@ export const H4 = ({ children, className }: TextProps & ChildrenProp) => (
 );
 
 export const P = ({ children, className }: TextProps & ChildrenProp) => (
-  <p className={cn('leading-6 tracking-tight', className)}>{children}</p>
+  <div className={cn('leading-6 tracking-tight', className)}>{children}</div>
 );
 
 H1.defaultProps = {

@@ -5,7 +5,7 @@ interface Props {
 }
 
 const PageContainer = ({ children }: Props) => {
-  return <div className="w-full px-6 pb-12 font-sans md:px-8 md:max-w-screen-md lg:max-w-screen-lg xl:max-w-[1420px]">{children}</div>;
+  return <div className="w-full m-auto px-6 pb-12 font-sans md:px-8 md:w-screen-md lg:w-screen-lg xl:w-[1420px]">{children}</div>;
 };
 
 export default PageContainer;

@@ -10,8 +10,8 @@ const InterestsHero = ({ imgPath, children }: HeroProps & ChildrenProp) => (
       </div>
     </div>
     {imgPath &&
-      <div className="flex justify-center order-first max-h-full lg:order-last md:max-w-[33%]">
-        <Image src={imgPath} alt='interest' className="object-cover object-center max-w-full rounded-md " />
+      <div className="relative flex justify-center order-first max-h-full lg:order-last md:w-[33%]">
+        <Image src={imgPath} fill alt='interest' className="object-cover object-center max-w-full rounded-md" />
       </div>
     }
   </div>

@@ -7,9 +7,9 @@ const Projects = () => (
       <div className="text-left">
         <H2 className="mt-0 mb-2 font-bold">Projects</H2>
       </div>
-      <p className="text-sm leading-4 font-regular">
+      <div className="text-sm leading-4 font-regular">
         Some of my most recent projects are listed below
-      </p>
+      </div>
       <ul>
         <li>Strava app for renaming activities</li>
         <li>More to come...</li>

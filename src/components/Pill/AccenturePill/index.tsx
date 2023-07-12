@@ -9,15 +9,15 @@ interface AccenturePillProps {
 
 const AccenturePill = ({ className }: AccenturePillProps) => (
   <Pill className={cn('bg-white', className)}>
-    <div className='flex row'>
-      <Image src='static/svg/accenture.svg' alt='accenture' className="w-20 h-8 md:h-5 md:mr-2" />
+    <div className='relative flex items-center w-full h-8 row'>
+      <Image src='/static/svg/accenture.svg' width={75} height={32} alt='accenture' className="md:h-5 md:mr-2" />
     </div>
     <div className='flex row'>
-      <Link className="flex ml-2 mr-1 text-neutral-800" href="https://www.accenture.com/" data-testid="accenture-external-link" target="_blank" rel="noreferrer">
-        <Image src='static/svg/external-link-icon.svg' width={20} height={20} alt='external' className="fill-current" />
+      <Link className="relative flex w-5 h-5 ml-2 mr-1 text-neutral-800" href="https://www.accenture.com/" data-testid="accenture-external-link" target="_blank" rel="noreferrer">
+        <Image src='/static/svg/external-link-icon.svg' fill alt='external' className="fill-current" />
       </Link>
-      <Link className="flex ml-2 mr-1 text-[#0a66c2]" href="https://www.linkedin.com/company/accenture" target="_blank" rel="noreferrer">
-        <Image src='static/svg/linkedin-logo.svg' width={20} height={20} alt='linkedin' className="fill-current" />
+      <Link className="relative flex w-5 h-5 ml-2 mr-1 text-[#0a66c2]" href="https://www.linkedin.com/company/accenture" target="_blank" rel="noreferrer">
+        <Image src='/static/svg/linkedin-logo.svg' fill alt='linkedin' className="fill-current" />
       </Link>
     </div>
   </Pill>

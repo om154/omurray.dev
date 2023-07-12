@@ -27,7 +27,7 @@ const Navigation = () => {
   const pathName = usePathname();
 
   return (
-    <div className="sticky top-0 z-10 flex items-center justify-center py-4 md:px-1 isolate md:justify-between">
+    <div className="sticky top-0 z-10 flex items-center justify-center py-4 isolate md:justify-between">
       <nav className='relative flex px-2 py-1 border rounded-lg shadow-md border-neutral-200 bg-white/70 backdrop-blur-md'>
         <ul className='flex flex-row gap-1 list-none md:gap-0'>
           <LinkListItem title="Home" path="/" active={pathName === '/'} />

@@ -1,4 +1,5 @@
 import cn from 'classnames';
+import Link from 'next/link'
 
 interface EmailPillProps {
   className?: string
@@ -8,7 +9,7 @@ const EmailPill = ({ className }: EmailPillProps) => {
   if (process.env.REACT_APP_USER_EMAIL_ADDRESS === undefined) return null;
 
   return (
-    <a href={`mailto:${process.env.REACT_APP_USER_EMAIL_ADDRESS}`} className={cn('inline-block px-3 py-2 font-bold bg-white rounded-lg shadow-md text-primary-900', className)}>
+    <Link href={`mailto:${process.env.REACT_APP_USER_EMAIL_ADDRESS}`} className={cn('inline-block px-3 py-2 font-bold bg-white rounded-lg shadow-md text-primary-900', className)}>
       <div className="flex items-center my-1">
         <span className="mr-2 font-serif leading-tight no-underline select-none font-regular text-md md:text-lg">
           📫
@@ -17,7 +18,7 @@ const EmailPill = ({ className }: EmailPillProps) => {
           { `${process.env.REACT_APP_USER_EMAIL_ADDRESS}`}
         </span>
       </div>
-    </a>
+    </Link>
   );
 };
 

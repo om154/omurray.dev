@@ -1,9 +1,6 @@
 import { v4 as uuidv4 } from 'uuid';
 import Section from '../Section';
 import Item, { InterestItem } from './Item';
-import coffeeImg from 'public/static/img/acoffee.jpeg';
-import wineImg from 'public/static/img/susucaru.jpeg';
-import runningImg from 'public/static/img/running.jpeg';
 import Navigation from '../Navigation';
 import PageContainer from '../shared/PageContainer';
 
@@ -15,7 +12,7 @@ const items: InterestItem[] = [
       'In the past I have run at the Melbourne Marathon Festival, including the 10km and the Half Marathon. One day I aspire to complete a marathon!',
       'When I lived in Melbourne, I umpired Australian Rules football including two years at the Victorian State League. 🏉',
     ],
-    imagePath: runningImg
+    imagePath: 'static/img/acoffee.jpeg'
   },
   {
     title: 'Coffee  ☕️',
@@ -24,7 +21,7 @@ const items: InterestItem[] = [
       'Pour over filters produce a very light, clean cup of coffee and they tend to be much less acidic than espresso. It\'s now a daily habit to make pour over using a v60, even whilst traveling!',
       'Some of my favourite coffee roasters in Melbourne are: Market Lane, Acoffee, Seven Seeds & Methodist. I am always looking for suggestions, so please share!'
     ],
-    imagePath: coffeeImg
+    imagePath: 'static/img/running.jpeg'
   },
   {
     title: 'Natural Wine  🍷',
@@ -33,7 +30,7 @@ const items: InterestItem[] = [
       'Most are made to drink (not to cellar) and often taste crisp, fresh & fruity... sometimes a bit crazy!',
       "There are dozens, but some  Australian producers I've liked are Lucy M, Brave New and Momento Mori. Try them and you'll see what I mean! ✌🏻"
     ],
-    imagePath: wineImg
+    imagePath: 'static/img/susucaru.jpeg'
   }
 ];
 

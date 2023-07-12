@@ -1,8 +1,5 @@
 import cn from 'classnames';
-import { ReactComponent as TwineLogo } from 'public/static/svg/twine.svg';
-import { ReactComponent as CrunchbaseLogo } from 'public/static/svg/crunchbase-logo.svg';
-import { ReactComponent as LinkedInLogo } from 'public/static/svg/linkedin-logo.svg';
-import { ReactComponent as ExternalLinkIcon } from 'public/static/svg/external-link-icon.svg';
+import Image from 'next/image';
 import Pill from '..';
 
 interface TwinePillProps {
@@ -12,17 +9,17 @@ interface TwinePillProps {
 const TwinePill = ({ className }: TwinePillProps) => (
   <Pill className={cn('bg-white', className)}>
     <div className='flex row'>
-      <TwineLogo className="h-8 p-1 fill-current md:p-0 md:h-4 md:mr-2" />
+      <Image src='static/svg/twine.svg' height={32} alt='twine' className="p-1 fill-current md:p-0 md:mr-2" />
     </div>
     <div className='flex row'>
       <a className="flex ml-2 mr-1 text-neutral-800" href="https://www.twine.us/" data-testid="glimpse-external-link" target="_blank" rel="noreferrer">
-        <ExternalLinkIcon className="w-5 h-5 fill-current" />
+        <Image src='static/svg/external-link-icon.svg' width={20} height={20} alt='external' className="fill-current" />
       </a>
       <a className="flex ml-2 mr-1 text-[#0a66c2]" href="https://www.linkedin.com/company/wearetwine" target="_blank" rel="noreferrer">
-        <LinkedInLogo className="w-5 h-5 fill-current" />
+        <Image src='static/svg/linkedin-logo.svg' width={20} height={20} alt='linkedin' className="fill-current" />
       </a>
       <a className="flex ml-2" href="https://www.crunchbase.com/organization/twine-121c" target="_blank" rel="noreferrer">
-        <CrunchbaseLogo className="w-5 h-5 fill-current" />
+        <Image src='static/svg/crunchbase-logo.svg' width={20} height={20} alt='crunchbase' className="fill-current" />
       </a>
     </div>
   </Pill>

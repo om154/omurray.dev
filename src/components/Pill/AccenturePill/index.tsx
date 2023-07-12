@@ -1,7 +1,7 @@
 import cn from 'classnames';
-import { ReactComponent as LinkedInLogo } from '../../../assets/linkedin-logo.svg';
-import { ReactComponent as ExternalLinkIcon } from '../../../assets/external-link-icon.svg';
-import { ReactComponent as AccentureLogo } from '../../../assets/accenture.svg';
+import { ReactComponent as LinkedInLogo } from 'public/static/svg/linkedin-logo.svg';
+import { ReactComponent as ExternalLinkIcon } from 'public/static/svg/external-link-icon.svg';
+import { ReactComponent as AccentureLogo } from 'public/static/svg/accenture.svg';
 import Pill from '..';
 
 interface AccenturePillProps {

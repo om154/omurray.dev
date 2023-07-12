@@ -1,6 +1,5 @@
 import Section from '../Section';
 import { P } from '../shared/Text';
-import oliverImg from '../../assets/oliver.jpeg';
 import ShippitPill from '../Pill/ShippitPill';
 import AccenturePill from '../Pill/AccenturePill';
 import AboutMeHero from '../Hero/AboutMe';
@@ -32,7 +31,7 @@ const AboutMe = () => (
         <div className="text-left">
           <h2 className="font-serif text-3xl font-extralight text-neutral-900 md:text-8xl">About me</h2>
         </div>
-        <AboutMeHero imgPath={oliverImg}>
+        <AboutMeHero imgPath={'static/img/oliver.jpeg'}>
           <P>
             Hey 👋🏻 I&apos;m Oliver, a
             {process.env.REACT_APP_DATE_OF_BIRTH && ` ${calculateAge(process.env.REACT_APP_DATE_OF_BIRTH)} year old `}

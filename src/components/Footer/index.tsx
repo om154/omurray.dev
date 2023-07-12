@@ -1,6 +1,6 @@
-import { ReactComponent as LinkedInLogo } from '../../assets/linkedin-logo.svg';
-import { ReactComponent as GitHubLogo } from '../../assets/github-logo.svg';
-import { ReactComponent as TwitterLogo } from '../../assets/twitter-logo.svg';
+import { ReactComponent as LinkedInLogo } from 'public/static/svg/linkedin-logo.svg';
+import { ReactComponent as GitHubLogo } from 'public/static/svg/github-logo.svg';
+import { ReactComponent as TwitterLogo } from 'public/static/svg/twitter-logo.svg';
 
 const Footer = () => (
   <div className="box-border flex justify-center w-full pl-2 mx-auto text-center rounded-lg bg-white/70">

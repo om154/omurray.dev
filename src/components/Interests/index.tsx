@@ -1,9 +1,9 @@
 import { v4 as uuidv4 } from 'uuid';
 import Section from '../Section';
 import Item, { InterestItem } from './Item';
-import coffeeImg from '../../assets/img/acoffee.jpeg';
-import wineImg from '../../assets/img/susucaru.jpeg';
-import runningImg from '../../assets/img/running.jpeg';
+import coffeeImg from 'public/static/img/acoffee.jpeg';
+import wineImg from 'public/static/img/susucaru.jpeg';
+import runningImg from 'public/static/img/running.jpeg';
 import Navigation from '../Navigation';
 import PageContainer from '../shared/PageContainer';
 

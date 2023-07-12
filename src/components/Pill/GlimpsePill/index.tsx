@@ -1,15 +1,14 @@
 import cn from 'classnames';
-import { ReactComponent as CrunchbaseLogo } from '../../../assets/crunchbase-logo.svg';
-import { ReactComponent as LinkedInLogo } from '../../../assets/linkedin-logo.svg';
-import { ReactComponent as ExternalLinkIcon } from '../../../assets/external-link-icon.svg';
-import glimpseLogoImg from '../../../assets/img/glimpse.webp';
+import { ReactComponent as CrunchbaseLogo } from '/public/static/svg/crunchbase-logo.svg';
+import { ReactComponent as LinkedInLogo } from '/public/static/svg/linkedin-logo.svg';
+import { ReactComponent as ExternalLinkIcon } from '/public/static/svg/external-link-icon.svg';
 import Pill from '..';
 
 interface GlimpsePillProps {
   className?: string
 }
 
-const GlimpseLogo = () => <img className="h-8 p-1 md:p-0 md:h-6 md:mr-2 " src={glimpseLogoImg} alt="Glimpse" />;
+const GlimpseLogo = () => <img className="h-8 p-1 md:p-0 md:h-6 md:mr-2 " src="static/svg/img/glimpse.webp" alt="Glimpse" />;
 
 const GlimpsePill = ({ className }: GlimpsePillProps) => (
   <Pill className={cn('bg-white', className)}>

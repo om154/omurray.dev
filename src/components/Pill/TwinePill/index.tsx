@@ -1,8 +1,8 @@
 import cn from 'classnames';
-import { ReactComponent as TwineLogo } from '../../../assets/twine.svg';
-import { ReactComponent as CrunchbaseLogo } from '../../../assets/crunchbase-logo.svg';
-import { ReactComponent as LinkedInLogo } from '../../../assets/linkedin-logo.svg';
-import { ReactComponent as ExternalLinkIcon } from '../../../assets/external-link-icon.svg';
+import { ReactComponent as TwineLogo } from 'public/static/svg/twine.svg';
+import { ReactComponent as CrunchbaseLogo } from 'public/static/svg/crunchbase-logo.svg';
+import { ReactComponent as LinkedInLogo } from 'public/static/svg/linkedin-logo.svg';
+import { ReactComponent as ExternalLinkIcon } from 'public/static/svg/external-link-icon.svg';
 import Pill from '..';
 
 interface TwinePillProps {

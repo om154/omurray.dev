@@ -4,8 +4,8 @@ const { lightColor } = require('./src/themes/color');
 module.exports = {
   mode: 'jit',
   content: [
-    './src/**/*.{js,jsx,ts,tsx}',
-    './public/index.html'
+    "app/**/*.{js,ts,jsx,tsx,mdx}",
+    "src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   darkMode: 'class',
   theme: {

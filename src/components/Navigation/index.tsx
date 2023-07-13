@@ -41,8 +41,8 @@ const Navigation = () => {
       </nav>
       <div className='hidden md:flex'>
         <div className="box-border flex justify-center w-full pl-2 mx-auto text-center rounded-lg bg-white/70">
-          {process.env.NEXT_PUBLIC_TWITTER_URL && (
-            <Link className="flex m-2" href={process.env.NEXT_PUBLIC_TWITTER_URL as string} target="_blank" rel="noreferrer">
+          {process.env.NEXT_PUBLIC_LINKEDIN_URL && (
+            <Link className="flex m-2" href={process.env.NEXT_PUBLIC_LINKEDIN_URL as string} target="_blank" rel="noreferrer">
               <LinkedInLogo className="transition-all duration-250 fill-neutral-500 hover:fill-neutral-700" />
             </Link>
            )}
@@ -51,8 +51,8 @@ const Navigation = () => {
               <GitHubLogo className="transition-all duration-250 fill-neutral-500 hover:fill-neutral-700" />
             </Link>
            )}
-          {process.env.NEXT_PUBLIC_LINKEDIN_URL && (
-            <Link className="flex m-2" href={process.env.NEXT_PUBLIC_LINKEDIN_URL as string} target="_blank" rel="noreferrer">
+          {process.env.NEXT_PUBLIC_TWITTER_URL && (
+            <Link className="flex m-2" href={process.env.NEXT_PUBLIC_TWITTER_URL as string} target="_blank" rel="noreferrer">
               <TwitterLogo className="transition-all duration-250 fill-neutral-500 hover:fill-neutral-700" />
             </Link>
            )}

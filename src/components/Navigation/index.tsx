@@ -16,7 +16,7 @@ interface ListItemProps {
 const LinkListItem = ({ title, path, active }: ListItemProps) => (
   <li className='contents'>
     <Link href={path} className={classNames(
-      'px-1 md:px-2 py-1 font-sans text-sm hover:bg-neutral-200  hover:text-primary-900 rounded-lg leading-5 transiiton-all duration-200',
+      'px-1 md:px-2 py-1 font-sans transition-colors duration-200 ease-linear no-underline text-sm font-regular outline-none select-none hover:bg-neutral-200  hover:text-primary-900 rounded-lg leading-5',
       {
         'text-primary-900': active,
         'text-neutral-600':!active

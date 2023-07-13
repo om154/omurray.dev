@@ -31,7 +31,7 @@ const AboutMe = () => (
       <AboutMeHero imgPath={'/static/img/oliver.jpeg'}>
         <P>
           Hey 👋🏻 I&apos;m Oliver, a
-          {process.env.REACT_APP_DATE_OF_BIRTH && ` ${calculateAge(process.env.REACT_APP_DATE_OF_BIRTH)} year old `}
+          {process.env.NEXT_PUBLIC__DATE_OF_BIRTH && ` ${calculateAge(process.env.NEXT_PUBLIC__DATE_OF_BIRTH)} year old `}
           Software Engineer originally from Melbourne, Australia. I'm currently working on connecting remote teams at
           {' '}
           <Link className="no-underline hover:underline" href="https://www.twine.us/" target="_blank" rel="noreferrer">twine</Link>

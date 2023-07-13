@@ -25,7 +25,7 @@ export function calculateAge(birthday: string) {
 const AboutMe = () => (
   <Section alignTop>
     <div className="box-border w-full">
-      <div className="text-left">
+      <div className="mb-2 text-left">
         <h2 className="font-serif text-3xl font-extralight text-neutral-900 md:text-8xl">About me</h2>
       </div>
       <AboutMeHero imgPath={'/static/img/oliver.jpeg'}>
@@ -37,7 +37,7 @@ const AboutMe = () => (
           <Link className="no-underline hover:underline" href="https://www.twine.us/" target="_blank" rel="noreferrer">twine</Link>
           ! Here's some of my work experience -
         </P>
-        <div className='grid grid-cols-1 gap-4 pb-6 mt-4 sm:grid-flow-row-dense lg:grid-cols-2'>
+        <div className='grid grid-cols-1 gap-4 mt-4 sm:grid-flow-row-dense lg:grid-cols-2'>
           <div className='flex flex-col justify-between p-5 font-sans rounded-lg aspect-squar bg-neutral-100'>
             <P>
               At twine we&apos;re focused on helping connect remote teams, and are fully remote ourselves!

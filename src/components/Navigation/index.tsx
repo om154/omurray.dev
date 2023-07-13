@@ -43,17 +43,17 @@ const Navigation = () => {
         <div className="box-border flex justify-center w-full pl-2 mx-auto text-center rounded-lg bg-white/70">
           {process.env.NEXT_PUBLIC_LINKEDIN_URL && (
             <Link className="flex m-2" href={process.env.NEXT_PUBLIC_LINKEDIN_URL as string} target="_blank" rel="noreferrer">
-              <LinkedInLogo className="transition-all duration-250 fill-neutral-500 hover:fill-neutral-700" />
+              <LinkedInLogo className="transition-colors duration-200 ease-linear fill-neutral-500 hover:fill-neutral-700" />
             </Link>
            )}
           {process.env.NEXT_PUBLIC_GITHUB_URL && (
             <Link className="flex m-2" href={process.env.NEXT_PUBLIC_GITHUB_URL as string} target="_blank" rel="noreferrer">
-              <GitHubLogo className="transition-all duration-250 fill-neutral-500 hover:fill-neutral-700" />
+              <GitHubLogo className="transition-colors duration-200 ease-linear fill-neutral-500 hover:fill-neutral-700" />
             </Link>
            )}
           {process.env.NEXT_PUBLIC_TWITTER_URL && (
             <Link className="flex m-2" href={process.env.NEXT_PUBLIC_TWITTER_URL as string} target="_blank" rel="noreferrer">
-              <TwitterLogo className="transition-all duration-250 fill-neutral-500 hover:fill-neutral-700" />
+              <TwitterLogo className="transition-colors duration-200 ease-linear fill-neutral-500 hover:fill-neutral-700" />
             </Link>
            )}
         </div>

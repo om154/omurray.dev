@@ -34,10 +34,10 @@ const items: InterestItem[] = [
 
 const Interests = () => (
   <Section alignTop>
-    <div className="w-full text-left">
+    <div className="w-full mb-2 text-left">
       <h2 className="font-serif text-3xl font-extralight text-neutral-900 md:text-8xl">Interests</h2>
     </div>
-    <div className='box-border grid grid-cols-1 gap-4 mt-4 md:grid-flow-row-dense md:auto-rows-fr md:grid-cols-1 xl:grid-cols-4'>
+    <div className='box-border grid grid-cols-1 gap-4 md:grid-flow-row-dense md:auto-rows-fr md:grid-cols-1 xl:grid-cols-4'>
       {items.map((item: InterestItem) => <Item key={uuidv4()} item={item} />)}
     </div>
   </Section>

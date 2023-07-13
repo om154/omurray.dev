@@ -53,13 +53,13 @@ const travelLocations: TravelLocation[] = [
 const Travel = () => (
   <Section>
     <div className="box-border w-full">
-      <div className="text-left">
+      <div className="mb-2 text-left">
         <h2 className="font-serif text-3xl font-extralight text-neutral-900 md:text-8xl">Adventures</h2>
       </div>
       <div className="box-border w-full">
         <P>
           Over the last few years I've visited:
-          <div className='grid grid-cols-2 gap-4 mt-4 sm:grid-flow-row-dense md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8'>
+          <div className='grid grid-cols-2 gap-4 sm:grid-flow-row-dense md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8'>
             {travelLocations.reverse().map(l =>
               <div className='flex flex-col justify-between p-3 rounded-lg aspect-square bg-neutral-100'>
                 <div className='text-[32px]'>{l.emoji}</div>

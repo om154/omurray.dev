@@ -34,7 +34,7 @@ const Greeting = () => (
           href='/interests'
           className="inline-block text-primary-600 hover:underline underline-offset-4 decoration-[rgb(110,163,71)] break-inside-avoid"
         >hiking ⛰️
-        </Link> In the morning, you can find me drinking <Link
+        </Link><br/>In the morning, you can find me drinking <Link
           href='/interests'
           className="inline-block text-primary-600 hover:underline underline-offset-4 decoration-[rgb(80,62,51)] break-inside-avoid"
         >filter coffee ☕️</Link> or in the evening, <Link

@@ -1,7 +1,7 @@
+'use client'
 
 import classNames from 'classnames';
 import Link from "next/link"
-'use client'
 import { usePathname } from 'next/navigation'
 import LinkedInLogo from '../shared/LinkedInLogo';
 import GitHubLogo from './GitHubLogo';

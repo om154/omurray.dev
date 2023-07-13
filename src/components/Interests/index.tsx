@@ -1,8 +1,6 @@
 import { v4 as uuidv4 } from 'uuid';
 import Section from '../Section';
 import Item, { InterestItem } from './Item';
-import Navigation from '../Navigation';
-import PageContainer from '../shared/PageContainer';
 
 const items: InterestItem[] = [
   {
@@ -35,17 +33,14 @@ const items: InterestItem[] = [
 ];
 
 const Interests = () => (
-  <PageContainer>
-    <Navigation />
-    <Section alignTop>
-      <div className="w-full text-left">
-        <h2 className="font-serif text-3xl font-extralight text-neutral-900 md:text-8xl">Interests</h2>
-      </div>
-      <div className='box-border grid grid-cols-1 gap-4 mt-4 md:grid-flow-row-dense md:auto-rows-fr md:grid-cols-1 xl:grid-cols-4'>
-        {items.map((item: InterestItem) => <Item key={uuidv4()} item={item} />)}
-      </div>
-    </Section>
-  </PageContainer>
+  <Section alignTop>
+    <div className="w-full text-left">
+      <h2 className="font-serif text-3xl font-extralight text-neutral-900 md:text-8xl">Interests</h2>
+    </div>
+    <div className='box-border grid grid-cols-1 gap-4 mt-4 md:grid-flow-row-dense md:auto-rows-fr md:grid-cols-1 xl:grid-cols-4'>
+      {items.map((item: InterestItem) => <Item key={uuidv4()} item={item} />)}
+    </div>
+  </Section>
 );
 
 export default Interests;

@@ -1,4 +1,6 @@
+import Navigation from 'src/components/Navigation'
 import './global.css'
+import PageContainer from 'src/components/shared/PageContainer'
 
 export default function RootLayout({
   children,
@@ -22,7 +24,16 @@ export default function RootLayout({
         />
         <title>Oliver Murray</title>
       </head>
-      <body>{children}</body>
+      <body>
+        <PageContainer>
+          <section>
+            <Navigation />
+          </section>
+          <section>
+            {children}
+          </section>
+        </PageContainer>
+      </body>
     </html>
   )
 }

@@ -68,8 +68,6 @@ const Travel = () => (
             )}
           </div>
         </P>
-        <P className='my-4'>Expect to see more about my travels here in the near future! Where should I go next? Let me know!</P>
-        <EmailPill />
       </div>
     </div>
   </Section>

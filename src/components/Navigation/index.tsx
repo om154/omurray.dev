@@ -1,7 +1,7 @@
-'use client'
 
 import classNames from 'classnames';
 import Link from "next/link"
+'use client'
 import { usePathname } from 'next/navigation'
 import LinkedInLogo from '../shared/LinkedInLogo';
 import GitHubLogo from './GitHubLogo';
@@ -55,8 +55,16 @@ const Navigation = () => {
   const previousXOffset = usePreviousPersistent(xOffset)
 
   const handleMouseEnter: MouseEventHandler<HTMLLIElement> = (event) => {
-    setXOffset((event.target as HTMLLIElement).offsetLeft)
-    setWidth((event.target as HTMLLIElement).clientWidth)
+    const eventTarget = event.target as HTMLLIElement;
+
+    if (eventTarget) {
+      if (eventTarget.offsetLeft) {
+        setXOffset(eventTarget.offsetLeft)
+      }
+      if (eventTarget.clientWidth) {
+        setWidth(eventTarget.clientWidth)
+      }
+    }
   }
 
   const handleMouseLeave: MouseEventHandler<HTMLLIElement> = (event) => {

@@ -6,7 +6,7 @@ const ContactMe = () => (
   <Section>
     <div className="box-border w-full">
       <div className="mb-2 text-left">
-        <h2 className="font-serif text-3xl font-extralight text-neutral-900 md:text-8xl">Reach out</h2>
+        <h2 className="font-serif text-3xl font-extralight text-neutral-900 md:text-8xl selection:bg-primary-700 selection:text-white">Reach out</h2>
       </div>
       <div className="box-border w-full p-4 rounded-lg bg-neutral-100">
         <P>

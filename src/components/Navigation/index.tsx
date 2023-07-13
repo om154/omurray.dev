@@ -35,7 +35,7 @@ interface ListItemProps {
 }
 
 const LinkListItem = ({ title, path, active, onMouseEnter, onMouseLeave }: ListItemProps) => (
-  <li className='contents' onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
+  <li className='select-none contents' onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
     <Link href={path} className={classNames(
       'px-1 md:px-2 py-1 font-sans transition-colors duration-200 ease-linear no-underline text-sm font-regular outline-none select-nonerounded-lg hover:text-primary-900 leading-5',
       {

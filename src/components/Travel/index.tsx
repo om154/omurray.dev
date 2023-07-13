@@ -54,7 +54,7 @@ const Travel = () => (
   <Section>
     <div className="box-border w-full">
       <div className="mb-2 text-left">
-        <h2 className="font-serif text-3xl font-extralight text-neutral-900 md:text-8xl">Adventures</h2>
+        <h2 className="font-serif text-3xl font-extralight text-neutral-900 md:text-8xl selection:bg-primary-700 selection:text-white">Adventures</h2>
       </div>
       <div className="box-border w-full">
         <P>
@@ -62,7 +62,7 @@ const Travel = () => (
           <div className='grid grid-cols-2 gap-4 mt-2 sm:grid-flow-row-dense md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8'>
             {travelLocations.reverse().map(l =>
               <div className='flex flex-col justify-between p-3 rounded-lg aspect-square bg-neutral-100'>
-                <div className='text-[32px]'>{l.emoji}</div>
+                <div className='text-[32px] select-none'>{l.emoji}</div>
                 <div>{l.name}</div>
               </div>
             )}

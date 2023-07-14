@@ -12,7 +12,7 @@ const travelLocations: TravelLocation[] = [
   { name: 'Austin, TX', emoji: '🇺🇸' },
   { name: 'Tampa, FL', emoji: '🇺🇸' },
   { name: 'Tucson, AZ', emoji: '🇺🇸' },
-  { name: 'Puerto Rico', emoji: '🇺🇸' },
+  { name: 'San Juan, Puerto Rico', emoji: '🇺🇸' },
   { name: 'San Diego, CA', emoji: '🇺🇸' },
   { name: 'Los Angeles, CA', emoji: '🇺🇸' },
   { name: 'Santa Barbara, CA', emoji: '🇺🇸' },

@@ -17,10 +17,6 @@
     box-sizing: border-box;
   }
 
-  html {
-    font-family: Inter, Roboto, sans-serif;
-  }
-
   body {
     display: flex;
     flex-direction: column;
@@ -36,11 +32,4 @@
     transition-duration: 300ms;
     transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
   }
-}
-
-@font-face {
-  font-family: 'Fraunces';
-  src: url('/static/fonts/Fraunces[SOFT,WONK,opsz,wght].woff2') format('woff2');
-  font-style: normal;
-  font-display: swap;
 }

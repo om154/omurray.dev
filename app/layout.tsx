@@ -1,6 +1,21 @@
 import Navigation from 'src/components/Navigation'
-import './global.css'
 import PageContainer from 'src/components/shared/PageContainer'
+import { Inter } from 'next/font/google'
+import localFont from 'next/font/local'
+
+import './global.css'
+
+const inter = Inter({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-inter',
+})
+
+const fraunces = localFont({
+  src: '../public/static/fonts/Fraunces[SOFT,WONK,opsz,wght].woff2',
+  display: 'block',
+  variable: '--font-fraunces',
+})
 
 export default function RootLayout({
   children,
@@ -8,7 +23,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${inter.variable} ${fraunces.variable}`}>
       <head>
         <meta charSet="utf-8" />
         <link rel="preconnect" href="https://rsms.me/" />

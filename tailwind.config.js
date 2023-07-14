@@ -10,9 +10,9 @@ module.exports = {
   darkMode: 'class',
   theme: {
     fontFamily: {
-      sans: 'Inter, Roboto, sans-serif',
+      sans: 'var(--font-inter), Roboto, sans-serif',
       serif: [
-        'Fraunces, Roboto, sans-serif',
+        'var(--font-fraunces), Roboto, sans-serif',
         {
           fontFeatureSettings: 'normal',
           fontVariationSettings: '"opsz" 72, "SOFT" 50'

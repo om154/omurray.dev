@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Section from '../Section';
-import { H2, P } from '../shared/Text';
+import { H2, H3, P } from '../shared/Text';
 import ShippitPill from '../Pill/ShippitPill';
 import AccenturePill from '../Pill/AccenturePill';
 import AboutMeHero from '../Hero/AboutMe';
@@ -35,8 +35,12 @@ const AboutMe = () => (
           Software Engineer originally from Melbourne, Australia. I'm currently working on connecting remote teams at
           {' '}
           <Link className="no-underline hover:underline" href="https://www.twine.us/" target="_blank" rel="noreferrer">twine</Link>
-          ! Here's some of my work experience -
+          !
         </P>
+        <div className='w-full my-4 border-[0.5px] border-black border-opacity-20 border-solid'/>
+        <div className="w-full mt-2 text-left">
+          <H3>Experience building software</H3>
+        </div>
         <div className='grid grid-cols-1 gap-4 mt-4 sm:grid-flow-row-dense lg:grid-cols-2'>
           <div className='flex flex-col justify-between p-5 font-sans rounded-lg aspect-squar bg-neutral-100'>
             <P>

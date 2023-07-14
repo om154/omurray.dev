@@ -38,7 +38,7 @@ const AboutMe = () => (
           !
         </P>
         <div className='w-full my-4 border-[0.5px] border-black border-opacity-20 border-solid'/>
-        <div className="w-full mt-2 text-left">
+        <div className="w-full text-left md:mt-2">
           <H3>Experience building software</H3>
         </div>
         <div className='grid grid-cols-1 gap-4 mt-4 sm:grid-flow-row-dense lg:grid-cols-2'>

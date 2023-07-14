@@ -12,7 +12,7 @@ const Greeting = () => (
         {' '}I&apos;m a{' '}
         <Link
           href='/about'
-          className='inline-block text-primary-600 decoration-[transparent] hover:decoration-primary-700 hover:text-primary-700 transition-all duration-300 ease-in-out underline-offset-4 break-inside-avoid'
+          className='inline-block text-primary-600 decoration-[transparent] hover:decoration-primary-700 hover:text-primary-700 transition-colors duration-300 ease-in-out underline-offset-4 break-inside-avoid'
         >
           software engineer
         </Link>
@@ -24,28 +24,28 @@ const Greeting = () => (
         In my spare time I enjoy{' '}
         <Link
           href='/interests'
-          className='inline-block text-primary-600 decoration-[transparent] hover:decoration-primary-700 hover:text-primary-700 transition-all duration-300 ease-in-out underline-offset-4 break-inside-avoid'
+          className='inline-block text-primary-600 decoration-[transparent] hover:decoration-primary-700 hover:text-primary-700 transition-colors duration-300 ease-in-out underline-offset-4 break-inside-avoid'
         >
           running
         </Link>
         {' '}and{' '}
         <Link
           href='/interests'
-          className='inline-block text-primary-600 decoration-[transparent] hover:decoration-[rgb(110,163,71)] hover:text-[rgb(110,163,71)] transition-all duration-300 ease-in-out underline-offset-4 break-inside-avoid'
+          className='inline-block text-primary-600 decoration-[transparent] hover:decoration-[rgb(110,163,71)] hover:text-[rgb(110,163,71)] transition-colors duration-300 ease-in-out underline-offset-4 break-inside-avoid'
         >
           hiking ⛰️
         </Link>
         {' '}In the morning, you can find me drinking{' '}
         <Link
           href='/interests'
-          className='inline-block text-primary-600 decoration-[transparent] hover:decoration-[rgb(80,62,51)] hover:text-[rgb(80,62,51)] transition-all duration-300 ease-in-out underline-offset-4 break-inside-avoid'
+          className='inline-block text-primary-600 decoration-[transparent] hover:decoration-[rgb(80,62,51)] hover:text-[rgb(80,62,51)] transition-colors duration-300 ease-in-out underline-offset-4 break-inside-avoid'
         >
           filter coffee ☕️
         </Link>
         {' '}or in the evening,{' '}
         <Link
           href='/interests'
-          className='inline-block text-primary-600 decoration-[transparent] hover:decoration-[rgb(243,119,32)] hover:text-[rgb(243,119,32)] transition-all duration-300 ease-in-out underline-offset-4 break-inside-avoid'
+          className='inline-block text-primary-600 decoration-[transparent] hover:decoration-[rgb(243,119,32)] hover:text-[rgb(243,119,32)] transition-colors duration-300 ease-in-out underline-offset-4 break-inside-avoid'
         >
           natural wine 🍊
         </Link>
@@ -56,7 +56,7 @@ const Greeting = () => (
         I travel a lot, so I also spend plenty of time exploring and meeting people in{' '}
         <Link
           href='/travel'
-          className='inline-block text-primary-600 decoration-[transparent] hover:decoration-[rgb(34,85,192)] hover:text-[rgb(34,85,192)] transition-all duration-300 ease-in-out underline-offset-4 break-inside-avoid'
+          className='inline-block text-primary-600 decoration-[transparent] hover:decoration-[rgb(34,85,192)] hover:text-[rgb(34,85,192)] transition-colors duration-300 ease-in-out underline-offset-4 break-inside-avoid'
         >
           new places 🌎
         </Link>

@@ -7,8 +7,8 @@ const items: InterestItem[] = [
   {
     title: 'Sports 🏃🏻‍♂️',
     paragraphs: [
-      'Lately, I have really enjoyed running 🏃🏻‍♂️ I also recently tried hiking, and trail running after years on the road! ⛰️',
-      'In the past I have run at the Melbourne Marathon Festival, including the 10km and the Half Marathon. One day I aspire to complete a marathon!',
+      'My go-to form of exercise is running. Recently I started hiking and running on trails too! ⛰️',
+      'In the past I have run at the Melbourne Marathon Festival, including the 10km and the Half Marathon - one day I aspire to complete a marathon!',
       'When I lived in Melbourne, I umpired Australian Rules football including two years at the Victorian State League. 🏉',
     ],
     imagePath: '/static/img/running.jpeg'
@@ -16,9 +16,9 @@ const items: InterestItem[] = [
   {
     title: 'Coffee  ☕️',
     paragraphs: [
-      "I have always loved coffee, but learning to make pour over coffee opened up a whole new experiences of Melbourne's finest coffee roasters. I love to learn about the intricacies of coffee brewing and roasting.",
-      'Pour over filters produce a very light, clean cup of coffee and they tend to be much less acidic than espresso. It\'s now a daily habit to make pour over using a v60, even whilst traveling!',
-      'Some of my favourite coffee roasters in Melbourne are: Market Lane, Acoffee, Seven Seeds & Methodist. I am always looking for suggestions, so please share!'
+      "I have always loved coffee, but learning to make pour over coffee opened up a whole experience of Melbourne's coffee scene. I really enjoy learning about the intricacies of coffee brewing and roasting.",
+      'Pour over brewing produces a very light, clean cup of coffee ands tends to be much less acidic than espresso. It\'s now a daily habit to make pour over using a v60, even whilst traveling!',
+      'Some of my favourite coffee roasters in Melbourne are Market Lane and Seven Seeds. I am always looking for suggestions, so please send them my way!'
     ],
     imagePath: '/static/img/acoffee.jpeg'
   },

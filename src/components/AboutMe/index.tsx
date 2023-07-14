@@ -32,9 +32,9 @@ const AboutMe = () => (
         <P>
           Hey 👋🏻 I&apos;m Oliver, a
           {process.env.NEXT_PUBLIC_DATE_OF_BIRTH && ` ${calculateAge(process.env.NEXT_PUBLIC_DATE_OF_BIRTH)} year old `}
-          Software Engineer originally from Melbourne, Australia. I'm currently working on connecting remote teams at
+          Software Engineer originally from Melbourne, Australia. I moved to the United States 🇺🇸 in 2021 and I'm now working on connecting remote teams at
           {' '}
-          <Link className="no-underline hover:underline" href="https://www.twine.us/" target="_blank" rel="noreferrer">twine</Link>
+          <Link className="decoration-[transparent] hover:decoration-primary-900 hover:text-primary-900" href="https://www.twine.us/" target="_blank" rel="noreferrer">twine</Link>
           !
         </P>
         <div className='w-full my-4 border-[0.5px] border-black border-opacity-20 border-solid'/>
@@ -56,7 +56,7 @@ const AboutMe = () => (
             <P>
               I started out working on the problem of connection for remote teams at
               {' '}
-              <Link className="inline-block no-underline hover:underline" href="https://www.joinglimpse.com/" target="_blank" rel="noreferrer">Glimpse</Link>
+              <Link className="inline-block decoration-[transparent] hover:decoration-primary-900 hover:text-primary-900" href="https://www.joinglimpse.com/" target="_blank" rel="noreferrer">Glimpse</Link>
               , but we teamed up when twine acquired us in early 2022.
             </P>
             <div className="flex flex-col items-center mt-3 space-x-2 lg:space-x-0 lg:flex-row lg:justify-around">
@@ -67,7 +67,7 @@ const AboutMe = () => (
             <P>
               In the past I worked in Engineering at
               {' '}
-              <Link className="no-underline hover:underline" href="https://www.shippit.com/" target="_blank" rel="noreferrer">Shippit</Link>
+              <Link className="decoration-[transparent] hover:decoration-primary-900 hover:text-primary-900" href="https://www.shippit.com/" target="_blank" rel="noreferrer">Shippit</Link>
               , a Sydney-based start-up
               creating the network that brings
               people & goods together in the leanest way possible.
@@ -80,7 +80,7 @@ const AboutMe = () => (
             <P>
               I also spent time at
               {' '}
-              <Link className="no-underline hover:underline" href="https://www.accenture.com/" target="_blank" rel="noreferrer">Accenture</Link>
+              <Link className="decoration-[transparent] hover:decoration-primary-900 hover:text-primary-900" href="https://www.accenture.com/" target="_blank" rel="noreferrer">Accenture</Link>
               {' '}
               developing large-scale web
               applications to help their clients effectively capture, manage and analyze their data.

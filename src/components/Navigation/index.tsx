@@ -109,18 +109,18 @@ const Navigation = () => {
       <div className='hidden md:flex'>
         <div className="box-border flex justify-center w-full pl-2 mx-auto text-center rounded-lg bg-white/70">
           {process.env.NEXT_PUBLIC_LINKEDIN_URL && (
-            <Link className="flex m-2" href={process.env.NEXT_PUBLIC_LINKEDIN_URL as string} target="_blank" rel="noreferrer">
-              <LinkedInLogo className="transition-colors duration-200 ease-linear fill-neutral-500 hover:fill-neutral-700" />
+            <Link className="flex p-1 m-1 fill-neutral-600 hover:fill-primary-900" href={process.env.NEXT_PUBLIC_LINKEDIN_URL as string} target="_blank" rel="noreferrer">
+              <LinkedInLogo className="transition-colors duration-200 ease-linear fill-[inherit]" />
             </Link>
           )}
           {process.env.NEXT_PUBLIC_GITHUB_URL && (
-            <Link className="flex m-2" href={process.env.NEXT_PUBLIC_GITHUB_URL as string} target="_blank" rel="noreferrer">
-              <GitHubLogo className="transition-colors duration-200 ease-linear fill-neutral-500 hover:fill-neutral-700" />
+            <Link className="flex p-1 m-1 fill-neutral-600 hover:fill-primary-900" href={process.env.NEXT_PUBLIC_GITHUB_URL as string} target="_blank" rel="noreferrer">
+              <GitHubLogo className="transition-colors duration-200 ease-linear fill-[inherit]" />
             </Link>
           )}
           {process.env.NEXT_PUBLIC_TWITTER_URL && (
-            <Link className="flex m-2" href={process.env.NEXT_PUBLIC_TWITTER_URL as string} target="_blank" rel="noreferrer">
-              <TwitterLogo className="transition-colors duration-200 ease-linear fill-neutral-500 hover:fill-neutral-700" />
+            <Link className="flex p-1 m-1 fill-neutral-600 hover:fill-primary-900" href={process.env.NEXT_PUBLIC_TWITTER_URL as string} target="_blank" rel="noreferrer">
+              <TwitterLogo className="transition-colors duration-200 ease-linear fill-[inherit]" />
             </Link>
           )}
         </div>

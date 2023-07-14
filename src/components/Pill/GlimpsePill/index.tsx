@@ -8,11 +8,11 @@ interface GlimpsePillProps {
   className?: string
 }
 
-const GlimpseLogo = () => <Image className="h-8 p-1 md:p-0 md:h-6 md:mr-2" height={32} width={80} src="/static/img/glimpse.webp" alt="Glimpse" />;
+const GlimpseLogo = () => <Image className="p-1 md:mr-2" fill src="/static/img/glimpse.webp" alt="Glimpse" />;
 
 const GlimpsePill = ({ className }: GlimpsePillProps) => (
   <Pill className={cn('bg-white', className)}>
-    <div className='relative flex items-center w-full h-8 row'>
+    <div className='relative flex items-center row h-[32px] w-[80px]'>
       <GlimpseLogo />
     </div>
     <div className='flex items-center row'>

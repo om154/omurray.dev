@@ -13,7 +13,7 @@ const Section = (
 ) => (
   <div
     className={cn(
-      'flex flex-col items-center border-b-0 box-border rounded-lg text-neutral-900',
+      'px-2 md:px-0 flex flex-col items-center border-b-0 box-border rounded-lg text-neutral-900',
       {
         'justify-center': !alignTop,
         'justify-start': alignTop,

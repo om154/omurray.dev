@@ -3,7 +3,7 @@ import Image from "next/image";
 interface Props {
   title: string
   emoji?: string
-  directory: 'japan' | 'norway'
+  directory: 'japan' | 'norway' | 'bend'
 }
 
 const PhotoHero = ({ title, emoji, directory }: Props) => {

@@ -15,7 +15,7 @@ interface ItemProps {
 const Item = ({ item: { title, paragraphs, imagePath } }: ItemProps) => (
   <InterestsHero imgPath={imagePath}>
     <div>
-      <h2 className="box-border font-serif text-xl leading-tight tracking-tight text-center font-regular md:text-3xl lg:text-4xl text-primary-800 md:text-left">
+      <h2 className="box-border font-serif text-xl leading-tight tracking-tight text-center font-regular md:text-2xl lg:text-3xl text-primary-800 md:text-left">
         {title}
       </h2>
       <div>

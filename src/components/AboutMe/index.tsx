@@ -38,7 +38,7 @@ const AboutMe = () => (
           <Link className="decoration-[transparent] hover:decoration-primary-900 hover:text-primary-900" href="https://www.twine.us/" target="_blank" rel="noreferrer">twine</Link>
           !
         </P>
-        <div className='flex flex-row justify-end w-full mt-2'>
+        <div className='flex flex-row justify-end w-full mt-2 md:hidden'>
           <ContactLinks />
         </div>
         <div className='w-full my-4 border-[0.5px] border-black border-opacity-20 border-solid'/>

@@ -15,9 +15,9 @@ interface ItemProps {
 const Item = ({ item: { title, paragraphs, imagePath } }: ItemProps) => (
   <InterestsHero imgPath={imagePath}>
     <div>
-      <H2 className="font-bold text-center text-primary-800 md:text-left">
+      <h2 className="box-border font-serif text-xl font-bold leading-tight tracking-tight text-center md:text-3xl lg:text-4xl text-primary-800 md:text-left">
         {title}
-      </H2>
+      </h2>
       <div>
         {paragraphs.map((paragraph: string) => <P key={uuidv4()} className="mt-4 md:mt-6">{paragraph}</P>)}
       </div>

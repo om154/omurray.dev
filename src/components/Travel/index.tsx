@@ -1,5 +1,5 @@
 import Section from '../Section';
-import { P } from '../shared/Text';
+import { H2, P } from '../shared/Text';
 import EmailPill from '../Pill/EmailPill';
 
 interface TravelLocation {
@@ -54,7 +54,7 @@ const Travel = () => (
   <Section>
     <div className="box-border w-full">
       <div className="mb-2 text-left">
-        <h2 className="font-serif text-3xl font-extralight text-neutral-900 md:text-8xl selection:bg-primary-700 selection:text-white">Adventures</h2>
+        <H2>Adventures</H2>
       </div>
       <div className="box-border w-full">
         <P>

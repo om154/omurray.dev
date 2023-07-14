@@ -1,6 +1,7 @@
 import { v4 as uuidv4 } from 'uuid';
 import Section from '../Section';
 import Item, { InterestItem } from './Item';
+import { H2 } from '../shared/Text';
 
 const items: InterestItem[] = [
   {
@@ -35,7 +36,7 @@ const items: InterestItem[] = [
 const Interests = () => (
   <Section alignTop>
     <div className="w-full mb-2 text-left">
-      <h2 className="font-serif text-3xl font-extralight text-neutral-900 md:text-8xl selection:bg-primary-700 selection:text-white">Interests</h2>
+      <H2>Interests</H2>
     </div>
     <div className='box-border grid grid-cols-1 gap-4 md:grid-flow-row-dense md:auto-rows-fr md:grid-cols-1 xl:grid-cols-4'>
       {items.map((item: InterestItem) => <Item key={uuidv4()} item={item} />)}

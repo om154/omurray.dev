@@ -2,6 +2,10 @@ import { v4 as uuidv4 } from 'uuid';
 import Section from '../Section';
 import Item, { InterestItem } from './Item';
 import { H2 } from '../shared/Text';
+import runningImg from 'public/static/img/running.jpeg'
+import coffeeImg from 'public/static/img/acoffee.jpeg'
+import wineImg from 'public/static/img/susucaru.jpeg'
+import tennisImg from 'public/static/img/rolandgarros.jpeg'
 
 const items: InterestItem[] = [
   {
@@ -11,7 +15,7 @@ const items: InterestItem[] = [
       'In the past I have run at the Melbourne Marathon Festival, including the 10km and the Half Marathon - one day I aspire to complete a marathon!',
       'When I lived in Melbourne, I umpired Australian Rules football including two years at the Victorian State League. 🏉',
     ],
-    imagePath: '/static/img/running.jpg'
+    imagePath: runningImg
   },
   {
     title: '☕️ Coffee',
@@ -20,7 +24,7 @@ const items: InterestItem[] = [
       'Pour over brewing produces a very light, clean cup of coffee ands tends to be much less acidic than espresso. It\'s now a daily habit to make pour over using a v60, even whilst traveling!',
       'Some of my favourite coffee roasters in Melbourne are Market Lane and Seven Seeds. I am always looking for suggestions, so please send them my way!'
     ],
-    imagePath: '/static/img/acoffee.jpeg'
+    imagePath: coffeeImg
   },
   {
     title: '🍷 Natural Wine',
@@ -29,7 +33,7 @@ const items: InterestItem[] = [
       'Most are made to drink (not to cellar) and often taste crisp, fresh & fruity... sometimes a bit crazy!',
       "There are dozens, but some  Australian producers I've liked are Lucy M, Brave New and Momento Mori. Try them and you'll see what I mean! ✌🏻"
     ],
-    imagePath: '/static/img/susucaru.jpeg'
+    imagePath: wineImg
   },
   {
     title: '🎾 Sports',
@@ -38,7 +42,7 @@ const items: InterestItem[] = [
       'Every year, my parents would take me to the Australian Open and earlier this year I was fortunate enough to visit Paris during Roland-Garros!',
       'My girlfriend & I were lucky enough to see the 🇩🇪 Zverev vs Tiafoe 🇺🇸 match in the Quarter Finals.'
     ],
-    imagePath: '/static/img/rolandgarros.jpg'
+    imagePath: tennisImg
   }
 ];
 

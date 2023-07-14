@@ -30,6 +30,8 @@
   "include": [
     "src/**/*",
     "app/**/*",
+    "public/**/*",
+    "index.d.ts",
     ".next/types/**/*.ts"
   ],
   "exclude": [

@@ -1,3 +1,3 @@
 export interface HeroProps {
-  imgPath?: string
+  imgSrc?: string
 }

@@ -7,6 +7,7 @@ import AboutMeHero from '../Hero/AboutMe';
 import GlimpsePill from '../Pill/GlimpsePill';
 import TwinePill from '../Pill/TwinePill';
 import ContactLinks from '../Navigation/ContactLinks';
+import aboutMeImg from 'public/static/img/oliver.jpeg'
 
 export function calculateAge(birthday: string) {
   const splitDate = birthday.split('-');
@@ -29,7 +30,7 @@ const AboutMe = () => (
       <div className="mb-2 text-left">
         <H2>About me</H2>
       </div>
-      <AboutMeHero imgPath={'/static/img/oliver.jpeg'}>
+      <AboutMeHero imgSrc={aboutMeImg}>
         <P>
           Hey 👋🏻 I&apos;m Oliver, a
           {process.env.NEXT_PUBLIC_DATE_OF_BIRTH && ` ${calculateAge(process.env.NEXT_PUBLIC_DATE_OF_BIRTH)} year old `}

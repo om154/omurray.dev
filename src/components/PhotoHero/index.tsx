@@ -5,7 +5,7 @@ export interface PhotoHeroModel {
   month?: string
   year?: string
   emoji?: string
-  directory: 'japan' | 'norway' | 'bend'
+  imgSrc: string[]
 }
 
 interface Props {
@@ -13,7 +13,7 @@ interface Props {
 }
 
 const PhotoHero = ({ data }: Props) => {
-  const { title, month, year, emoji, directory } = data;
+  const { title, month, year, emoji, imgSrc } = data;
 
   return (
     <div className='aspect-[2] sm:col-span-2 p-4 rounded-lg bg-neutral-100 relative flex flex-col justify-center items-center'>
@@ -29,13 +29,13 @@ const PhotoHero = ({ data }: Props) => {
       </div>
       <div className='flex flex-col w-full gap-2 my-4 transition-transform duration-300 ease-out hover:scale-[1.02]'>
         <div className="relative flex flex-row justify-center w-full gap-2">
-          <Image src={`/static/img/${directory}/1.jpg`} alt='japan' height={64} width={208} className='hidden md:block object-cover object-center rounded-xl h-[104px]'/>
-          <Image src={`/static/img/${directory}/2.jpg`} alt='japan' height={128} width={208} className='object-cover object-center rounded-xl h-[158px] md:h-[208px]'/>
-          <Image src={`/static/img/${directory}/3.jpg`} alt='japan' height={85} width={85} className='hidden md:block object-cover object-center rounded-[100px] h-[160px] self-end'/>
+          <Image src={imgSrc[0]} placeholder='blur' alt='japan' height={64} width={208} className='hidden md:block object-cover object-center rounded-xl h-[104px]'/>
+          <Image src={imgSrc[1]} placeholder='blur' alt='japan' height={128} width={208} className='object-cover object-center rounded-xl h-[158px] md:h-[208px]'/>
+          <Image src={imgSrc[2]} placeholder='blur' alt='japan' height={85} width={85} className='hidden md:block object-cover object-center rounded-[100px] h-[160px] self-end'/>
         </div>
         <div className="relative flex flex-row justify-center w-full gap-x-0 gap-y-2 md:gap-2">
-          <Image src={`/static/img/${directory}/4.jpg`} alt='japan' height={128} width={208} className='object-cover object-center border-8 border-solid border-neutral-100 rounded-xl mt-[-30px] ml-[-8px] md:mt-[-112px] md:mb-[-8px] md:mr-[-8px] md:ml-[-80px]' />
-          <Image src={`/static/img/${directory}/5.jpg`} alt='japan' height={150} width={95} className='object-cover object-center rounded-xl h-[150px] w-[95px] rounded-tl-sm' />
+          <Image src={imgSrc[3]} placeholder='blur' alt='japan' height={128} width={208} className='object-cover object-center border-8 border-solid border-neutral-100 rounded-xl mt-[-30px] ml-[-8px] md:mt-[-112px] md:mb-[-8px] md:mr-[-8px] md:ml-[-80px]' />
+          <Image src={imgSrc[4]} placeholder='blur' alt='japan' height={150} width={95} className='object-cover object-center rounded-xl h-[150px] w-[95px] rounded-tl-sm' />
         </div>
       </div>
     </div>

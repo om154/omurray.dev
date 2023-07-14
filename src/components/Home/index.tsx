@@ -1,29 +1,6 @@
 import Greeting from '../Greeting';
 import PhotoHero, { PhotoHeroModel } from '../PhotoHero';
-
-const photoHeroes: PhotoHeroModel[] = [
-  {
-    title: 'Japan',
-    month: 'February',
-    year: '2023',
-    emoji: '🇯🇵',
-    directory: 'japan'
-  },
-  {
-    title: 'Norway',
-    month: 'June',
-    year: '2023',
-    emoji: '🇳🇴',
-    directory: 'norway'
-  },
-  {
-    title: 'Oregon',
-    month: 'July',
-    year: '2022',
-    emoji: '⛰️',
-    directory: 'bend'
-  }
-]
+import { photoHeroes } from './photoHeroes';
 
 const Home = () => {
   return (

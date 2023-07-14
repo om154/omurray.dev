@@ -6,7 +6,7 @@ interface TextProps {
 }
 
 export const H1 = ({ children, className }: TextProps & ChildrenProp) => (
-  <h1 className={cn('font-serif font-light box-border text-xl leading-tight tracking-tight md:text-2xl lg:text-3xl selection:bg-primary-700 selection:text-white', className)}>{children}</h1>
+  <h1 className={cn('font-serif font-light box-border text-2xl leading-tight tracking-tight lg:text-3xl selection:bg-primary-700 selection:text-white', className)}>{children}</h1>
 );
 
 export const H2 = ({ children, className }: TextProps & ChildrenProp) => (

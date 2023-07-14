@@ -22,8 +22,8 @@ const PhotoHero = ({ data }: Props) => {
           {emoji && <span className='mr-2 text-2xl'>{emoji}</span>}
           <span>{title}</span>
           {month || year ?
-            <div className="ml-2 ">
-              <span className="text-sm text-neutral-500">{`${month ?? ''}${year ? `, ${year}` : ''}`}</span>
+            <div className="ml-4 md:ml-2">
+              <span className="text-xs md:text-sm text-neutral-500">{`${month ?? ''}${year ? `, ${year}` : ''}`}</span>
             </div> : <div />}
         </div>
       </div>

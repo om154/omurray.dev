@@ -15,13 +15,13 @@ const PhotoHero = ({ title, emoji, directory }: Props) => {
       </div>
       <div className='flex flex-col w-full gap-2 my-4'>
         <div className="relative flex flex-row justify-center w-full gap-2">
-          <Image src={`/static/img/${directory}/1.JPG`} alt='japan' height={64} width={208} className='hidden md:block object-cover object-center rounded-xl h-[104px]'/>
-          <Image src={`/static/img/${directory}/2.JPG`} alt='japan' height={128} width={208} className='object-cover object-center rounded-xl h-[158px] md:h-[208px]'/>
-          <Image src={`/static/img/${directory}/3.JPG`} alt='japan' height={85} width={85} className='hidden md:block object-cover object-center rounded-[100px] h-[160px] self-end'/>
+          <Image src={`/static/img/${directory}/1.jpg`} alt='japan' height={64} width={208} className='hidden md:block object-cover object-center rounded-xl h-[104px]'/>
+          <Image src={`/static/img/${directory}/2.jpg`} alt='japan' height={128} width={208} className='object-cover object-center rounded-xl h-[158px] md:h-[208px]'/>
+          <Image src={`/static/img/${directory}/3.jpg`} alt='japan' height={85} width={85} className='hidden md:block object-cover object-center rounded-[100px] h-[160px] self-end'/>
         </div>
         <div className="relative flex flex-row justify-center w-full gap-2">
-          <Image src={`/static/img/${directory}/4.JPG`} alt='japan' height={128} width={208} className='object-cover object-center border-8 border-solid border-neutral-300 rounded-xl mt-[-30px] ml-[-8px] md:mt-[-112px] md:mb-[-8px] md:mr-[-8px] md:ml-[-80px]' />
-          <Image src={`/static/img/${directory}/5.JPG`} alt='japan' height={150} width={95} className='object-cover object-center rounded-xl h-[150px] w-[95px] rounded-tl-sm' />
+          <Image src={`/static/img/${directory}/4.jpg`} alt='japan' height={128} width={208} className='object-cover object-center border-8 border-solid border-neutral-300 rounded-xl mt-[-30px] ml-[-8px] md:mt-[-112px] md:mb-[-8px] md:mr-[-8px] md:ml-[-80px]' />
+          <Image src={`/static/img/${directory}/5.jpg`} alt='japan' height={150} width={95} className='object-cover object-center rounded-xl h-[150px] w-[95px] rounded-tl-sm' />
         </div>
       </div>
     </div>

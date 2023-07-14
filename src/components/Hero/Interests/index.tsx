@@ -11,7 +11,7 @@ const InterestsHero = ({ imgPath, children }: HeroProps & ChildrenProp) => (
     </div>
     {imgPath &&
       <div className="relative flex justify-center order-first h-60 md:h-full md:w-[20%] xl:w-[40%]">
-        <Image src={imgPath} fill alt='interest' className="object-cover object-top max-w-full rounded-md select-none md:object-center" />
+        <Image src={imgPath} fill alt='interest' className="object-cover object-center max-w-full rounded-md select-none md:object-top md:object-center" />
       </div>
     }
   </div>

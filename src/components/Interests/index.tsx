@@ -5,16 +5,16 @@ import { H2 } from '../shared/Text';
 
 const items: InterestItem[] = [
   {
-    title: 'Sports 🏃🏻‍♂️',
+    title: '🏃🏻‍♂️ Running',
     paragraphs: [
       'My go-to form of exercise is running. Recently I started hiking and running on trails too! ⛰️',
       'In the past I have run at the Melbourne Marathon Festival, including the 10km and the Half Marathon - one day I aspire to complete a marathon!',
       'When I lived in Melbourne, I umpired Australian Rules football including two years at the Victorian State League. 🏉',
     ],
-    imagePath: '/static/img/running.jpeg'
+    imagePath: '/static/img/running.jpg'
   },
   {
-    title: 'Coffee  ☕️',
+    title: '☕️ Coffee',
     paragraphs: [
       "I have always loved coffee, but learning to make pour over coffee opened up a whole experience of Melbourne's coffee scene. I really enjoy learning about the intricacies of coffee brewing and roasting.",
       'Pour over brewing produces a very light, clean cup of coffee ands tends to be much less acidic than espresso. It\'s now a daily habit to make pour over using a v60, even whilst traveling!',
@@ -23,13 +23,22 @@ const items: InterestItem[] = [
     imagePath: '/static/img/acoffee.jpeg'
   },
   {
-    title: 'Natural Wine  🍷',
+    title: '🍷 Natural Wine',
     paragraphs: [
       'The phrase \'natural wine\' generally refers to wine made with minimal intervention. This means avoiding using pesticides, chemicals and any other additives. Natural winemakers also tend not to filter their wines, resulting in a cloudy and unique, orange-looking colour 🍊',
       'Most are made to drink (not to cellar) and often taste crisp, fresh & fruity... sometimes a bit crazy!',
       "There are dozens, but some  Australian producers I've liked are Lucy M, Brave New and Momento Mori. Try them and you'll see what I mean! ✌🏻"
     ],
     imagePath: '/static/img/susucaru.jpeg'
+  },
+  {
+    title: '🎾 Sports',
+    paragraphs: [
+      'I\'m a big sports fan, but grew up playing Cricket and Australian Rules football',
+      'Every year, my parents would take me to the Australian Open and earlier this year I was fortunate enough to visit Paris during Roland-Garros!',
+      'My girlfriend & I were lucky enough to see the 🇩🇪 Zverev vs Tiafoe 🇺🇸 match in the Quarter Finals.'
+    ],
+    imagePath: '/static/img/rolandgarros.jpg'
   }
 ];
 

@@ -3,10 +3,8 @@
 import classNames from 'classnames';
 import Link from "next/link"
 import { usePathname } from 'next/navigation'
-import LinkedInLogo from '../shared/LinkedInLogo';
-import GitHubLogo from './GitHubLogo';
-import TwitterLogo from './TwitterLogo';
 import { MouseEventHandler, useEffect, useState } from 'react';
+import ContactLinks from './ContactLinks';
 
 export const usePreviousPersistent = (value: any) => {
   const [state, setState] = useState<any>({
@@ -103,26 +101,11 @@ const Navigation = () => {
           <LinkListItem onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} title="About" path="/about" active={pathName === '/about'} />
           <LinkListItem onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} title="Travel" path="/travel" active={pathName === '/travel'} />
           <LinkListItem onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} title="Interests" path="/interests" active={pathName === '/interests'} />
-          <LinkListItem onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} title="Contact" path="/contact" active={pathName === '/contact'} />
         </ul>
       </nav>
       <div className='hidden md:flex'>
         <div className="box-border flex justify-center w-full pl-2 mx-auto text-center rounded-lg bg-white/70">
-          {process.env.NEXT_PUBLIC_LINKEDIN_URL && (
-            <Link className="flex p-1 m-1 fill-neutral-600 hover:fill-primary-900" href={process.env.NEXT_PUBLIC_LINKEDIN_URL as string} target="_blank" rel="noreferrer">
-              <LinkedInLogo className="transition-colors duration-200 ease-linear fill-[inherit]" />
-            </Link>
-          )}
-          {process.env.NEXT_PUBLIC_GITHUB_URL && (
-            <Link className="flex p-1 m-1 fill-neutral-600 hover:fill-primary-900" href={process.env.NEXT_PUBLIC_GITHUB_URL as string} target="_blank" rel="noreferrer">
-              <GitHubLogo className="transition-colors duration-200 ease-linear fill-[inherit]" />
-            </Link>
-          )}
-          {process.env.NEXT_PUBLIC_TWITTER_URL && (
-            <Link className="flex p-1 m-1 fill-neutral-600 hover:fill-primary-900" href={process.env.NEXT_PUBLIC_TWITTER_URL as string} target="_blank" rel="noreferrer">
-              <TwitterLogo className="transition-colors duration-200 ease-linear fill-[inherit]" />
-            </Link>
-          )}
+          <ContactLinks />
         </div>
       </div>
     </div>

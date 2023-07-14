@@ -6,6 +6,7 @@ import AccenturePill from '../Pill/AccenturePill';
 import AboutMeHero from '../Hero/AboutMe';
 import GlimpsePill from '../Pill/GlimpsePill';
 import TwinePill from '../Pill/TwinePill';
+import ContactLinks from '../Navigation/ContactLinks';
 
 export function calculateAge(birthday: string) {
   const splitDate = birthday.split('-');
@@ -37,6 +38,9 @@ const AboutMe = () => (
           <Link className="decoration-[transparent] hover:decoration-primary-900 hover:text-primary-900" href="https://www.twine.us/" target="_blank" rel="noreferrer">twine</Link>
           !
         </P>
+        <div className='flex flex-row justify-end w-full mt-2'>
+          <ContactLinks />
+        </div>
         <div className='w-full my-4 border-[0.5px] border-black border-opacity-20 border-solid'/>
         <div className="w-full text-left md:mt-2">
           <H3>Experience building software</H3>

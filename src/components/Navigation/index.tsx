@@ -73,7 +73,7 @@ const Navigation = () => {
   }
 
   return (
-    <div className="sticky top-0 z-10 flex items-center justify-center py-4 isolate">
+    <div className="sticky top-0 z-10 flex items-center justify-center py-4 isolate md:justify-between">
       <AnimateDown>
         <nav className='w-full px-2 py-1 border border-solid rounded-lg shadow-md border-neutral-300 bg-white/70 backdrop-blur-md'>
           <ul

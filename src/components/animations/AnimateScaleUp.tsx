@@ -32,4 +32,4 @@ const AnimateScaleUp = ({ children, className, delay, duration }: Props) => {
   )
 }
 
-export default AnimateFadeIn
+export default AnimateScaleUp

@@ -5,7 +5,7 @@ export interface TravelLocation {
   country: string
   countryAbbreviation?: string
   countryFlagEmoji: string
-  arrivalDateTime?: string
+  arrivalDateTime: string
 }
 
 export const travelData: TravelLocation[] = [

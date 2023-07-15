@@ -46,15 +46,15 @@ const items: InterestItem[] = [
   }
 ];
 
-const Interests = () => (
+const Hobbies = () => (
   <Section alignTop>
     <div className="w-full mb-2 text-left">
-      <H2>Interests</H2>
+      <H2>Hobbies</H2>
     </div>
     <div className='box-border grid grid-cols-1 gap-4 md:grid-flow-row-dense md:auto-rows-fr md:grid-cols-1 xl:grid-cols-4'>
       {items.map((item: InterestItem, index: number) => (
         <Item
-          key={`interests-grid-item-${item.title.toLocaleLowerCase()}`}
+          key={`hobbies-grid-item-${item.title.toLocaleLowerCase()}`}
           item={item}
           animationDelay={(index + 1) * .15}
         />
@@ -63,4 +63,4 @@ const Interests = () => (
   </Section>
 );
 
-export default Interests;
+export default Hobbies;

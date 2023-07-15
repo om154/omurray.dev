@@ -27,28 +27,28 @@ const Greeting = () => (
         <H1 className="mt-0">
           In my spare time I enjoy{' '}
           <Link
-            href='/interests'
+            href='/hobbies'
             className='inline-block text-primary-600 decoration-[transparent] hover:decoration-primary-700 hover:text-primary-700 transition-colors duration-300 ease-in-out underline-offset-[6px] break-inside-avoid'
           >
             running
           </Link>
           {' '}and{' '}
           <Link
-            href='/interests'
+            href='/hobbies'
             className='inline-block text-primary-600 decoration-[transparent] hover:decoration-[rgb(110,163,71)] hover:text-[rgb(110,163,71)] transition-colors duration-300 ease-in-out underline-offset-[6px] break-inside-avoid'
           >
             hiking ⛰️
           </Link>
           {' '}In the morning, you can find me drinking{' '}
           <Link
-            href='/interests'
+            href='/hobbies'
             className='inline-block text-primary-600 decoration-[transparent] hover:decoration-[rgb(80,62,51)] hover:text-[rgb(80,62,51)] transition-colors duration-300 ease-in-out underline-offset-[6px] break-inside-avoid'
           >
             filter coffee ☕️
           </Link>
           {' '}or in the evening,{' '}
           <Link
-            href='/interests'
+            href='/hobbies'
             className='inline-block text-primary-600 decoration-[transparent] hover:decoration-[rgb(243,119,32)] hover:text-[rgb(243,119,32)] transition-colors duration-300 ease-in-out underline-offset-[6px] break-inside-avoid'
           >
             natural wine 🍊

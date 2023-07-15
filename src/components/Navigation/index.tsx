@@ -103,7 +103,7 @@ const Navigation = () => {
             <LinkListItem onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} title="Home" path="/" active={pathName === '/'} />
             <LinkListItem onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} title="About" path="/about" active={pathName === '/about'} />
             <LinkListItem onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} title="Travel" path="/travel" active={pathName === '/travel'} />
-            <LinkListItem onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} title="Interests" path="/interests" active={pathName === '/interests'} />
+            <LinkListItem onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} title="Hobbies" path="/hobbies" active={pathName === '/hobbies'} />
           </ul>
         </nav>
       </AnimateDown>

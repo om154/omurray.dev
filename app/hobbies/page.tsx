@@ -1,10 +1,10 @@
-import Interests from "src/components/Interests"
+import Hobbies from "src/components/Hobbies"
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Interests'
+  title: 'Hobbies'
 }
 
 export default function Page() {
-  return <Interests />
+  return <Hobbies />
 }

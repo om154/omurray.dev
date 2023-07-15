@@ -61,7 +61,10 @@ const Travel = () => (
           Over the last few years I've visited:
           <div className='grid grid-cols-2 gap-4 mt-2 sm:grid-flow-row-dense md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8'>
             {travelLocations.reverse().map(l =>
-              <div className='flex flex-col justify-between p-3 transition-colors duration-200 ease-in-out rounded-lg aspect-square bg-neutral-100 hover:bg-neutral-300'>
+              <div
+                key={`travel-grid-item-${l.name}`}
+                className='flex flex-col justify-between p-3 transition-colors duration-200 ease-in-out rounded-lg aspect-square bg-neutral-100 hover:bg-neutral-300'
+              >
                 <div className='text-[32px] select-none'>{l.emoji}</div>
                 <div>{l.name}</div>
               </div>

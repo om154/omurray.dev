@@ -23,7 +23,7 @@ export default function RootLoading() {
         </Section>
       </div>
       {[1, 2, 3].map(h =>
-        <div className='row-span-2 lg:mb-0 sm:col-span-2'>
+        <div className='row-span-2 lg:mb-0 sm:col-span-2' key={`skeleton-grid-item-${h}`}>
           <div className='aspect-[2] sm:col-span-2 p-4 rounded-lg bg-neutral-200 relative flex flex-col justify-center items-center h-full animate-pulse' />
         </div>
       )}

@@ -52,7 +52,9 @@ const Interests = () => (
       <H2>Interests</H2>
     </div>
     <div className='box-border grid grid-cols-1 gap-4 md:grid-flow-row-dense md:auto-rows-fr md:grid-cols-1 xl:grid-cols-4'>
-      {items.map((item: InterestItem) => <Item key={uuidv4()} item={item} />)}
+      {items.map((item: InterestItem) => (
+        <Item key={`interests-grid-item-${item.title.toLocaleLowerCase()}`} item={item} />
+      ))}
     </div>
   </Section>
 );

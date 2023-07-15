@@ -9,7 +9,7 @@ const Home = () => {
         <Greeting />
       </div>
       {photoHeroes.map(h =>
-        <div className='row-span-2 lg:mb-0 sm:col-span-2'>
+        <div key={`photo-hero-${h.title.toLocaleLowerCase()}`} className='row-span-2 lg:mb-0 sm:col-span-2'>
           <PhotoHero data={h} />
         </div>
       )}

@@ -273,8 +273,8 @@ export const travelData: TravelLocation[] = [
     "arrivalDateTime": "2021-10-05T00:00:00.000Z"
   },
   {
-    "city": "San Juan, Puerto Rico",
-    "country": "United States",
+    "city": "San Juan",
+    "country": "Puerto Rico",
     "countryAbbreviation": "U.S.",
     "countryFlagEmoji": "🇺🇸",
     "arrivalDateTime": "2021-10-05T00:00:00.000Z"

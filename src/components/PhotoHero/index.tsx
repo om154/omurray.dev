@@ -33,7 +33,7 @@ const PhotoHero = ({ data }: Props) => {
             </div> : <div />}
         </div>
       </div>
-      <div className='flex flex-col w-full gap-2 my-4 transition-transform duration-300 ease-out hover:scale-[1.02]'>
+      <div className='flex flex-col w-full gap-2 my-4 transition-transform duration-300 ease-out md:hover:scale-[1.02]'>
         <div className="relative flex flex-row justify-center w-full gap-2">
           <Image src={imgSrc[0]} placeholder='blur' alt='japan' height={64} width={208} className='hidden md:block object-cover object-center rounded-xl h-[104px]'/>
           <Image src={imgSrc[1]} placeholder='blur' alt='japan' height={128} width={208} className='object-cover object-center rounded-xl h-[158px] md:h-[208px]'/>

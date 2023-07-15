@@ -19,6 +19,19 @@ import oregonImg4 from 'public/static/img/bend/4.jpeg'
 import oregonImg5 from 'public/static/img/bend/5.jpeg'
 
 export const photoHeroes: PhotoHeroModel[] = [
+    {
+    title: 'Norway',
+    month: 'June',
+    year: '2023',
+    emoji: '🇳🇴',
+    imgSrc: [
+      norwayImg1,
+      norwayImg2,
+      norwayImg3,
+      norwayImg4,
+      norwayImg5
+    ]
+  },
   {
     title: 'Japan',
     month: 'February',
@@ -30,19 +43,6 @@ export const photoHeroes: PhotoHeroModel[] = [
       japanImg3,
       japanImg4,
       japanImg5
-    ]
-  },
-  {
-    title: 'Norway',
-    month: 'June',
-    year: '2023',
-    emoji: '🇳🇴',
-    imgSrc: [
-      norwayImg1,
-      norwayImg2,
-      norwayImg3,
-      norwayImg4,
-      norwayImg5
     ]
   },
   {

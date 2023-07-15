@@ -32,8 +32,4 @@ const GlimpsePill = ({ className }: GlimpsePillProps) => (
   </Pill>
 );
 
-GlimpsePill.defaultProps = {
-  className: ''
-};
-
 export default GlimpsePill;

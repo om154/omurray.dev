@@ -26,8 +26,4 @@ const AccenturePill = ({ className }: AccenturePillProps) => (
   </Pill>
 );
 
-AccenturePill.defaultProps = {
-  className: ''
-};
-
 export default AccenturePill;

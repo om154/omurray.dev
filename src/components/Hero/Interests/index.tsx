@@ -17,8 +17,4 @@ const InterestsHero = ({ imgSrc, children }: HeroProps & ChildrenProp) => (
   </div>
 );
 
-InterestsHero.defaultProps = {
-  imgSrc: ''
-};
-
 export default InterestsHero;

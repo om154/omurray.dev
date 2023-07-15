@@ -24,23 +24,3 @@ export const H4 = ({ children, className }: TextProps & ChildrenProp) => (
 export const P = ({ children, className }: TextProps & ChildrenProp) => (
   <div className={cn('leading-6 tracking-tight selection:bg-primary-700 selection:text-white', className)}>{children}</div>
 );
-
-H1.defaultProps = {
-  className: ''
-};
-
-H2.defaultProps = {
-  className: ''
-};
-
-H3.defaultProps = {
-  className: ''
-};
-
-H4.defaultProps = {
-  className: ''
-};
-
-P.defaultProps = {
-  className: ''
-};

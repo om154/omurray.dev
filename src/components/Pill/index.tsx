@@ -13,8 +13,4 @@ const Pill = ({ children, className }: ChildrenProp & PillProps) => (
   </div>
 );
 
-Pill.defaultProps = {
-  className: ''
-};
-
 export default Pill;

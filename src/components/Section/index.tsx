@@ -8,7 +8,7 @@ interface SectionProps {
 
 const Section = (
   {
-    children, className, alignTop
+    children, className, alignTop = false
   }: SectionProps & ChildrenProp
 ) => (
   <div
@@ -25,10 +25,5 @@ const Section = (
     {children}
   </div>
 );
-
-Section.defaultProps = {
-  className: '',
-  alignTop: false,
-};
 
 export default Section;

@@ -15,8 +15,4 @@ const AboutMeHero = ({ imgSrc, children }: HeroProps & ChildrenProp) => (
   </div>
 );
 
-AboutMeHero.defaultProps = {
-  imgSrc: ''
-};
-
 export default AboutMeHero;

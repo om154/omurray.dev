@@ -29,8 +29,4 @@ const TwinePill = ({ className }: TwinePillProps) => (
   </Pill>
 );
 
-TwinePill.defaultProps = {
-  className: ''
-};
-
 export default TwinePill;

@@ -22,8 +22,4 @@ const EmailPill = ({ className }: EmailPillProps) => {
   );
 };
 
-EmailPill.defaultProps = {
-  className: ''
-};
-
 export default EmailPill;

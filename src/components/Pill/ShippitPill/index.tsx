@@ -30,8 +30,4 @@ const ShippitPill = ({ className }: ShippitPillProps) => (
   </Pill>
 );
 
-ShippitPill.defaultProps = {
-  className: ''
-};
-
 export default ShippitPill;

@@ -1,3 +1,5 @@
+'use client'
+
 import Link from 'next/link';
 import Section from '../Section';
 import { H2, H3, P } from '../shared/Text';
@@ -8,6 +10,7 @@ import GlimpsePill from '../Pill/GlimpsePill';
 import TwinePill from '../Pill/TwinePill';
 import ContactLinks from '../Navigation/ContactLinks';
 import aboutMeImg from 'public/static/img/oliver.jpeg'
+import AnimateDown from '../animations/AnimateDown';
 
 export function calculateAge(birthday: string) {
   const splitDate = birthday.split('-');
@@ -30,7 +33,7 @@ const AboutMe = () => (
       <div className="mb-2 text-left">
         <H2>About me</H2>
       </div>
-      <AboutMeHero imgSrc={aboutMeImg}>
+      <AboutMeHero imgSrc={aboutMeImg} animationDuration={.35}>
         <P>
           Hey 👋🏻 I&apos;m Oliver, a
           {process.env.NEXT_PUBLIC_DATE_OF_BIRTH && ` ${calculateAge(process.env.NEXT_PUBLIC_DATE_OF_BIRTH)} year old `}
@@ -47,7 +50,7 @@ const AboutMe = () => (
           <H3>Experience building software</H3>
         </div>
         <div className='grid grid-cols-1 gap-4 mt-4 sm:grid-flow-row-dense lg:grid-cols-2'>
-          <div className='flex flex-col justify-between p-5 font-sans transition-colors duration-200 ease-in-out rounded-lg aspect-squar bg-neutral-100 hover:bg-neutral-200'>
+          <AnimateDown delay={.1 + 1 * .1} className='flex flex-col justify-between p-5 font-sans transition-colors duration-200 ease-in-out rounded-lg aspect-squar bg-neutral-100 hover:bg-neutral-200'>
             <P>
               At twine we&apos;re focused on helping connect remote teams, and are fully remote ourselves!
               {' '}
@@ -56,8 +59,8 @@ const AboutMe = () => (
                 <TwinePill className="my-1 select-none lg:m-0" />
               </div>
             </P>
-          </div>
-          <div className='flex flex-col justify-between p-5 font-sans transition-colors duration-200 ease-in-out rounded-lg aspect-squar bg-neutral-100 hover:bg-neutral-200'>
+          </AnimateDown>
+          <AnimateDown delay={.1 + 2 * .1} className='flex flex-col justify-between p-5 font-sans transition-colors duration-200 ease-in-out rounded-lg aspect-squar bg-neutral-100 hover:bg-neutral-200'>
             <P>
               I started out working on the problem of connection for remote teams at
               {' '}
@@ -67,8 +70,8 @@ const AboutMe = () => (
             <div className="flex flex-col items-center mt-3 space-x-2 lg:space-x-0 lg:flex-row lg:justify-around">
               <GlimpsePill className="mt-1 select-none lg:m-0" />
             </div>
-          </div>
-          <div className='flex flex-col justify-between p-5 font-sans transition-colors duration-200 ease-in-out rounded-lg aspect-squar bg-neutral-100 hover:bg-neutral-200'>
+          </AnimateDown>
+          <AnimateDown delay={.1 + 3 * .1} className='flex flex-col justify-between p-5 font-sans transition-colors duration-200 ease-in-out rounded-lg aspect-squar bg-neutral-100 hover:bg-neutral-200'>
             <P>
               In the past I worked in Engineering at
               {' '}
@@ -80,8 +83,8 @@ const AboutMe = () => (
             <div className="flex flex-col items-center mt-3 space-y-2 md:space-x-2 lg:space-y-0 lg:space-x-0 lg:flex-row lg:justify-around">
               <ShippitPill className="my-1 select-none lg:m-0" />
             </div>
-          </div>
-          <div className='flex flex-col justify-between p-5 font-sans transition-colors duration-200 ease-in-out rounded-lg aspect-squar bg-neutral-100 hover:bg-neutral-200'>
+          </AnimateDown>
+          <AnimateDown delay={.1 + 4 * .1} className='flex flex-col justify-between p-5 font-sans transition-colors duration-200 ease-in-out rounded-lg aspect-squar bg-neutral-100 hover:bg-neutral-200'>
             <P>
               I also spent time at
               {' '}
@@ -93,7 +96,7 @@ const AboutMe = () => (
             <div className="flex flex-col items-center mt-3 space-y-2 md:space-x-2 lg:space-y-0 lg:space-x-0 lg:flex-row lg:justify-around">
               <AccenturePill className="my-1 select-none lg:my-0 lg:ml-1" />
             </div>
-          </div>
+          </AnimateDown>
         </div>
       </AboutMeHero>
     </div>

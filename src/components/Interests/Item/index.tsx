@@ -10,10 +10,11 @@ export interface InterestItem {
 
 interface ItemProps {
   item: InterestItem
+  animationDelay: number
 }
 
-const Item = ({ item: { title, paragraphs, imagePath } }: ItemProps) => (
-  <InterestsHero imgSrc={imagePath}>
+const Item = ({ item: { title, paragraphs, imagePath }, animationDelay }: ItemProps) => (
+  <InterestsHero imgSrc={imagePath} animationDelay={animationDelay}>
     <div>
       <h2 className="box-border font-serif text-xl leading-tight tracking-tight text-center font-regular md:text-2xl lg:text-3xl text-primary-800 md:text-left">
         {title}

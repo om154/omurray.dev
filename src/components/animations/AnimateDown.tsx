@@ -4,10 +4,11 @@ import { motion } from 'framer-motion'
 interface Props {
   children: ReactNode
   delay?: number
+  duration?: number
   className?: string
 }
 
-const AnimateDown = ({ children, className, delay }: Props) => {
+const AnimateDown = ({ children, className, delay, duration }: Props) => {
   return (
     <motion.div
       initial="hidden"
@@ -21,7 +22,8 @@ const AnimateDown = ({ children, className, delay }: Props) => {
           translateY: 0,
           opacity: 1,
           transition: {
-            delay
+            delay,
+            duration
           }
         }
       }}

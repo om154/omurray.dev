@@ -8,9 +8,9 @@ const Home = () => {
       <div className='row-span-2 my-4 sm:col-span-2 '>
         <Greeting />
       </div>
-      {photoHeroes.map(h =>
+      {photoHeroes.map((h, i) =>
         <div key={`photo-hero-${h.title.toLocaleLowerCase()}`} className='row-span-2 lg:mb-0 sm:col-span-2'>
-          <PhotoHero data={h} />
+          <PhotoHero data={h} animationDelay={(i + 1) * .2} />
         </div>
       )}
     </div>

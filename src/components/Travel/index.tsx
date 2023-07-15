@@ -1,6 +1,8 @@
+'use client'
+
 import Section from '../Section';
+import AnimateDown from '../animations/AnimateDown';
 import { H2, P } from '../shared/Text';
-import EmailPill from '../Pill/EmailPill';
 
 interface TravelLocation {
   name: string
@@ -60,14 +62,15 @@ const Travel = () => (
         <P>
           Over the last few years I've visited:
           <div className='grid grid-cols-2 gap-4 mt-2 sm:grid-flow-row-dense md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8'>
-            {travelLocations.reverse().map(l =>
-              <div
+            {travelLocations.reverse().map((l, i) =>
+              <AnimateDown
                 key={`travel-grid-item-${l.name}`}
                 className='flex flex-col justify-between p-3 transition-colors duration-200 ease-in-out rounded-lg aspect-square bg-neutral-100 hover:bg-neutral-300'
+                delay={(i + 1) * .02}
               >
                 <div className='text-[32px] select-none'>{l.emoji}</div>
                 <div>{l.name}</div>
-              </div>
+              </AnimateDown>
             )}
           </div>
         </P>

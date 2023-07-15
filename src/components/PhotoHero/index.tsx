@@ -13,14 +13,15 @@ export interface PhotoHeroModel {
 
 interface Props {
   data: PhotoHeroModel
+  animationDelay: number
 }
 
-const PhotoHero = ({ data }: Props) => {
+const PhotoHero = ({ data, animationDelay }: Props) => {
   const { title, month, year, emoji, imgSrc } = data;
 
   return (
     <AnimateDown
-      delay={.2}
+      delay={animationDelay}
       className='aspect-[2] sm:col-span-2 p-4 rounded-lg bg-neutral-100 relative flex flex-col justify-center items-center'
     >
       <div className='w-full mb-2 text-lg leading-none font-regular text-primary-900 top-4 left-4'>

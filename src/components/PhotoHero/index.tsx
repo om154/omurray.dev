@@ -1,4 +1,7 @@
+'use client'
+
 import Image from "next/image";
+import AnimateDown from "../animations/AnimateDown";
 
 export interface PhotoHeroModel {
   title: string
@@ -16,7 +19,10 @@ const PhotoHero = ({ data }: Props) => {
   const { title, month, year, emoji, imgSrc } = data;
 
   return (
-    <div className='aspect-[2] sm:col-span-2 p-4 rounded-lg bg-neutral-100 relative flex flex-col justify-center items-center'>
+    <AnimateDown
+      delay={.2}
+      className='aspect-[2] sm:col-span-2 p-4 rounded-lg bg-neutral-100 relative flex flex-col justify-center items-center'
+    >
       <div className='w-full mb-2 text-lg leading-none font-regular text-primary-900 top-4 left-4'>
         <div className='flex flex-row items-center'>
           {emoji && <span className='mr-2 text-2xl'>{emoji}</span>}
@@ -38,7 +44,7 @@ const PhotoHero = ({ data }: Props) => {
           <Image src={imgSrc[4]} placeholder='blur' alt='japan' height={150} width={95} className='object-cover object-center rounded-xl h-[150px] w-[95px] rounded-tl-sm' />
         </div>
       </div>
-    </div>
+    </AnimateDown>
   )
 }
 

@@ -5,6 +5,8 @@ import Link from "next/link"
 import { usePathname } from 'next/navigation'
 import { MouseEventHandler, useEffect, useState } from 'react';
 import ContactLinks from './ContactLinks';
+import AnimateFadeIn from '../animations/AnimateFadeIn';
+import AnimateDown from '../animations/AnimateDown';
 
 export const usePreviousPersistent = (value: any) => {
   const [state, setState] = useState<any>({
@@ -72,41 +74,46 @@ const Navigation = () => {
 
   return (
     <div className="sticky top-0 z-10 flex items-center justify-start py-4 isolate md:justify-between">
-      <nav className='px-2 py-1 border border-solid border-neutral-300 rounded-lg shadow-md  bg-white/70  w-full md:w-[unset]'>
-        <ul
-          className='flex flex-row flex-wrap justify-around list-none'
-          onMouseLeave={() => hovering && setHovering(false)}
-          onMouseEnter={() => !hovering && setHovering(true)}
-        >
-          <div className={classNames(
-            'absolute left-0 -z-10 h-7 rounded bg-neutral-400 backdrop-blur transition-[width,transform,opacity]',
-          )} style={
-            {
-              // default to show no transition
-              transitionDuration: '0ms',
-              // display the hover state if hovering is true and width is set
-              ...(hovering ? {
-                opacity: 0.9
-              } : {}),
-              ...(width ? { width: `${width}px` } : {}),
-              // only display the transform transition if the offset changes (not if it goes null -> defined)
-              ...(previousXOffset !== null && xOffset !== null ? { transitionDuration: '150ms', } : {}),
-              // always translate based on the offset, if defined
-              ...(xOffset ? {
-                transform: `translate(${xOffset}px)`
-              } : {}),
-            }
-          } />
-          <LinkListItem onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} title="Home" path="/" active={pathName === '/'} />
-          <LinkListItem onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} title="About" path="/about" active={pathName === '/about'} />
-          <LinkListItem onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} title="Travel" path="/travel" active={pathName === '/travel'} />
-          <LinkListItem onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} title="Interests" path="/interests" active={pathName === '/interests'} />
-        </ul>
-      </nav>
+      <AnimateDown>
+        <nav className='px-2 py-1 border border-solid border-neutral-300 rounded-lg shadow-md  bg-white/70  w-full md:w-[unset]'>
+          <ul
+            className='flex flex-row flex-wrap justify-around list-none'
+            onMouseLeave={() => hovering && setHovering(false)}
+            onMouseEnter={() => !hovering && setHovering(true)}
+          >
+            <div className={classNames(
+              'absolute left-0 -z-10 h-7 rounded bg-neutral-400 backdrop-blur transition-[width,transform,opacity]',
+            )} style={
+              {
+                // default to show no transition
+                transitionDuration: '0ms',
+                // display the hover state if hovering is true and width is set
+                ...(hovering ? {
+                  opacity: 0.9
+                } : {}),
+                ...(width ? { width: `${width}px` } : {}),
+                // only display the transform transition if the offset changes (not if it goes null -> defined)
+                ...(previousXOffset !== null && xOffset !== null ? { transitionDuration: '150ms', } : {}),
+                // always translate based on the offset, if defined
+                ...(xOffset ? {
+                  transform: `translate(${xOffset}px)`
+                } : {}),
+              }
+            } />
+            <LinkListItem onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} title="Home" path="/" active={pathName === '/'} />
+            <LinkListItem onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} title="About" path="/about" active={pathName === '/about'} />
+            <LinkListItem onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} title="Travel" path="/travel" active={pathName === '/travel'} />
+            <LinkListItem onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} title="Interests" path="/interests" active={pathName === '/interests'} />
+          </ul>
+        </nav>
+      </AnimateDown>
       <div className='hidden md:flex'>
-        <div className="box-border flex justify-center w-full pl-2 mx-auto text-center rounded-lg bg-white/70">
+        <AnimateFadeIn
+          delay={.6}
+          className="box-border flex justify-center w-full pl-2 mx-auto text-center rounded-lg bg-white/70"
+        >
           <ContactLinks />
-        </div>
+        </AnimateFadeIn>
       </div>
     </div>
   );

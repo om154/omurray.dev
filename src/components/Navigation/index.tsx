@@ -37,7 +37,7 @@ interface ListItemProps {
 const LinkListItem = ({ title, path, active, onMouseEnter, onMouseLeave }: ListItemProps) => (
   <li className='select-none contents' onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
     <Link href={path} className={classNames(
-      'px-1 md:px-2 py-1 font-sans transition-colors duration-200 ease-linear no-underline text-[15px] md:text-md font-regular outline-none select-nonerounded-lg hover:text-primary-900 leading-5',
+      'px-3 md:px-2 py-1 font-sans transition-colors duration-200 ease-linear no-underline text-[15px] md:text-md font-regular outline-none select-nonerounded-lg hover:text-primary-900 leading-5',
       {
         'text-primary-900': active,
         'text-neutral-600': !active
@@ -73,16 +73,16 @@ const Navigation = () => {
   }
 
   return (
-    <div className="sticky top-0 z-10 flex items-center justify-start py-4 isolate md:justify-between">
-      <AnimateDown className='w-full md:w-[unset]'>
-        <nav className='px-2 py-1 border border-solid border-neutral-300 rounded-lg shadow-md  bg-white/70  w-full md:w-[unset]'>
+    <div className="sticky top-0 z-10 flex items-center justify-center py-4 isolate">
+      <AnimateDown>
+        <nav className='w-full px-2 py-1 border border-solid rounded-lg shadow-md border-neutral-300 bg-white/70 backdrop-blur-md'>
           <ul
             className='flex flex-row flex-wrap justify-around list-none'
             onMouseLeave={() => hovering && setHovering(false)}
             onMouseEnter={() => !hovering && setHovering(true)}
           >
             <div className={classNames(
-              'absolute left-0 -z-10 h-7 rounded bg-neutral-400 backdrop-blur transition-[width,transform,opacity]',
+              'absolute left-0 -z-10 h-7 rounded bg-neutral-400 transition-[width,transform,opacity]',
             )} style={
               {
                 // default to show no transition

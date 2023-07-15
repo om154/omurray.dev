@@ -77,12 +77,8 @@ export default function RootLayout({
       </head>
       <body>
         <PageContainer>
-          <section>
-            <Navigation />
-          </section>
-          <section>
-            {children}
-          </section>
+          <Navigation />
+          {children}
         </PageContainer>
       </body>
     </html>

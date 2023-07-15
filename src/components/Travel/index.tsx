@@ -23,14 +23,12 @@ const TravelCard = ({ location, index }: TravelCardProps) => {
         <div className='absolute z-10 w-full px-4 pt-2 pb-4 font-bold text-[transparent] rounded-tl-lg rounded-tr-lg group-hover:bg-primary-300 group-hover:text-white bg-[transparent] transition-colors duration-200'>
           {formattedDateTime}
         </div>
-        <div
-          className='relative z-20 flex flex-col justify-between p-3 transition-[colors, transform] duration-200 ease-in-out rounded-lg group-hover:translate-y-9 aspect-square bg-neutral-100'
-        >
+        <div className='relative z-20 flex flex-col justify-start p-3 transition-[colors, transform] duration-200 ease-in-out rounded-lg group-hover:translate-y-9 aspect-square bg-neutral-100'>
           {countryFlagEmoji && <div className='text-[36px] select-none'>{countryFlagEmoji}</div>}
         </div>
         <div className='absolute z-30 w-full bottom-3 left-3 max-w-[130px]'>
-          <div className='break-normal'>{city}, </div>
-          <div className='whitespace-nowrap'>{country}</div>
+          <div className='break-normal text-md'>{city}, </div>
+          <div className='whitespace-nowrap text-md'>{country}</div>
         </div>
       </div>
     </AnimateDown>
@@ -45,7 +43,7 @@ const Travel = () => (
       </div>
       <div className="box-border w-full">
         <P>
-          Over the last few years I've visited:
+          Over the last couple of years I've been fortunate enough to visit:
           <div className='grid grid-cols-1 gap-4 mt-2 sm:grid-cols-2 sm:grid-flow-row-dense md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-8'>
             {/* render travel data as cards */}
             {travelData.map((l, i) => <TravelCard location={l} index={i} />)}

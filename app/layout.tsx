@@ -8,7 +8,7 @@ import './global.css'
 
 const inter = Inter({
   subsets: ['latin'],
-  display: 'swap',
+  display: 'block',
   variable: '--font-inter',
 })
 

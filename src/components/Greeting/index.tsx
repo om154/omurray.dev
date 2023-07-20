@@ -57,7 +57,7 @@ const Greeting = () => (
       </div>
       <div className="box-border w-full max-w-5xl mx-auto mt-6 text-left lg:px-4 text-primary-900">
         <H1 className="mt-0">
-          I travel a lot, so I also spend plenty of time exploring and meeting people in{' '}
+          I travel a lot, so I spend plenty of time exploring and meeting people in{' '}
           <Link
             href='/travel'
             className='inline-block text-primary-600 decoration-[transparent] hover:decoration-[rgb(34,85,192)] hover:text-[rgb(34,85,192)] transition-colors duration-300 ease-in-out underline-offset-[6px] break-inside-avoid'

@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import AnimateDown from "../animations/AnimateDown";
+import { H3 } from "../shared/Text";
 
 export interface PhotoHeroModel {
   title: string
@@ -27,9 +28,9 @@ const PhotoHero = ({ data, animationDelay }: Props) => {
       <div className='w-full mb-2 text-lg leading-none font-regular text-primary-900 top-4 left-4'>
         <div className='flex flex-row items-center'>
           {emoji && <span className='mr-2 text-2xl select-none'>{emoji}</span>}
-          <span className="selection:bg-primary-700 selection:text-white">{title}</span>
+          <H3 className="selection:bg-primary-700 selection:text-white">{title}</H3>
           {month || year ?
-            <div className="ml-4 md:ml-2">
+            <div className="self-end ml-4 mb-[2px] md:mb-1 md:ml-3">
               <span className="text-xs md:text-sm text-neutral-500 selection:bg-primary-700 selection:text-white">{`${month ?? ''}${year ? `, ${year}` : ''}`}</span>
             </div> : <div />}
         </div>

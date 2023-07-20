@@ -1,7 +1,6 @@
 import Navigation from 'src/components/Navigation'
 import PageContainer from 'src/components/shared/PageContainer'
-import { Inter } from 'next/font/google'
-import localFont from 'next/font/local'
+import { Inter, Lora } from 'next/font/google'
 import { Metadata } from 'next'
 
 import './global.css'
@@ -12,10 +11,10 @@ const inter = Inter({
   variable: '--font-inter',
 })
 
-const fraunces = localFont({
-  src: '../public/static/fonts/Fraunces[SOFT,WONK,opsz,wght].woff2',
+const lora = Lora({
+  subsets: ['latin'],
   display: 'block',
-  variable: '--font-fraunces',
+  variable: '--font-lora',
 })
 
 export const metadata: Metadata = {
@@ -71,7 +70,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`${inter.variable} ${fraunces.variable}`}>
+    <html lang="en" className={`${inter.variable} ${lora.variable}`}>
       <head>
         <meta charSet="utf-8" />
       </head>

@@ -11,13 +11,7 @@ module.exports = {
   theme: {
     fontFamily: {
       sans: 'var(--font-inter), Roboto, sans-serif',
-      serif: [
-        'var(--font-fraunces), Roboto, sans-serif',
-        {
-          fontFeatureSettings: 'normal',
-          fontVariationSettings: '"opsz" 72, "SOFT" 50'
-        }
-      ],
+      serif: 'var(--font-lora), Roboto, sans-serif'
     },
     fontSize: fontSizes,
     fontWeight: fontWeights,

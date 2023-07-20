@@ -4,7 +4,6 @@ import Section from '../Section';
 import AnimateDown from '../animations/AnimateDown';
 import { H2, P } from '../shared/Text';
 import { TravelLocation, travelData } from './travelData';
-import { motion } from 'framer-motion'
 
 interface TravelCardProps {
   location: TravelLocation

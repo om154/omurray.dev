@@ -107,10 +107,10 @@ const Navigation = () => {
           </ul>
         </nav>
       </AnimateDown>
-      <div className='hidden md:flex'>
+      <div className='hidden ml-2 md:flex'>
         <AnimateFadeIn
           delay={.6}
-          className="box-border flex justify-center w-full pl-2 mx-auto text-center rounded-lg bg-white/70"
+          className="box-border flex justify-center w-full mx-auto text-center rounded-lg bg-white/70"
         >
           <ContactLinks />
         </AnimateFadeIn>

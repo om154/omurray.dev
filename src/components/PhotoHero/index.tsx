@@ -26,15 +26,15 @@ const PhotoHero = ({ data, animationDelay }: Props) => {
     >
       <div className='w-full mb-2 text-lg leading-none font-regular text-primary-900 top-4 left-4'>
         <div className='flex flex-row items-center'>
-          {emoji && <span className='mr-2 text-2xl'>{emoji}</span>}
-          <span>{title}</span>
+          {emoji && <span className='mr-2 text-2xl select-none'>{emoji}</span>}
+          <span className="selection:bg-primary-700 selection:text-white">{title}</span>
           {month || year ?
             <div className="ml-4 md:ml-2">
-              <span className="text-xs md:text-sm text-neutral-500">{`${month ?? ''}${year ? `, ${year}` : ''}`}</span>
+              <span className="text-xs md:text-sm text-neutral-500 selection:bg-primary-700 selection:text-white">{`${month ?? ''}${year ? `, ${year}` : ''}`}</span>
             </div> : <div />}
         </div>
       </div>
-      <div className='flex flex-col w-full gap-2 my-4 transition-transform duration-300 ease-out md:hover:scale-[1.02]'>
+      <div className='flex flex-col w-full gap-2 my-4 transition-transform duration-300 ease-out md:hover:scale-[1.02] select-none'>
         <div className="relative flex flex-row justify-center w-full gap-2">
           <Image src={imgSrc[0]} placeholder='blur' alt='japan' height={64} width={208} className='hidden md:block object-cover object-center rounded-xl h-[104px]'/>
           <Image src={imgSrc[1]} placeholder='blur' alt='japan' height={128} width={208} className='object-cover object-center rounded-xl h-[158px] md:h-[208px]'/>

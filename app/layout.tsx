@@ -25,6 +25,11 @@ export const metadata: Metadata = {
   description: 'Meet Oliver!',
   generator: 'Next.js',
   applicationName: 'Oliver Murray',
+  appleWebApp: {
+    capable: true,
+    title: 'Oliver Murray',
+    statusBarStyle: 'default'
+  },
   referrer: 'origin-when-cross-origin',
   keywords: ['Oliver', 'Murray', 'Oliver Murray', 'Software Engineer', 'Next.js', 'React', 'JavaScript'],
   authors: [{ name: 'Oliver', url: 'https://omurray.dev' }],

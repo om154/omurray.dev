@@ -1,6 +1,6 @@
 import Navigation from 'src/components/Navigation'
 import PageContainer from 'src/components/shared/PageContainer'
-import { Inter, Lora } from 'next/font/google'
+import { Fragment_Mono, Inter, Lora } from 'next/font/google'
 import { Metadata } from 'next'
 
 import './global.css'
@@ -15,6 +15,13 @@ const lora = Lora({
   subsets: ['latin'],
   display: 'block',
   variable: '--font-lora',
+})
+
+const fragmentMono = Fragment_Mono({
+  subsets: ['latin'],
+  display: 'block',
+  weight: "400",
+  variable: '--font-fragment-mono',
 })
 
 export const metadata: Metadata = {
@@ -75,7 +82,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`${inter.variable} ${lora.variable}`}>
+    <html lang="en" className={`${inter.variable} ${lora.variable} ${fragmentMono.variable}`}>
       <head>
         <meta charSet="utf-8" />
       </head>

@@ -28,10 +28,10 @@ const PhotoHero = ({ data, animationDelay }: Props) => {
       <div className='w-full mb-2 text-lg leading-none font-regular text-primary-900 top-4 left-4'>
         <div className='flex flex-row items-center'>
           {emoji && <span className='mr-2 text-2xl select-none'>{emoji}</span>}
-          <H3 className="selection:bg-primary-700 selection:text-white">{title}</H3>
+          <H3>{title}</H3>
           {month || year ?
             <div className="self-end ml-4 mb-[2px] md:mb-1 md:ml-3">
-              <span className="text-xs md:text-sm text-neutral-500 selection:bg-primary-700 selection:text-white">{`${month ?? ''}${year ? `, ${year}` : ''}`}</span>
+              <span className="text-xs md:text-sm text-neutral-500">{`${month ?? ''}${year ? `, ${year}` : ''}`}</span>
             </div> : <div />}
         </div>
       </div>

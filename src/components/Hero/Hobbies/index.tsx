@@ -16,7 +16,7 @@ const InterestsHero = ({ imgSrc, children, animationDelay, animationDuration }: 
     </div>
     {imgSrc &&
       <div className="relative flex justify-center order-first h-60 md:h-full md:w-[20%] xl:w-[40%]">
-        <Image src={imgSrc} fill placeholder='blur' alt='interest' className="object-cover object-center max-w-full rounded-md select-none md:object-top md:object-center" />
+        <Image src={imgSrc} fill placeholder='blur' alt='interest' className="object-cover object-center max-w-full rounded-md select-none md:object-top" />
       </div>
     }
   </AnimateDown>

@@ -12,8 +12,7 @@
     "postcss": "^8.4.25",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "typescript": "^5.0.4",
-    "uuid": "^9.0.0"
+    "typescript": "^5.0.4"
   },
   "scripts": {
     "dev": "next dev",
@@ -49,7 +48,6 @@
     "@types/node": "^18.16.1",
     "@types/react": "^18.2.0",
     "@types/react-dom": "^18.2.1",
-    "@types/uuid": "^9.0.1",
     "autoprefixer": "^10.4.14",
     "eslint": "^8.39.0",
     "eslint-config-airbnb": "^19.0.4",

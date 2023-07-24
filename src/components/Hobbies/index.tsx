@@ -1,4 +1,3 @@
-import { v4 as uuidv4 } from 'uuid';
 import Section from '../Section';
 import Item, { InterestItem } from './Item';
 import { H2 } from '../shared/Text';

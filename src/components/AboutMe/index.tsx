@@ -54,19 +54,19 @@ const cards: AboutMeCard[] = [
   // twine
   {
     content: <>
-      At twine we&apos;re focused on helping connect remote teams, and are fully remote ourselves!
+      twine is a fully remote company building tools for remote teams to connect.
       {' '}
-      Our platform makes remote work fun & engaging by connecting employees at key moments such as onboarding, all hands and other events.
+      Our platform makes remote work fun & engaging by connecting employees at key moments such as onboarding, all hands and events.
     </>,
     Pill: <TwinePill className="my-1 select-none lg:m-0" />
   },
   // Glimpse
   {
     content: <>
-      I started out working on the problem of connection for remote teams at
+      I began out working on the problem of connection for remote teams at
       {' '}
       <Link className="inline-block decoration-[transparent] hover:decoration-primary-900 hover:text-primary-900" href="https://www.joinglimpse.com/" target="_blank" rel="noreferrer">Glimpse</Link>
-      , but we teamed up when twine acquired us in early 2022.
+      {' '}and we teamed up with twine when they acquired us in early 2022.
     </>,
     Pill: <GlimpsePill className="mt-1 select-none lg:m-0" />
   },

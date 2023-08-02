@@ -54,43 +54,49 @@ const cards: AboutMeCard[] = [
   // twine
   {
     content: <>
-      twine is a fully remote company building tools for remote teams to connect.
-      {' '}
-      Our platform makes remote work fun & engaging by connecting employees at key moments such as onboarding, all hands and events.
+      <Link className="decoration-[transparent] hover:decoration-primary-900 hover:text-primary-900" href="https://www.twine.us/" target="_blank" rel="noreferrer">twine</Link>
+      {' '}builds products to connect remote teams (Seed stage, Zoom Ventures). Our platform powered thousands of conversations!
+      <div className='mt-1' />
+      Our new product -{' '}
+      <Link className="decoration-[transparent] hover:decoration-primary-900 hover:text-primary-900" href="https://www.twine.us/ambient" target="_blank" rel="noreferrer">twine Ambient</Link>
+      {' '}- is an AI Chief of Staff that summarizes, threads, and shares important business updates from meetings, Slack, and other tools across a business.
     </>,
     Pill: <TwinePill className="my-1 select-none lg:m-0" />
   },
   // Glimpse
   {
     content: <>
-      I began out working on the problem of connection for remote teams at
+      I began working on connecting remote teams as a Founding Engineer at
       {' '}
-      <Link className="inline-block decoration-[transparent] hover:decoration-primary-900 hover:text-primary-900" href="https://www.joinglimpse.com/" target="_blank" rel="noreferrer">Glimpse</Link>
-      {' '}and we teamed up with twine when they acquired us in early 2022.
+      <Link className="inline whitespace-break-spaces decoration-[transparent] hover:decoration-primary-900 hover:text-primary-900" href="https://www.joinglimpse.com/" target="_blank" rel="noreferrer">Glimpse (Seed stage, Y Combinator)</Link>
+      .
+      <div className='mt-1' />
+      As the first external hire, I helped define the application's architecture and build the first version of the product.
+      <div className='mt-1' />
+      We teamed up with twine through an acquisition in early 2022, and I took on role leading development of our newly launched Zoom product.
     </>,
     Pill: <GlimpsePill className="mt-1 select-none lg:m-0" />
   },
   // Shippit
   {
     content: <>
-      In the past I worked in Engineering at
+      I worked in Engineering at a Sydney-based start-up named
       {' '}
-      <Link className="decoration-[transparent] hover:decoration-primary-900 hover:text-primary-900" href="https://www.shippit.com/" target="_blank" rel="noreferrer">Shippit</Link>
-      , a Sydney-based start-up
-      creating the network that brings
-      people & goods together in the leanest way possible.
+      <Link className="decoration-[transparent] hover:decoration-primary-900 hover:text-primary-900" href="https://www.shippit.com/" target="_blank" rel="noreferrer">Shippit (Series B, Tiger Global)</Link>.
+      <div className='mt-1' />
+      They have a SaaS product for ecommerce merchants and are working to bring people & goods together in the leanest way possible.
     </>,
     Pill: <ShippitPill className="my-1 select-none lg:m-0" />
   },
   // Accenture
   {
     content: <>
-      I also spent time at
+      I spent 3 years at
       {' '}
       <Link className="decoration-[transparent] hover:decoration-primary-900 hover:text-primary-900" href="https://www.accenture.com/" target="_blank" rel="noreferrer">Accenture</Link>
       {' '}
-      developing large-scale web
-      applications to help their clients effectively capture, manage and analyze their data.
+      developing large-scale enterprise
+      applications to help their clients effectively capture, manage and analyze data from dozens of sources.
     </>,
     Pill: <AccenturePill className="my-1 select-none lg:my-0 lg:ml-1" />
   }

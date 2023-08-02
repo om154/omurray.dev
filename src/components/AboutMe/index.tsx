@@ -54,10 +54,10 @@ const cards: AboutMeCard[] = [
   // twine
   {
     content: <>
-      <Link className="decoration-[transparent] hover:decoration-primary-900 hover:text-primary-900" href="https://www.twine.us/" target="_blank" rel="noreferrer">twine</Link>
-      {' '}builds products to connect remote teams (Seed stage, Zoom Ventures). Our platform powered thousands of conversations!
+      At <Link className="decoration-[transparent] hover:decoration-primary-900 hover:text-primary-900" href="https://www.twine.us/" target="_blank" rel="noreferrer">twine</Link>
+      {' '}we build products to connect remote teams (Seed stage, Zoom Ventures). Our platform has powered thousands of conversations!
       <div className='mt-1' />
-      Our new product -{' '}
+      Our latest product -{' '}
       <Link className="decoration-[transparent] hover:decoration-primary-900 hover:text-primary-900" href="https://www.twine.us/ambient" target="_blank" rel="noreferrer">twine Ambient</Link>
       {' '}- is an AI Chief of Staff that summarizes, threads, and shares important business updates from meetings, Slack, and other tools across a business.
     </>,
@@ -66,7 +66,7 @@ const cards: AboutMeCard[] = [
   // Glimpse
   {
     content: <>
-      I began working on connecting remote teams as a Founding Engineer at
+      I began working to connect remote teams as Founding Engineer at
       {' '}
       <Link className="inline whitespace-break-spaces decoration-[transparent] hover:decoration-primary-900 hover:text-primary-900" href="https://www.joinglimpse.com/" target="_blank" rel="noreferrer">Glimpse (Seed stage, Y Combinator)</Link>
       .

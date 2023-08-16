@@ -1,3 +1,5 @@
+import classNames from "classnames"
+
 interface Props {
   width?: number
   height?: number
@@ -11,6 +13,10 @@ const AccentureLogo = ({ width = 75, height = 32, className }: Props) => (
     width={width}
     height={height}
     viewBox="0 0 163.2 43"
+    className={classNames(
+      'transition-transform duration-200 row hover:scale-[1.05] ease',
+      className
+    )}
   >
     <path
       d="m95.1 12 9.4-3.5-9.4-3.6V0l16.1 6.5v4L95.1 17z"

@@ -1,3 +1,5 @@
+import classNames from "classnames"
+
 interface Props {
   width?: number
   height?: number
@@ -10,7 +12,10 @@ const TwineLogo = ({ width = 60, height = 32, className }: Props) => (
     viewBox="0 0 155 47"
     width={width}
     height={height}
-    className={className}
+    className={classNames(
+      'transition-transform duration-200 row hover:scale-[1.05] ease',
+      className
+    )}
   >
     <title>twine-logo</title>
     <path

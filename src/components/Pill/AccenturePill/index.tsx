@@ -16,10 +16,10 @@ const AccenturePill = ({ className }: AccenturePillProps) => (
       <AccentureLogo />
     </div>
     <div className='flex items-center row'>
-      <Link className="relative flex w-6 h-6 ml-2 mr-1 text-neutral-800" href="https://www.accenture.com/" data-testid="accenture-external-link" target="_blank" rel="noreferrer">
+      <Link className="relative flex w-6 h-6 ml-2 mr-1 text-neutral-800 transition-transform duration-200 hover:-translate-y-0.5 ease" href="https://www.accenture.com/" data-testid="accenture-external-link" target="_blank" rel="noreferrer">
         <ExternalLinkIcon />
       </Link>
-      <Link className="flex ml-2 mr-1" href="https://www.linkedin.com/company/accenture" target="_blank" rel="noreferrer">
+      <Link className="flex ml-2 mr-1 transition-transform duration-200 hover:-translate-y-0.5 ease" href="https://www.linkedin.com/company/accenture" target="_blank" rel="noreferrer">
         <LinkedInLogo />
       </Link>
     </div>

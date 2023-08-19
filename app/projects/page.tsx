@@ -2,7 +2,7 @@ import Section from 'src/components/Section';
 import Item, { InterestItem } from 'src/components/Hobbies/Item';
 import { H2 } from 'src/components/shared/Text';
 import comedyFyiImg from 'public/static/img/comedyFyi.png'
-import selfStoreImg from 'public/static/img/selfStore.png'
+import selfStoreImg from 'public/static/img/selfstore.png'
 import thinValueImg from 'public/static/img/thinvaluePoker.png'
 import omurrayDevImg from 'public/static/img/omurrayDev.png'
 import { Metadata } from 'next'

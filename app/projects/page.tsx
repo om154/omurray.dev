@@ -42,7 +42,7 @@ const items: ProjectItemModel[] = [
   },
   {
     paragraphs: [
-      'A platform to connect people with storage space with people who need to store boxes, cars, RVs and more.',
+      'A platform that allows anyone to make money renting out their unused space for storage.',
     ],
     technologies: [
       'Next.js',

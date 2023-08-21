@@ -47,8 +47,10 @@ const items: ProjectItemModel[] = [
     technologies: [
       'Next.js',
       'React',
+      'Tailwind',
       'TypeScript',
-      'Tailwind'
+      'Node.js',
+      'MongoDB'
     ],
     url: 'https://getselfstore.com',
     imagePath: selfStoreImg

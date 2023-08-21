@@ -1,5 +1,5 @@
-# A personal website - Oliver Murray 🧑🏼‍💻
+# Oliver Murray 🧑🏼‍💻
 
-Built using Nextjs, React, Typescript and Tailwind.
+A personal website built using Nextjs, React, Typescript and Tailwind.
 
 You can view the application live at: [omurray.dev](https://omurray.dev/)

@@ -108,7 +108,7 @@ const cards: AboutMeCard[] = [
       <Link className="decoration-[transparent] hover:decoration-primary-900 hover:text-primary-900" href="https://www.accenture.com/" target="_blank" rel="noreferrer">Accenture</Link>
       {' '}
       I worked on multiple projects developing large-scale enterprise
-      applications to help clients effectively capture, manage and analyze data from dozens of sources.
+      applications to help clients effectively capture, manage and analyze their data from dozens of sources.
     </>,
     year: '2018 - 2020',
     Pill: <AccenturePill className="my-1 select-none lg:my-0 lg:ml-1" />
@@ -125,7 +125,7 @@ const AboutMe = () => (
         <P>
           Hey 👋🏻 I&apos;m Oliver, a
           {process.env.NEXT_PUBLIC_DATE_OF_BIRTH && ` ${calculateAge(process.env.NEXT_PUBLIC_DATE_OF_BIRTH)} year old `}
-          Software Engineer originally from Melbourne, Australia. I moved to the United States 🇺🇸 in 2021 and I'm now working on the problem of connection & context for remote teams at
+          Software Engineer originally from Melbourne, Australia. I moved to the United States 🇺🇸 in 2021 to work for early-stage start-ups
           {' '}
           <Link className="decoration-[transparent] hover:decoration-primary-900 hover:text-primary-900" href="https://www.twine.us/" target="_blank" rel="noreferrer">twine</Link>
           !

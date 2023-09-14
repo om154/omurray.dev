@@ -125,10 +125,7 @@ const AboutMe = () => (
         <P>
           Hey 👋🏻 I&apos;m Oliver, a
           {process.env.NEXT_PUBLIC_DATE_OF_BIRTH && ` ${calculateAge(process.env.NEXT_PUBLIC_DATE_OF_BIRTH)} year old `}
-          Software Engineer originally from Melbourne, Australia. I moved to the United States 🇺🇸 in 2021 to work for early-stage start-ups
-          {' '}
-          <Link className="decoration-[transparent] hover:decoration-primary-900 hover:text-primary-900" href="https://www.twine.us/" target="_blank" rel="noreferrer">twine</Link>
-          !
+          Software Engineer originally from Melbourne, Australia. I moved to the United States 🇺🇸 in 2021 to work for early-stage start-ups!
         </P>
         <div className='flex flex-row justify-end w-full mt-2 md:hidden'>
           <ContactLinks />

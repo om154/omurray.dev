@@ -15,8 +15,8 @@ export const metadata: Metadata = {
 const items: ProjectItemModel[] = [
   {
     paragraphs: [
-      'An app to find tickets for shows from the United States\' best comedians.',
-      'For any show, you can find a link to buy tickets and see a map with other shows nearby.',
+      'An app to find tickets to shows by the United States\' best comedians.',
+      'For any show, you can find a link to buy tickets and see other shows nearby on a map.',
     ],
     technologies: [
       'Next.js',
@@ -43,6 +43,7 @@ const items: ProjectItemModel[] = [
   {
     paragraphs: [
       'A platform that allows anyone to make money renting out their unused space for storage.',
+      'Launching soon!'
     ],
     technologies: [
       'Next.js',
@@ -57,7 +58,7 @@ const items: ProjectItemModel[] = [
   },
   {
     paragraphs: [
-      'You\'re here!',
+      'You\'re here! 🎉',
       'A personal website about me including my travels, projects and hobbies.',
     ],
     technologies: [

@@ -10,6 +10,27 @@ export interface TravelLocation {
 
 export const travelData: TravelLocation[] = [
   {
+    "city": "Calgary",
+    "countryFlagEmoji": "🇨🇦",
+    "country": "Canada",
+    "countryAbbreviation": "CA",
+    "arrivalDateTime": "2023-09-20T00:00:00.000Z"
+  },
+  {
+    "city": "Banff",
+    "countryFlagEmoji": "🇨🇦",
+    "country": "Canada",
+    "countryAbbreviation": "CA",
+    "arrivalDateTime": "2023-09-11T00:00:00.000Z"
+  },
+  {
+    "city": "Whistler",
+    "countryFlagEmoji": "🇨🇦",
+    "country": "Canada",
+    "countryAbbreviation": "CA",
+    "arrivalDateTime": "2023-09-09T00:00:00.000Z"
+  },
+  {
     "city": "Stockholm",
     "countryFlagEmoji": "🇸🇪",
     "country": "Sweden",

@@ -20,7 +20,7 @@ const TravelCard = ({ location, index }: TravelCardProps) => {
     <AnimateDown key={`travel-grid-item-left-${city}`} delay={(index + 1) * .02} >
       <div className='relative overflow-hidden rounded-lg group'>
         <div className='absolute z-10 w-full px-4 pt-2 pb-4 font-bold text-[transparent] rounded-tl-lg rounded-tr-lg group-hover:bg-primary-300 group-hover:text-white bg-[transparent] transition-colors duration-200 select-none'>
-          {formattedDateTime}
+          <time dateTime={arrivalDateTime}>{formattedDateTime}</time>
         </div>
         <div className='relative z-20 flex flex-col justify-start p-3 transition-[colors, transform] duration-200 ease-in-out rounded-lg group-hover:translate-y-9 aspect-square bg-neutral-100'>
           {countryFlagEmoji && <div className='text-[36px] select-none'>{countryFlagEmoji}</div>}

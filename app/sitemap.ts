@@ -18,5 +18,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: 'https://omurray.dev/travel',
       lastModified: new Date(),
     },
+    {
+      url: 'https://omurray.dev/projects',
+      lastModified: new Date(),
+    },
   ]
 }

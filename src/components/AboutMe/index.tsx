@@ -12,6 +12,7 @@ import ContactLinks from '../Navigation/ContactLinks';
 import aboutMeImg from 'public/static/img/oliver.jpeg'
 import AnimateDown from '../animations/AnimateDown';
 import { ReactNode } from 'react';
+import AmbientPill from '../Pill/AmbientPill';
 
 export function calculateAge(birthday: string) {
   const splitDate = birthday.split('-');
@@ -72,7 +73,10 @@ const cards: AboutMeCard[] = [
     </>,
     year: '2022 - 2023',
     stage: 'Seed stage, Zoom Ventures',
-    Pill: <TwinePill className="my-1 select-none lg:m-0" />
+    Pill: <div className='flex flex-col w-full gap-2 my-1 md:flex-row lg:flex-col'>
+      <AmbientPill className='select-none ' />
+      <TwinePill className="select-none lg:m-0" />
+    </div>
   },
   // Glimpse
   {

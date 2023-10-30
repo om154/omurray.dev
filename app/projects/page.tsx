@@ -42,7 +42,7 @@ const items: ProjectItemModel[] = [
   },
   {
     paragraphs: [
-      'A platform that allows anyone to make money renting out their unused space for storage.',
+      'Backyard is a platform that allows anyone to rent space, or make money renting out their space for storage.',
       'Launching soon!'
     ],
     technologies: [

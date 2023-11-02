@@ -2,6 +2,7 @@ import Navigation from 'src/components/Navigation'
 import PageContainer from 'src/components/shared/PageContainer'
 import { Fragment_Mono, Inter, Lora } from 'next/font/google'
 import { Metadata } from 'next'
+import { Analytics } from '@vercel/analytics/react'
 
 import './global.css'
 
@@ -91,6 +92,7 @@ export default function RootLayout({
           <Navigation />
           {children}
         </PageContainer>
+        <Analytics />
       </body>
     </html>
   )

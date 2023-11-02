@@ -6,6 +6,7 @@
     "node": "^18.0.0"
   },
   "dependencies": {
+    "@vercel/analytics": "^1.1.1",
     "classnames": "^2.3.1",
     "framer-motion": "^10.12.21",
     "next": "^13.4.9",

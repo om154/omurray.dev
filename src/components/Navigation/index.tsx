@@ -102,7 +102,7 @@ const Navigation = () => {
             } />
             <LinkListItem onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} title="Home" path="/" active={pathName === '/'} />
             <LinkListItem onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} title="About" path="/about" active={pathName === '/about'} />
-            {/* <LinkListItem onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} title="Insights" path="/insights" active={pathName === '/insights'} /> */}
+            {/* <LinkListItem onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} title="Resources" path="/resources" active={pathName === '/resources'} /> */}
             <LinkListItem onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} title="Projects" path="/projects" active={pathName === '/projects'} />
             <LinkListItem onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} title="Travel" path="/travel" active={pathName === '/travel'} />
             <LinkListItem onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} title="Hobbies" path="/hobbies" active={pathName === '/hobbies'} />

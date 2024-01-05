@@ -98,7 +98,7 @@ const data = [
       {
         label: 'Delegation, Working Remotely, Coaching, levelshealth.com and more',
         title: 'Sam Corcos on The Tim Ferriss Show',
-        url: 'https://www.youtube.com/watch?v=MtrkDoQFArU&t=7410s&pp=ygUXc2FtIGNvY29yb3MgdGltIGZlcnJpc3M%3D',
+        url: 'https://youtu.be/MtrkDoQFArU?si=oWyawfBj0mpgDa6z',
         authors: [
           'Tim Ferriss',
           'Sam Corcos'

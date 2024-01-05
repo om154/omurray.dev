@@ -35,7 +35,12 @@ interface ListItemProps {
 }
 
 const LinkListItem = ({ title, path, active, onMouseEnter, onMouseLeave }: ListItemProps) => (
-  <li className='select-none contents' onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
+  <li
+    role="menuitem"
+    className='select-none contents'
+    onMouseEnter={onMouseEnter}
+    onMouseLeave={onMouseLeave}
+  >
     <Link href={path} className={classNames(
       'px-2 py-1 font-sans transition-colors duration-200 ease-linear no-underline text-[15px] md:text-md font-regular outline-none select-nonerounded-lg hover:text-primary-900 leading-5',
       {
@@ -75,8 +80,13 @@ const Navigation = () => {
   return (
     <div className="sticky top-0 z-10 flex items-center justify-center py-4 isolate md:justify-between">
       <AnimateDown>
-        <nav className='w-full px-2 py-1 border border-solid rounded-lg shadow-md border-neutral-300 bg-white/70 backdrop-blur-md'>
+        <nav
+          role="navigation"
+          aria-label='Main menu'
+          className='w-full px-2 py-1 border border-solid rounded-lg shadow-md border-neutral-300 bg-white/70 backdrop-blur-md'
+        >
           <ul
+            role="menu"
             className='flex flex-row flex-wrap justify-around list-none'
             onMouseLeave={() => hovering && setHovering(false)}
             onMouseEnter={() => !hovering && setHovering(true)}

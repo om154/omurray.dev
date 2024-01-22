@@ -1,5 +1,3 @@
-'use client'
-
 import Section from '../Section';
 import AnimateDown from '../animations/AnimateDown';
 import { H2, P } from '../shared/Text';

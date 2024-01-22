@@ -1,5 +1,3 @@
-'use client'
-
 import cn from 'classnames';
 import { ChildrenProp } from '../../utils/props';
 import AnimateFadeIn from '../animations/AnimateFadeIn';

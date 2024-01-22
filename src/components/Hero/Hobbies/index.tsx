@@ -1,5 +1,3 @@
-'use client'
-
 import Image from 'next/image';
 import { ChildrenProp } from '../../../utils/props';
 import { HeroProps } from '../props';

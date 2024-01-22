@@ -1,5 +1,3 @@
-'use client'
-
 import Image from "next/image"
 import Link from "next/link"
 import AnimateDown from "src/components/animations/AnimateDown"

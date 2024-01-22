@@ -7,24 +7,7 @@ import { MouseEventHandler, useEffect, useState } from 'react';
 import ContactLinks from './ContactLinks';
 import AnimateFadeIn from '../animations/AnimateFadeIn';
 import AnimateDown from '../animations/AnimateDown';
-
-export const usePreviousPersistent = (value: any) => {
-  const [state, setState] = useState<any>({
-    value: value,
-    prev: null,
-  });
-
-  const current = state.value;
-
-  if (value !== current) {
-    setState({
-      value: value,
-      prev: current,
-    });
-  }
-
-  return state.prev;
-};
+import { usePreviousPersistent } from 'src/hooks/usePreviousPersistent';
 
 interface ListItemProps {
   title: string

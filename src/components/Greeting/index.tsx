@@ -1,5 +1,3 @@
-'use client'
-
 import Link from "next/link";
 import Section from '../Section';
 import { H1 } from '../shared/Text';

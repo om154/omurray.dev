@@ -1,5 +1,3 @@
-'use client'
-
 import Image from "next/image";
 import AnimateDown from "../animations/AnimateDown";
 import { H3 } from "../shared/Text";

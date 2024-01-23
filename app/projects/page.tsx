@@ -65,7 +65,7 @@ const items: ProjectItemModel[] = [
       'React',
       'TypeScript',
       'Tailwind',
-      'Framer Motion'
+      'Framer'
     ],
     url: 'https://omurray.dev',
     imagePath: omurrayDevImg

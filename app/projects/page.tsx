@@ -2,6 +2,7 @@ import Section from 'src/components/Section';
 import Item, { InterestItem } from 'src/components/Hobbies/Item';
 import { H2 } from 'src/components/shared/Text';
 import comedyFyiImg from 'public/static/img/comedyFyi.png'
+import firesideImg from 'public/static/img/fireside.png'
 import backyardImg from 'public/static/img/backyard.png'
 import thinValueImg from 'public/static/img/thinvaluePoker.png'
 import omurrayDevImg from 'public/static/img/omurrayDev.png'
@@ -29,31 +30,35 @@ const items: ProjectItemModel[] = [
   },
   {
     paragraphs: [
-      'A personal website for my brother, Lachlan, who is an amatuer poker player working to get staked as a professional.',
+      'Backyard is a platform that allows anyone to rent space, or make money renting out their space for storage. Launching soon!',
     ],
     technologies: [
-      'Next.js',
-      'React',
-      'TypeScript',
-      'Tailwind'
-    ],
-    url: 'https://thinvalue.poker',
-    imagePath: thinValueImg
-  },
-  {
-    paragraphs: [
-      'Backyard is a platform that allows anyone to rent space, or make money renting out their space for storage.',
-      'Launching soon!'
-    ],
-    technologies: [
-      'sst',
       'Remix',
       'React',
       'TypeScript',
-      'Tailwind'
+      'Tailwind',
+      'Supabase',
+      'Postgres',
+      'Severless (sst)',
     ],
     url: 'https://usebackyard.com',
     imagePath: backyardImg
+  },
+  {
+    paragraphs: [
+      'Fireside helps you record a podcast with your loved ones. We generate nostalgic, sentimental questions for you and faciliate recording and storage so you can focus on their stories.',
+      'Launching soon!'
+    ],
+    technologies: [
+      'Neon',
+      'Remix',
+      'React',
+      'TypeScript',
+      'Tailwind',
+      'Severless (sst)',
+    ],
+    url: 'https://recordfireside.com',
+    imagePath: firesideImg
   },
   {
     paragraphs: [
@@ -65,10 +70,25 @@ const items: ProjectItemModel[] = [
       'React',
       'TypeScript',
       'Tailwind',
-      'Framer'
+      'Framer',
+      'Vercel'
     ],
     url: 'https://omurray.dev',
     imagePath: omurrayDevImg
+  },
+  {
+    paragraphs: [
+      'A personal website for my brother, Lachlan, who is an amatuer poker player working to get staked as a professional.',
+    ],
+    technologies: [
+      'Next.js',
+      'React',
+      'TypeScript',
+      'Tailwind',
+      'Vercel'
+    ],
+    url: 'https://thinvalue.poker',
+    imagePath: thinValueImg
   },
 ];
 

@@ -24,7 +24,7 @@ const ProjectItem = ({ item: { paragraphs, technologies, url, imagePath }, anima
     <div className="flex flex-col justify-between flex-1 order-last mt-4 md:m-0">
       <div>
         <div className="flex flex-row justify-start">
-          <Link href={url} className="font-bold text-center text-primary-700 md:text-left hover:text-primary-800" target="_blank" rel="noreferrer">
+          <Link href={url} className="text-center text-primary-700 md:text-left hover:text-primary-800" target="_blank" rel="noreferrer" style={{ fontWeight:700}}>
             <AnimateFadeIn duration={0.35}>
               <h3 className='box-border font-mono text-xl leading-tight tracking-tight lg:text-2xl underline decoration-[transparent] hover:decoration-primary-800 transition-[color,text-decoration] duration-300 ease'>{url}</h3>
             </AnimateFadeIn>

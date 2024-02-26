@@ -6,7 +6,7 @@ import { PartyPopper } from "lucide-react";
 
 const Greeting = () => (
   <AnimateDown className='flex flex-col h-full'>
-    <div className="flex flex-row justify-start w-full lg:px-4">
+    {/* <div className="flex flex-row justify-start w-full lg:px-4">
       <div className="flex flex-row gap-4 px-4 py-3 border border-solid rounded-md shadow-md border-primary-800/50 lg:px-4 text-primary-900 bg-sky-blue-500/25">
         <div className="flex flex-col justify-center">
           <PartyPopper width={32} height={32} />
@@ -16,8 +16,8 @@ const Greeting = () => (
           <p className="mr-1 text-md text-regular">You can read my first post on <a className="underline decoration-sky-blue-900" href='https://omurray.blog'>omurray.blog ↗</a></p>
         </div>
       </div>
-    </div>
-    <Section className="items-center mt-6 mb-2 bg-transparent">
+    </div> */}
+    <Section className="items-center my-2 bg-transparent">
       <div className="box-border w-full max-w-5xl mx-auto text-left lg:px-4 text-primary-900">
         <H1 className="mt-0">
           Hey, my name is{' '}

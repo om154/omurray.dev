@@ -34,7 +34,7 @@ interface AboutMeCardProps extends AboutMeCard {
 const AboutMeCard = ({ index, content, stage, year, Pill }: AboutMeCardProps) => (
   <AnimateDown delay={.1 + (index * .1)} className='flex flex-col justify-between px-5 pt-3 pb-5 font-sans transition-colors duration-200 ease-in-out rounded-lg aspect-squar bg-neutral-100 hover:bg-neutral-200'>
     <div>
-      <div className='mb-2 text-sm text-left text-neutral-600'>{year}</div>
+      <div className='mb-2 text-sm text-left font-semiBold text-neutral-600'>{year}</div>
       <P>
         {content}
       </P>
@@ -69,7 +69,7 @@ const cards: AboutMeCard[] = [
       <Link className="decoration-[transparent] hover:decoration-primary-900 hover:text-primary-900" href="https://www.twine.us/ambient" target="_blank" rel="noreferrer">twine Ambient</Link>
       {' '}- is an AI Chief of Staff that summarizes, threads, and shares important context from meetings, Slack, and other sources from across your business.
     </>,
-    year: '2022 - 2023',
+    year: '2022 – 2023',
     stage: 'Seed stage, Zoom Ventures',
     Pill: <div className='flex flex-col w-full gap-2 my-1 md:flex-row lg:flex-col'>
       <AmbientPill className='select-none ' />
@@ -86,7 +86,7 @@ const cards: AboutMeCard[] = [
       <div className='mt-1 '/>
       I also lead the development of our Zoom app, which ultimately made us a target for acquisition.
     </>,
-    year: '2021 - 2022',
+    year: '2021 – 2022',
     stage: 'Seed stage, Y Combinator',
     Pill: <GlimpsePill className="mt-1 select-none lg:m-0" />
   },
@@ -98,7 +98,7 @@ const cards: AboutMeCard[] = [
       <Link className="decoration-[transparent] hover:decoration-primary-900 hover:text-primary-900" href="https://www.shippit.com/" target="_blank" rel="noreferrer">Shippit</Link>.
       {' '}Their SaaS product helps streamline shipping & fulfilment for retailers.
     </>,
-    year: '2020 - 2021',
+    year: '2020 – 2021',
     stage: 'Series B, Tiger Global',
     Pill: <ShippitPill className="my-1 select-none lg:m-0" />
   },
@@ -112,7 +112,7 @@ const cards: AboutMeCard[] = [
       I worked on multiple projects developing large-scale enterprise
       applications to help clients effectively capture, manage and analyze their data from dozens of sources.
     </>,
-    year: '2018 - 2020',
+    year: '2018 – 2020',
     Pill: <AccenturePill className="my-1 select-none lg:my-0 lg:ml-1" />
   }
 ]

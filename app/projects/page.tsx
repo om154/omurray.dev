@@ -1,6 +1,6 @@
 import Section from 'src/components/Section';
 import Item, { InterestItem } from 'src/components/Hobbies/Item';
-import { H2 } from 'src/components/shared/Text';
+import { H2, P } from 'src/components/shared/Text';
 import comedyFyiImg from 'public/static/img/comedyFyi.png'
 import firesideImg from 'public/static/img/fireside.png'
 import backyardImg from 'public/static/img/backyard.png'
@@ -97,6 +97,7 @@ export default function Page() {
   return <Section alignTop>
     <div className="w-full mb-2 text-left">
       <H2>Projects</H2>
+      <P className='mt-2 text-neutral-900/90'>A few things I've been working on lately</P>
     </div>
     <div className='box-border grid grid-cols-1 gap-4 md:grid-flow-row-dense md:auto-rows-fr md:grid-cols-1 xl:grid-cols-4'>
       {items.map((item: ProjectItemModel, index: number) => (

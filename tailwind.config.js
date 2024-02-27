@@ -10,7 +10,7 @@ module.exports = {
   darkMode: 'class',
   theme: {
     fontFamily: {
-      sans: 'var(--font-inter), Roboto, sans-serif',
+      sans: 'ui-sans-serif, system-ui, -apple-system, var(--font-inter), Roboto, sans-serif',
       serif: 'var(--font-lora), Roboto, sans-serif',
       mono: 'var(--font-fragment-mono), Roboto, mono'
     },

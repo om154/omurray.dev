@@ -34,6 +34,6 @@ export const H4 = ({ children, className }: TextProps & ChildrenProp) => (
 
 export const P = ({ children, className }: TextProps & ChildrenProp) => (
   <AnimateFadeIn duration={TEXT_ANIMATION_DURATION}>
-    <div className={cn('leading-6 tracking-tight', className)}>{children}</div>
+    <div className={cn('leading-6 tracking-regular', className)}>{children}</div>
   </AnimateFadeIn>
 );

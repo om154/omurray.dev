@@ -14,7 +14,7 @@ interface ItemProps {
 
 const Item = ({ item: { title, paragraphs, imagePath }, animationDelay }: ItemProps) => (
   <InterestsHero imgSrc={imagePath} animationDelay={animationDelay}>
-    <H3 className="text-center text-primary-800 md:text-left">{title}</H3>
+    <h3 className="font-sans text-2xl font-medium text-center text-primary-800 md:text-left tracking-regular">{title}</h3>
     <div className='mt-1'>
       {paragraphs.map((paragraph: string, i: number) => (
         <P key={`hobbies-item-p-${i}`} className="mt-2 md:mt-4">

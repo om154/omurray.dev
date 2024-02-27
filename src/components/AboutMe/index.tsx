@@ -120,7 +120,7 @@ const cards: AboutMeCard[] = [
 const AboutMe = () => (
   <Section alignTop>
     <div className="box-border w-full">
-      <div className="mb-2 text-left">
+      <div className="mb-4 text-left">
         <H2>About me</H2>
       </div>
       <AboutMeHero imgSrc={aboutMeImg} animationDuration={.35}>

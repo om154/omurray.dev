@@ -62,6 +62,20 @@ const items: ProjectItemModel[] = [
   },
   {
     paragraphs: [
+      'A personal website for my brother, Lachlan, who is an amatuer poker player working to get staked as a professional.',
+    ],
+    technologies: [
+      'Next.js',
+      'React',
+      'TypeScript',
+      'Tailwind',
+      'Vercel'
+    ],
+    url: 'https://thinvalue.poker',
+    imagePath: thinValueImg
+  },
+  {
+    paragraphs: [
       'You\'re here! 🎉',
       'A personal website about me including my travels, projects and hobbies.',
     ],
@@ -75,20 +89,6 @@ const items: ProjectItemModel[] = [
     ],
     url: 'https://omurray.dev',
     imagePath: omurrayDevImg
-  },
-  {
-    paragraphs: [
-      'A personal website for my brother, Lachlan, who is an amatuer poker player working to get staked as a professional.',
-    ],
-    technologies: [
-      'Next.js',
-      'React',
-      'TypeScript',
-      'Tailwind',
-      'Vercel'
-    ],
-    url: 'https://thinvalue.poker',
-    imagePath: thinValueImg
   },
 ];
 

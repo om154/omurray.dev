@@ -5,6 +5,7 @@ import Pill from '..';
 import LinkedInLogo from 'src/components/shared/LinkedInLogo';
 import AccentureLogo from './AccentureLogo';
 import ExternalLinkIcon from '../ExternalLinkIcon';
+import CrunchbaseLogo from '../CrunchbaseLogo';
 
 interface AccenturePillProps {
   className?: string
@@ -22,6 +23,9 @@ const AccenturePill = ({ className }: AccenturePillProps) => (
       <Link className="flex ml-2 mr-1 transition-transform duration-200 hover:-translate-y-0.5 ease" href="https://www.linkedin.com/company/accenture" target="_blank" rel="noreferrer">
         <LinkedInLogo />
       </Link>
+      <div className="relative flex w-5 h-5 ml-2">
+        <CrunchbaseLogo opacity={0.5} className='hover:cursor-not-allowed' />
+      </div>
     </div>
   </Pill>
 );

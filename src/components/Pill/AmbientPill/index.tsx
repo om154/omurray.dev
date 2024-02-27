@@ -28,6 +28,9 @@ const AmbientPill = ({ className }: TwinePillProps) => (
       <Link className="flex ml-2 mr-1 transition-transform duration-200 hover:-translate-y-0.5 ease" href="https://www.linkedin.com/company/we-are-ambient/" target="_blank" rel="noreferrer">
         <LinkedInLogo />
       </Link>
+      <Link className="relative flex w-5 h-5 ml-2 transition-transform duration-200 hover:-translate-y-0.5 ease" href="https://www.crunchbase.com/organization/ambient-6921" target="_blank" rel="noreferrer">
+        <CrunchbaseLogo />
+      </Link>
     </div>
   </Pill>
 );

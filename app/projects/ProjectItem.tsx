@@ -30,7 +30,7 @@ const ProjectItem = ({ item: { paragraphs, technologies, url, imagePath }, anima
             </AnimateFadeIn>
           </Link>
         </div>
-        <div className='mt-2'>
+        <div className='mt-4'>
           {paragraphs.map((paragraph: string, i: number) => (
             <P key={`hobbies-item-p-${i}`} className="mt-1">
               {paragraph}
@@ -41,7 +41,7 @@ const ProjectItem = ({ item: { paragraphs, technologies, url, imagePath }, anima
       <div>
         <div className='w-full my-3 border-[0.5px] border-black border-opacity-20 border-solid' />
         <div className="self-end">
-          <span className=" text-black/40">Built using: </span>{technologies.map((t, i) => <span className="text-black/40">{i === technologies.length - 1 ? ' and ' : ' '}{t}{i === technologies.length - 1 ? '' : ','}</span>)}
+          <span className=" text-black/40">Built with </span>{technologies.map((t, i) => <span className="text-black/40">{i === technologies.length - 1 ? ' and ' : ' '}{t}{i === technologies.length - 1 ? '' : ','}</span>)}
         </div>
       </div>
     </div>

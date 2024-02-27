@@ -23,7 +23,9 @@ const items: ProjectItemModel[] = [
       'Next.js',
       'React',
       'TypeScript',
-      'Tailwind'
+      'Tailwind',
+      'Mapbox',
+      'Vercel'
     ],
     url: 'https://comedy.fyi',
     imagePath: comedyFyiImg
@@ -33,13 +35,14 @@ const items: ProjectItemModel[] = [
       'Backyard is a platform that allows anyone to rent space, or make money renting out their space for storage. Launching soon!',
     ],
     technologies: [
-      'Remix',
       'React',
+      'Remix',
+      'Vite',
       'TypeScript',
       'Tailwind',
       'Supabase',
       'Postgres',
-      'Severless (sst)',
+      'Severless on AWS (sst)',
     ],
     url: 'https://usebackyard.com',
     imagePath: backyardImg
@@ -50,12 +53,12 @@ const items: ProjectItemModel[] = [
       'Launching soon!'
     ],
     technologies: [
-      'Neon',
-      'Remix',
       'React',
+      'Remix',
       'TypeScript',
       'Tailwind',
-      'Severless (sst)',
+      'Neon',
+      'Severless on AWS (sst)',
     ],
     url: 'https://recordfireside.com',
     imagePath: firesideImg

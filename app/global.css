@@ -27,7 +27,7 @@
     align-items: center;
     height: 100vh;
     width: 100vw;
-    @apply selection:bg-primary-700 selection:text-white;
+    @apply selection:bg-primary-600 selection:text-white;
   }
 
   a {

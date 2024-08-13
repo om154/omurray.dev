@@ -10,6 +10,79 @@ export interface TravelLocation {
 
 export const travelData: TravelLocation[] = [
   {
+    "city": "Custer",
+    "state": "South Dakota",
+    "stateAbbreviation": "SD",
+    "country": "United States",
+    "countryAbbreviation": "U.S.",
+    "countryFlagEmoji": "🇺🇸",
+    "arrivalDateTime": "2024-08-16T00:00:00.000Z"
+  },
+  {
+    "city": "Moab",
+    "state": "Utah",
+    "stateAbbreviation": "UT",
+    "country": "United States",
+    "countryAbbreviation": "U.S.",
+    "countryFlagEmoji": "🇺🇸",
+    "arrivalDateTime": "2024-03-23T00:00:00.000Z"
+  },
+  {
+    "city": "St George",
+    "state": "Utah",
+    "stateAbbreviation": "UT",
+    "country": "United States",
+    "countryAbbreviation": "U.S.",
+    "countryFlagEmoji": "🇺🇸",
+    "arrivalDateTime": "2024-03-15T00:00:00.000Z"
+  },
+  {
+    "city": "Death Valley",
+    "state": "California",
+    "stateAbbreviation": "CA",
+    "country": "United States",
+    "countryAbbreviation": "U.S.",
+    "countryFlagEmoji": "🇺🇸",
+    "arrivalDateTime": "2024-03-13T00:00:00.000Z"
+  },
+  //
+  {
+    "city": "Joshua Tree",
+    "state": "California",
+    "stateAbbreviation": "CA",
+    "country": "United States",
+    "countryAbbreviation": "U.S.",
+    "countryFlagEmoji": "🇺🇸",
+    "arrivalDateTime": "2024-03-09T00:00:00.000Z"
+  },
+  {
+    "city": "Costa Mesa",
+    "state": "California",
+    "stateAbbreviation": "CA",
+    "country": "United States",
+    "countryAbbreviation": "U.S.",
+    "countryFlagEmoji": "🇺🇸",
+    "arrivalDateTime": "2024-02-03T00:00:00.000Z"
+  },
+  {
+    "city": "San Diego",
+    "state": "California",
+    "stateAbbreviation": "CA",
+    "country": "United States",
+    "countryAbbreviation": "U.S.",
+    "countryFlagEmoji": "🇺🇸",
+    "arrivalDateTime": "2023-11-28T00:00:00.000Z"
+  },
+  {
+    "city": "Eugene",
+    "state": "Oregon",
+    "stateAbbreviation": "OR",
+    "country": "United States",
+    "countryAbbreviation": "U.S.",
+    "countryFlagEmoji": "🇺🇸",
+    "arrivalDateTime": "2023-11-26T00:00:00.000Z"
+  },
+  {
     "city": "Calgary",
     "countryFlagEmoji": "🇨🇦",
     "country": "Canada",

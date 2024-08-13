@@ -1,7 +1,7 @@
 import Navigation from 'src/components/Navigation'
 import PageContainer from 'src/components/shared/PageContainer'
 import { Fragment_Mono, Inter, Lora } from 'next/font/google'
-import { Metadata } from 'next'
+import { Metadata, Viewport } from 'next'
 import { Analytics } from '@vercel/analytics/react'
 
 import './global.css'
@@ -25,7 +25,16 @@ const fragmentMono = Fragment_Mono({
   variable: '--font-fragment-mono',
 })
 
+export const viewport: Viewport = {
+  colorScheme: 'light',
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: '#0074DC' },
+    { media: '(prefers-color-scheme: dark)', color: 'black' },
+  ],
+}
+
 export const metadata: Metadata = {
+  metadataBase: new URL(process.env.NODE_ENV === "production" ? 'https://omurray.dev' : 'http://localhost:3000'),
   title: {
     template: 'Oliver Murray | %s',
     default: 'Oliver Murray',
@@ -43,7 +52,7 @@ export const metadata: Metadata = {
   authors: [{ name: 'Oliver', url: 'https://omurray.dev' }],
   creator: 'Oliver Murray',
   publisher: 'Oliver Murray',
-  colorScheme: 'light',
+
   formatDetection: {
     email: false,
     address: false,
@@ -62,10 +71,7 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
-  themeColor: [
-    { media: '(prefers-color-scheme: light)', color: '#0074DC' },
-    { media: '(prefers-color-scheme: dark)', color: 'black' },
-  ],
+
   category: 'technology',
   openGraph: {
     title: 'Oliver Murray',

@@ -23,10 +23,10 @@ const ProjectItem = ({ item: { paragraphs, technologies, url, imagePath }, anima
   >
     <div className="flex flex-col justify-between flex-1 order-last mt-4 md:m-0">
       <div>
-        <div className="flex flex-row justify-center md:justify-start">
+        <div className="flex flex-row justify-start">
           <Link href={url} className="overflow-hidden text-center text-ellipsis text-primary-700 md:text-left hover:text-primary-800" target="_blank" rel="noreferrer" style={{ fontWeight:700}}>
             <AnimateFadeIn duration={0.35}>
-              <h3 className='overflow-hidden text-ellipsis box-border font-mono text-xl leading-tight lg:text-2xl underline decoration-[transparent] hover:decoration-primary-800 transition-[color,text-decoration] duration-300 ease'>{url}</h3>
+              <h3 className='overflow-hidden text-ellipsis box-border font-mono text-xl leading-tight lg:text-2xl underline decoration-primary-700 decoration-1 hover:decoration-primary-800 transition-[color,text-decoration] duration-300 ease'>{url}</h3>
             </AnimateFadeIn>
           </Link>
         </div>

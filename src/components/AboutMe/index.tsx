@@ -1,17 +1,18 @@
-import Section from "../Section";
 import { H2, H3, P } from "../shared/Text";
-import ShippitPill from "../Pill/ShippitPill";
-import AccenturePill from "../Pill/AccenturePill";
+
 import AboutMeHero from "../Hero/AboutMe";
-import GlimpsePill from "../Pill/GlimpsePill";
-import TwinePill from "../Pill/TwinePill";
-import ContactLinks from "../Navigation/ContactLinks";
-import aboutMeImg from "public/static/img/oliver.jpeg";
-import AnimateDown from "../animations/AnimateDown";
-import { ReactNode } from "react";
+import AccenturePill from "../Pill/AccenturePill";
 import AmbientPill from "../Pill/AmbientPill";
-import PunchupPill from "../Pill/PunchupPill";
+import AnimateDown from "../animations/AnimateDown";
+import ContactLinks from "../Navigation/ContactLinks";
 import ExternalLink from "../shared/ExternalLink";
+import GlimpsePill from "../Pill/GlimpsePill";
+import PunchupPill from "../Pill/PunchupPill";
+import { ReactNode } from "react";
+import Section from "../Section";
+import ShippitPill from "../Pill/ShippitPill";
+import TwinePill from "../Pill/TwinePill";
+import aboutMeImg from "public/static/img/oliver.jpeg";
 
 export function calculateAge(birthday: string) {
   const splitDate = birthday.split("-");
@@ -41,7 +42,7 @@ const AboutMeCard = ({
 }: AboutMeCardProps) => (
   <AnimateDown
     delay={0.1 + index * 0.1}
-    className="flex flex-col justify-between px-5 pt-3 pb-5 font-sans transition-colors duration-200 ease-in-out rounded-lg aspect-square bg-neutral-100 hover:bg-neutral-200"
+    className="flex flex-col justify-between px-5 pt-3 pb-5 font-sans transition-colors duration-200 ease-in-out rounded-lg bg-neutral-100 hover:bg-neutral-200"
   >
     <div>
       <div className="mb-2 text-sm text-left font-regular text-neutral-600">
@@ -74,10 +75,12 @@ const cards: AboutMeCard[] = [
   {
     content: (
       <>
-        <ExternalLink href="https://punchup.live/">Punchup</ExternalLink>{" "}
-        is the digital growth engine for live entertainment.
+        <ExternalLink href="https://punchup.live/">Punchup</ExternalLink> is the
+        digital growth engine for live entertainment.
         <div className="mt-1" />
-        We empower comedians with the data they need to sell out shows and our product connects comedians with their biggest fans for exclusive content.
+        We empower comedians with the data they need to sell out shows and our
+        product connects comedians with their biggest fans for exclusive
+        content.
         <div className="mt-1" />
       </>
     ),
@@ -89,11 +92,14 @@ const cards: AboutMeCard[] = [
   {
     content: (
       <>
-        <ExternalLink href="https://www.twine.us/">twine</ExternalLink>{" "}
-        is building products to connect remote teams - think Donut.com, but synchronous.{" "}
-        Our real-time matchmaking platform has powered thousands of conversations!
+        <ExternalLink href="https://www.twine.us/">twine</ExternalLink> is
+        building products to connect remote teams - think Donut.com, but
+        synchronous. Our real-time matchmaking platform has powered thousands of
+        conversations!
         <div className="mt-1" />
-        <ExternalLink href="https://www.twine.us/ambient">twine Ambient</ExternalLink>{" "}
+        <ExternalLink href="https://www.twine.us/ambient">
+          twine Ambient
+        </ExternalLink>{" "}
         is our AI Chief of Staff that summarizes, threads, and shares important
         context from all across your business.
       </>
@@ -112,11 +118,17 @@ const cards: AboutMeCard[] = [
     content: (
       <>
         At{" "}
-        <ExternalLink href="https://www.joinglimpse.com/" className="inline whitespace-break-spaces">Glimpse</ExternalLink>{" "}
-        I joined 4 ex-Duke students as the company's first external hire. I defined our platform's architecture
-        and shipped new features to scale and refine our video chat platform.{" "}
-        <div className="mt-1 " />I also lead the development of our Zoom app,
-        which ultimately made us a prime target for acquisition.
+        <ExternalLink
+          href="https://web.archive.org/web/20231201103631/https://www.joinglimpse.com/"
+          className="inline whitespace-break-spaces"
+        >
+          Glimpse
+        </ExternalLink>{" "}
+        I joined 4 ex-Duke students as the company's first external hire. I
+        defined our platform's architecture and shipped new features to scale
+        and refine our video chat platform. <div className="mt-1 " />I also lead
+        the development of our Zoom app, which ultimately made us a prime target
+        for acquisition.
       </>
     ),
     year: "2021 – 2022",
@@ -129,8 +141,9 @@ const cards: AboutMeCard[] = [
       <>
         I previously worked in Engineering at a Sydney-based start-up named{" "}
         <ExternalLink href="https://www.shippit.com/">Shippit</ExternalLink>.{" "}
-        Their multi-carrier shipping software for ecommerce companies streamlines{" "}
-        shipping & fulfilment for some of Australia's biggest retailers.
+        Their multi-carrier shipping software for ecommerce companies
+        streamlines shipping & fulfilment for some of Australia's biggest
+        retailers.
       </>
     ),
     year: "2020 – 2021",
@@ -170,9 +183,9 @@ const AboutMe = () => (
         <div className="flex flex-row justify-end w-full mt-2 md:hidden">
           <ContactLinks />
         </div>
-        <div className="w-full mt-2 mb-4 border-[0.5px] border-black border-opacity-20 border-solid" />
+        <div className="w-full mt-2 mb-4 border-t border-neutral-300" />
         <div className="w-full text-left md:mt-2">
-          <H3>Things I've worked on</H3>
+          <H3>Companies I've worked for</H3>
         </div>
         <div className="grid grid-cols-1 gap-4 mt-4 sm:grid-flow-row-dense lg:grid-cols-2">
           {cards.map((c, i) => (

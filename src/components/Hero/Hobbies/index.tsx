@@ -3,7 +3,11 @@ import { ChildrenProp } from '../../../utils/props';
 import { HeroProps } from '../props';
 import AnimateDown from 'src/components/animations/AnimateDown';
 
-const InterestsHero = ({ imgSrc, children, animationDelay, animationDuration }: HeroProps & ChildrenProp) => (
+interface InterestsHeroProps extends HeroProps {
+  alt: string
+}
+
+const InterestsHero = ({ imgSrc, alt, children, animationDelay, animationDuration }: InterestsHeroProps & ChildrenProp) => (
   <AnimateDown
     delay={animationDelay}
     duration={animationDuration}
@@ -14,7 +18,7 @@ const InterestsHero = ({ imgSrc, children, animationDelay, animationDuration }: 
     </div>
     {imgSrc &&
       <div className="relative flex justify-center order-first h-60 md:h-full md:w-[20%] xl:w-[40%]">
-        <Image src={imgSrc} fill placeholder='blur' alt='interest' className="object-cover object-center max-w-full rounded-md select-none md:object-top" />
+        <Image src={imgSrc} fill placeholder='blur' alt={alt} className="object-cover object-center max-w-full rounded-md select-none md:object-top" />
       </div>
     }
   </AnimateDown>

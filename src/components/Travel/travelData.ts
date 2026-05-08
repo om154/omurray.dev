@@ -10,6 +10,65 @@ export interface TravelLocation {
 
 export const travelData: TravelLocation[] = [
   {
+    "city": "Houston",
+    "state": "Texas",
+    "stateAbbreviation": "TX",
+    "country": "United States",
+    "countryAbbreviation": "U.S.",
+    "countryFlagEmoji": "🇺🇸",
+    "arrivalDateTime": "2026-03-12T00:00:00.000Z"
+  },
+  {
+    "city": "Launceston",
+    "state": "Tasmania",
+    "country": "Australia",
+    "countryAbbreviation": "AU",
+    "countryFlagEmoji": "🇦🇺",
+    "arrivalDateTime": "2025-12-31T00:00:00.000Z"
+  },
+  {
+    "city": "Hobart",
+    "state": "Tasmania",
+    "country": "Australia",
+    "countryAbbreviation": "AU",
+    "countryFlagEmoji": "🇦🇺",
+    "arrivalDateTime": "2025-12-28T00:00:00.000Z"
+  },
+  {
+    "city": "Nadi",
+    "country": "Fiji",
+    "countryAbbreviation": "FJ",
+    "countryFlagEmoji": "🇫🇯",
+    "arrivalDateTime": "2025-02-09T00:00:00.000Z"
+  },
+  {
+    "city": "Sacramento",
+    "state": "California",
+    "stateAbbreviation": "CA",
+    "country": "United States",
+    "countryAbbreviation": "U.S.",
+    "countryFlagEmoji": "🇺🇸",
+    "arrivalDateTime": "2024-11-27T00:00:00.000Z"
+  },
+  {
+    "city": "Boston",
+    "state": "Massachusetts",
+    "stateAbbreviation": "MA",
+    "country": "United States",
+    "countryAbbreviation": "U.S.",
+    "countryFlagEmoji": "🇺🇸",
+    "arrivalDateTime": "2024-10-12T00:00:00.000Z"
+  },
+  {
+    "city": "Portland",
+    "state": "Maine",
+    "stateAbbreviation": "ME",
+    "country": "United States",
+    "countryAbbreviation": "U.S.",
+    "countryFlagEmoji": "🇺🇸",
+    "arrivalDateTime": "2024-09-30T00:00:00.000Z"
+  },
+  {
     "city": "Custer",
     "state": "South Dakota",
     "stateAbbreviation": "SD",

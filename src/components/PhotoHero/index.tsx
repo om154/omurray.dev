@@ -35,13 +35,13 @@ const PhotoHero = ({ data, animationDelay }: Props) => {
       </div>
       <div className='flex flex-col w-full gap-2 my-4 transition-transform duration-300 ease-out md:hover:scale-[1.02] select-none'>
         <div className="relative flex flex-row justify-center w-full gap-2">
-          <Image src={imgSrc[0]} placeholder='blur' alt='japan' height={64} width={208} className='hidden md:block object-cover object-center rounded-xl h-[104px]'/>
-          <Image src={imgSrc[1]} placeholder='blur' alt='japan' height={128} width={208} className='object-cover object-center rounded-xl h-[158px] md:h-[208px]'/>
-          <Image src={imgSrc[2]} placeholder='blur' alt='japan' height={85} width={85} className='hidden md:block object-cover object-center rounded-[100px] h-[160px] self-end'/>
+          <Image src={imgSrc[0]} placeholder='blur' alt={`${title} photo 1`} height={64} width={208} className='hidden md:block object-cover object-center rounded-xl h-[104px]'/>
+          <Image src={imgSrc[1]} placeholder='blur' alt={`${title} photo 2`} height={128} width={208} className='object-cover object-center rounded-xl h-[158px] md:h-[208px]'/>
+          <Image src={imgSrc[2]} placeholder='blur' alt={`${title} photo 3`} height={85} width={85} className='hidden md:block object-cover object-center rounded-[100px] h-[160px] self-end'/>
         </div>
         <div className="relative flex flex-row justify-center w-full gap-x-0 gap-y-2 md:gap-2">
-          <Image src={imgSrc[3]} placeholder='blur' alt='japan' height={128} width={208} className='object-cover object-center border-8 border-solid border-neutral-100 rounded-xl mt-[-30px] ml-[-8px] md:mt-[-112px] md:mb-[-8px] md:mr-[-8px] md:ml-[-80px]' />
-          <Image src={imgSrc[4]} placeholder='blur' alt='japan' height={150} width={95} className='object-cover object-center rounded-xl h-[150px] w-[95px] rounded-tl-sm' />
+          <Image src={imgSrc[3]} placeholder='blur' alt={`${title} photo 4`} height={128} width={208} className='object-cover object-center border-8 border-solid border-neutral-100 rounded-xl mt-[-30px] ml-[-8px] md:mt-[-112px] md:mb-[-8px] md:mr-[-8px] md:ml-[-80px]' />
+          <Image src={imgSrc[4]} placeholder='blur' alt={`${title} photo 5`} height={150} width={95} className='object-cover object-center rounded-xl h-[150px] w-[95px] rounded-tl-sm' />
         </div>
       </div>
     </AnimateDown>

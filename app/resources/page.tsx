@@ -27,11 +27,11 @@ export default function Page() {
         </div>
         <div>
           {data.map(d => (
-            <div className='mt-4'>
+            <div key={d.date} className='mt-4'>
               <h4>{new Date(d.date).toLocaleDateString('default', { day: 'numeric', month: 'long', year: 'numeric' })}</h4>
               <ul className='flex flex-col gap-2 py-3'>
                 {d.items.map(({ title, url, label, authors, themes }) => (
-                  <li className='flex flex-row justify-between'>
+                  <li key={url} className='flex flex-row justify-between'>
                     <div className='flex flex-col'>
                       <Link
                         href={url}
@@ -39,7 +39,7 @@ export default function Page() {
                       >
                         {label}
                       </Link>
-                      <p className='flex flex-row gap-2 mt-0.5 font-light items-centertext-sm text-neutral-700'>
+                      <p className='flex flex-row gap-2 mt-0.5 font-light items-center text-sm text-neutral-700'>
                         <span>{handleAuthors(authors)}</span>
                       </p>
                     </div>
@@ -48,7 +48,7 @@ export default function Page() {
                         (
                           <div className='flex flex-row gap-2 mt-1'>
                             {themes.map(t => (
-                              <span className="inline-flex items-center px-2 py-1 text-xs font-medium rounded-lg select-none bg-primary-200/50 text-primary-700 ring-1 ring-inset ring-primary-700/10">{t}</span>
+                              <span key={t} className="inline-flex items-center px-2 py-1 text-xs font-medium rounded-lg select-none bg-primary-200/50 text-primary-700 ring-1 ring-inset ring-primary-700/10">{t}</span>
                             ))}
                           </div>
                         )

@@ -2,18 +2,16 @@
 
 import { useState } from "react";
 
-export const usePreviousPersistent = (value: any) => {
-  const [state, setState] = useState<any>({
-    value: value,
+export const usePreviousPersistent = <T,>(value: T): T | null => {
+  const [state, setState] = useState<{ value: T; prev: T | null }>({
+    value,
     prev: null,
   });
 
-  const current = state.value;
-
-  if (value !== current) {
+  if (value !== state.value) {
     setState({
-      value: value,
-      prev: current,
+      value,
+      prev: state.value,
     });
   }
 

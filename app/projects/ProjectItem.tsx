@@ -49,7 +49,7 @@ const ProjectItem = ({
         </div>
       </div>
       <div>
-        <div className="w-full my-3 border-[0.5px] border-black border-opacity-20 border-solid" />
+        <div className="w-full my-3 border-t border-neutral-300" />
         <div className="self-end text-black/40">
           {technologies.map((t, i) => (
             <span key={`tech-${i}`}>
@@ -65,7 +65,7 @@ const ProjectItem = ({
         src={imagePath}
         fill
         placeholder="blur"
-        alt="interest"
+        alt={`Screenshot of ${url}`}
         className="object-cover object-top max-w-full rounded-md select-none"
       />
     </div>

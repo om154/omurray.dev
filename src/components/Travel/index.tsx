@@ -43,7 +43,7 @@ const Travel = () => (
         <P className='text-neutral-900/90'>
           Over the last couple of years I've been fortunate enough to visit a lots of different countries and cities. Here's a list of some of the places I've been to.
         </P>
-        <div className='grid grid-cols-1 gap-4 mt-4 sm:grid-cols-2 sm:grid-flow-row-dense md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-8'>
+        <div className='grid grid-cols-1 gap-4 mt-4 isolate sm:grid-cols-2 sm:grid-flow-row-dense md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-8'>
           {travelData.map((l, i) => <TravelCard key={`${l.city}-${l.country}`} location={l} index={i} />)}
           <AnimateDown delay={(travelData.length + 1) * .02} >
             <div className='relative overflow-hidden rounded-lg group'>

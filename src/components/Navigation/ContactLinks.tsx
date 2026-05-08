@@ -1,5 +1,4 @@
 import Link from "next/link"
-import TwitterLogo from "./TwitterLogo"
 import GitHubLogo from "./GitHubLogo"
 import LinkedInLogo from "../shared/LinkedInLogo"
 import EmailIcon from "./EmailIcon"
@@ -24,12 +23,6 @@ const ContactLinks = () => {
         <span className="sr-only">URL for Oliver's GitHub profile</span>
       </Link>
     )}
-    {/* {process.env.NEXT_PUBLIC_TWITTER_URL && (
-      <Link className="flex p-1 m-1 fill-neutral-600 hover:fill-primary-900" href={process.env.NEXT_PUBLIC_TWITTER_URL as string} target="_blank" rel="noreferrer">
-        <TwitterLogo className="transition-colors duration-200 ease-linear fill-[inherit]" />
-        <span className="sr-only">URL for Oliver's X/Twitter profile</span>
-      </Link>
-    )} */}
   </>
 }
 

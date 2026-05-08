@@ -25,7 +25,7 @@ const LinkListItem = ({ title, path, active, onMouseEnter, onMouseLeave }: ListI
     onMouseLeave={onMouseLeave}
   >
     <Link href={path} className={classNames(
-      'px-2 py-1 font-sans transition-colors duration-200 ease-linear no-underline text-[15px] md:text-md font-regular outline-none select-nonerounded-lg hover:text-primary-900 leading-5',
+      'px-2 py-1 font-sans transition-colors duration-200 ease-linear no-underline text-[15px] md:text-md font-regular outline-none select-none rounded-lg hover:text-primary-900 leading-5',
       {
         'text-primary-900': active,
         'text-neutral-600': !active
@@ -95,7 +95,6 @@ const Navigation = () => {
             } />
             <LinkListItem onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} title="Home" path="/" active={pathName === '/'} />
             <LinkListItem onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} title="About" path="/about" active={pathName === '/about'} />
-            {/* <LinkListItem onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} title="Resources" path="/resources" active={pathName === '/resources'} /> */}
             <LinkListItem onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} title="Projects" path="/projects" active={pathName === '/projects'} />
             <LinkListItem onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} title="Travel" path="/travel" active={pathName === '/travel'} />
             <LinkListItem onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} title="Hobbies" path="/hobbies" active={pathName === '/hobbies'} />

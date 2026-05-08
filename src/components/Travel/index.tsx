@@ -16,7 +16,7 @@ const TravelCard = ({ location, index }: TravelCardProps) => {
   const formattedDateTime = dateTime.toLocaleDateString('default', { month: 'long', year: 'numeric' })
 
   return (
-    <AnimateDown key={`travel-grid-item-left-${city}`} delay={(index + 1) * .02} >
+    <AnimateDown delay={(index + 1) * .02} >
       <div className='relative overflow-hidden rounded-lg group'>
         <div className='text-[15px] text-left md:text-md absolute z-10 w-full px-3 md:px-4 pt-[6px] pb-4 font-bold text-[transparent] rounded-tl-lg rounded-tr-lg border group-hover:border group-hover:border-primary-400/20 border-solid group-hover:bg-primary-300 group-hover:text-white bg-[transparent] transition-colors duration-200 select-none'>
           <time className='leading-none' dateTime={arrivalDateTime}>{formattedDateTime}</time>
@@ -44,7 +44,7 @@ const Travel = () => (
           Over the last couple of years I've been fortunate enough to visit a lots of different countries and cities. Here's a list of some of the places I've been to.
           <div className='grid grid-cols-1 gap-4 mt-4 sm:grid-cols-2 sm:grid-flow-row-dense md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-8'>
             {/* render travel data as cards */}
-            {travelData.map((l, i) => <TravelCard location={l} index={i} />)}
+            {travelData.map((l, i) => <TravelCard key={`${l.city}-${l.country}`} location={l} index={i} />)}
             {/*  a separate card for "Left Melbourne" */}
             <AnimateDown key='travel-grid-item-left-aus' delay={(travelData.length + 1) * .02} >
               <div className='relative overflow-hidden rounded-lg group'>

@@ -119,7 +119,7 @@ export default function Page() {
       <div className="box-border grid grid-cols-1 gap-4 mt-4 md:grid-flow-row-dense md:auto-rows-fr md:grid-cols-1 xl:grid-cols-4">
         {items.map((item: ProjectItemModel, index: number) => (
           <ProjectItem
-            key={`hobbies-grid-item-${index}`}
+            key={item.url}
             item={item}
             animationDelay={(index + 1) * 0.15}
           />

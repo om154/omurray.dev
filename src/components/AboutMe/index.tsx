@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Section from "../Section";
 import { H2, H3, P } from "../shared/Text";
 import ShippitPill from "../Pill/ShippitPill";
@@ -12,6 +11,7 @@ import AnimateDown from "../animations/AnimateDown";
 import { ReactNode } from "react";
 import AmbientPill from "../Pill/AmbientPill";
 import PunchupPill from "../Pill/PunchupPill";
+import ExternalLink from "../shared/ExternalLink";
 
 export function calculateAge(birthday: string) {
   const splitDate = birthday.split("-");
@@ -19,7 +19,7 @@ export function calculateAge(birthday: string) {
   const birthMonth = Number(splitDate[1]);
   const birthDay = Number(splitDate[0]);
 
-  const dateOfBirth = new Date(birthYear, birthMonth, birthDay);
+  const dateOfBirth = new Date(birthYear, birthMonth - 1, birthDay);
   const monthDiff = Date.now() - dateOfBirth.getTime();
   const ageDate = new Date(monthDiff);
 
@@ -41,7 +41,7 @@ const AboutMeCard = ({
 }: AboutMeCardProps) => (
   <AnimateDown
     delay={0.1 + index * 0.1}
-    className="flex flex-col justify-between px-5 pt-3 pb-5 font-sans transition-colors duration-200 ease-in-out rounded-lg aspect-squar bg-neutral-100 hover:bg-neutral-200"
+    className="flex flex-col justify-between px-5 pt-3 pb-5 font-sans transition-colors duration-200 ease-in-out rounded-lg aspect-square bg-neutral-100 hover:bg-neutral-200"
   >
     <div>
       <div className="mb-2 text-sm text-left font-regular text-neutral-600">
@@ -50,14 +50,11 @@ const AboutMeCard = ({
       <P>{content}</P>
     </div>
     <div>
-      {/* <div className='flex flex-row justify-between'> */}
-
       {stage ? (
         <div className="mt-2 text-sm text-right text-neutral-600">{stage}</div>
       ) : (
         <div />
       )}
-      {/* </div> */}
       <div className="flex flex-col items-center mt-3 space-x-2 lg:space-x-0 lg:flex-row lg:justify-around">
         {Pill}
       </div>
@@ -77,14 +74,7 @@ const cards: AboutMeCard[] = [
   {
     content: (
       <>
-        <Link
-          className="decoration-primary-800 decoration-1 underline-offset-2 hover:decoration-primary-900 hover:text-primary-900"
-          href="https://punchup.live/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Punchup
-        </Link>{" "}
+        <ExternalLink href="https://punchup.live/">Punchup</ExternalLink>{" "}
         is the digital growth engine for live entertainment.
         <div className="mt-1" />
         We empower comedians with the data they need to sell out shows and our product connects comedians with their biggest fans for exclusive content.
@@ -99,25 +89,11 @@ const cards: AboutMeCard[] = [
   {
     content: (
       <>
-        <Link
-          className="decoration-primary-800 decoration-1 underline-offset-2 hover:decoration-primary-900 hover:text-primary-900"
-          href="https://www.twine.us/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          twine
-        </Link>{" "}
+        <ExternalLink href="https://www.twine.us/">twine</ExternalLink>{" "}
         is building products to connect remote teams - think Donut.com, but synchronous.{" "}
         Our real-time matchmaking platform has powered thousands of conversations!
         <div className="mt-1" />
-        <Link
-          className="decoration-primary-800 decoration-1 underline-offset-2 hover:decoration-primary-900 hover:text-primary-900"
-          href="https://www.twine.us/ambient"
-          target="_blank"
-          rel="noreferrer"
-        >
-          twine Ambient
-        </Link>{" "}
+        <ExternalLink href="https://www.twine.us/ambient">twine Ambient</ExternalLink>{" "}
         is our AI Chief of Staff that summarizes, threads, and shares important
         context from all across your business.
       </>
@@ -136,14 +112,7 @@ const cards: AboutMeCard[] = [
     content: (
       <>
         At{" "}
-        <Link
-          className="inline whitespace-break-spaces decoration-primary-800 decoration-1 underline-offset-2 hover:decoration-primary-900 hover:text-primary-900"
-          href="https://www.joinglimpse.com/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Glimpse
-        </Link>{" "}
+        <ExternalLink href="https://www.joinglimpse.com/" className="inline whitespace-break-spaces">Glimpse</ExternalLink>{" "}
         I joined 4 ex-Duke students as the company's first external hire. I defined our platform's architecture
         and shipped new features to scale and refine our video chat platform.{" "}
         <div className="mt-1 " />I also lead the development of our Zoom app,
@@ -159,14 +128,7 @@ const cards: AboutMeCard[] = [
     content: (
       <>
         I previously worked in Engineering at a Sydney-based start-up named{" "}
-        <Link
-          className="decoration-primary-800 decoration-1 underline-offset-2 hover:decoration-primary-900 hover:text-primary-900"
-          href="https://www.shippit.com/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Shippit
-        </Link>.{" "}
+        <ExternalLink href="https://www.shippit.com/">Shippit</ExternalLink>.{" "}
         Their multi-carrier shipping software for ecommerce companies streamlines{" "}
         shipping & fulfilment for some of Australia's biggest retailers.
       </>
@@ -180,14 +142,7 @@ const cards: AboutMeCard[] = [
     content: (
       <>
         At{" "}
-        <Link
-          className="decoration-primary-800 decoration-1 underline-offset-2 hover:decoration-primary-900 hover:text-primary-900"
-          href="https://www.accenture.com/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Accenture
-        </Link>{" "}
+        <ExternalLink href="https://www.accenture.com/">Accenture</ExternalLink>{" "}
         I worked on multiple projects developing large-scale enterprise
         applications to help clients effectively capture, manage and analyze
         their data from dozens of sources.
@@ -222,6 +177,7 @@ const AboutMe = () => (
         <div className="grid grid-cols-1 gap-4 mt-4 sm:grid-flow-row-dense lg:grid-cols-2">
           {cards.map((c, i) => (
             <AboutMeCard
+              key={c.year}
               index={i}
               content={c.content}
               Pill={c.Pill}

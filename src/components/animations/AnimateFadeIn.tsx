@@ -1,7 +1,4 @@
-'use client'
-
-import { ReactNode } from 'react'
-import { motion } from '../../lib/motion'
+import { CSSProperties, ReactNode } from 'react'
 
 interface Props {
   children: ReactNode
@@ -11,26 +8,14 @@ interface Props {
 }
 
 const AnimateFadeIn = ({ children, className, delay, duration }: Props) => {
+  const style: CSSProperties = {}
+  if (delay)    (style as Record<string, string>)['--anim-delay']    = `${delay * 1000}ms`
+  if (duration) (style as Record<string, string>)['--anim-duration'] = `${duration}s`
+
   return (
-    <motion.div
-      initial="hidden"
-      animate="visible"
-      variants={{
-        hidden: {
-          opacity: 0
-        },
-        visible: {
-          opacity: 1,
-          transition: {
-            delay,
-            duration
-          }
-        }
-      }}
-      className={className}
-    >
+    <div style={style} className={`animate-fade-in ${className ?? ''}`}>
       {children}
-    </motion.div>
+    </div>
   )
 }
 

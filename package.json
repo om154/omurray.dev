@@ -10,7 +10,6 @@
     "@vercel/analytics": "^1.1.1",
     "@vercel/speed-insights": "^2.0.0",
     "classnames": "^2.3.1",
-    "framer-motion": "^10.12.21",
     "lucide-react": "^0.341.0",
     "next": "^14.2.35",
     "postcss": "^8.4.25",
@@ -33,9 +32,10 @@
   },
   "browserslist": {
     "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
+      "chrome >= 87",
+      "edge >= 88",
+      "firefox >= 78",
+      "safari >= 15.4"
     ],
     "development": [
       "last 1 chrome version",

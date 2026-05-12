@@ -9,19 +9,19 @@ import './global.css'
 
 const inter = Inter({
   subsets: ['latin'],
-  display: 'block',
+  display: 'swap',
   variable: '--font-inter',
 })
 
 const lora = Lora({
   subsets: ['latin'],
-  display: 'block',
+  display: 'swap',
   variable: '--font-lora',
 })
 
 const fragmentMono = Fragment_Mono({
   subsets: ['latin'],
-  display: 'block',
+  display: 'swap',
   weight: "400",
   variable: '--font-fragment-mono',
 })

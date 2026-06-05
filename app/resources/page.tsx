@@ -1,10 +1,15 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
 import Section from "src/components/Section"
-import { H2, H3, P } from "src/components/shared/Text"
+import { H2, P } from "src/components/shared/Text"
 
 export const metadata: Metadata = {
-  title: 'Resources'
+  title: 'Resources',
+  description:
+    "Articles, podcasts, and videos Oliver has read, listened to, or watched lately that are worth sharing.",
+  alternates: {
+    canonical: '/resources',
+  },
 }
 
 export default function Page() {
@@ -22,13 +27,13 @@ export default function Page() {
     <Section alignTop>
       <div className="box-border w-full">
         <div className="mb-2 text-left">
-          <H2>Resources</H2>
+          <H2 as="h1">Resources</H2>
           <P className='mt-2'>Things I've read, listened to or watched lately that I think are worth sharing —</P>
         </div>
         <div>
           {data.map(d => (
             <div key={d.date} className='mt-4'>
-              <h4>{new Date(d.date).toLocaleDateString('default', { day: 'numeric', month: 'long', year: 'numeric' })}</h4>
+              <h2>{new Date(d.date).toLocaleDateString('default', { day: 'numeric', month: 'long', year: 'numeric' })}</h2>
               <ul className='flex flex-col gap-2 py-3'>
                 {d.items.map(({ title, url, label, authors, themes }) => (
                   <li key={url} className='flex flex-row justify-between'>

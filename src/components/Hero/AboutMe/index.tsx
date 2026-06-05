@@ -11,7 +11,7 @@ const AboutMeHero = ({ imgSrc, children, animationDelay, animationDuration }: He
   >
     {imgSrc &&
       <div className="lg:relative hidden mb-4 lg:w-[25em] lg:justify-start lg:mb-0 lg:flex">
-        <Image fill placeholder='blur' className="object-cover object-center rounded-md select-none" src={imgSrc} alt="Oliver" />
+        <Image fill placeholder='blur' className="object-cover object-center rounded-md select-none" src={imgSrc} alt="Oliver Murray" />
       </div>
     }
     <div className="flex flex-col items-center justify-center">

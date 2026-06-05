@@ -3,7 +3,9 @@ import Item, { InterestItem } from "src/components/Hobbies/Item";
 import ProjectItem, { ProjectItemModel } from "./ProjectItem";
 
 import { Metadata } from "next";
+import JsonLd from "src/components/seo/JsonLd";
 import Section from "src/components/Section";
+import { projectsItemListSchema } from "src/lib/structuredData";
 import backyardImg from "public/static/img/backyard.png";
 import comedyFyiImg from "public/static/img/comedyFyi.png";
 import firesideImg from "public/static/img/fireside.png";
@@ -13,6 +15,11 @@ import trailchallengeImg from "public/static/img/trailchallenge.png";
 
 export const metadata: Metadata = {
   title: "Projects",
+  description:
+    "A selection of products and side projects Oliver has built - Trail Challenge, comedy.fyi, Backyard, Fireside, and more.",
+  alternates: {
+    canonical: "/projects",
+  },
 };
 
 const items: ProjectItemModel[] = [
@@ -30,7 +37,7 @@ const items: ProjectItemModel[] = [
       "React Native",
       "Tamagui",
     ],
-    url: "https://trailchallenge.co",
+    url: "https://trailchallenge.com",
     imagePath: trailchallengeImg,
   },
   {
@@ -110,8 +117,9 @@ const items: ProjectItemModel[] = [
 export default function Page() {
   return (
     <Section alignTop>
+      <JsonLd data={projectsItemListSchema(items)} />
       <div className="w-full text-left">
-        <H2>Projects</H2>
+        <H2 as="h1">Projects</H2>
         <P className="mt-2 text-neutral-900/90">
           A few things I've been working on lately
         </P>

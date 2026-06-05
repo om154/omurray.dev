@@ -48,7 +48,7 @@ const items: InterestItem[] = [
 const Hobbies = () => (
   <Section alignTop>
     <div className="w-full mb-2 text-left">
-      <H2>Hobbies</H2>
+      <H2 as="h1">Hobbies</H2>
       <P className='mt-2 text-neutral-900/90'>Most days you can find me...</P>
     </div>
     <div className='box-border grid grid-cols-1 gap-4 md:grid-flow-row-dense md:auto-rows-fr md:grid-cols-1 xl:grid-cols-4'>

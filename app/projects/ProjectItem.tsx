@@ -65,7 +65,7 @@ const ProjectItem = ({
         src={imagePath}
         fill
         placeholder="blur"
-        alt={`Screenshot of ${url}`}
+        alt={`Screenshot of the ${new URL(url).hostname.replace(/^www\./, "")} website`}
         className="object-cover object-top max-w-full rounded-md select-none"
       />
     </div>

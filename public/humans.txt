@@ -1,0 +1,10 @@
+/* TEAM */
+Developer: Oliver Murray
+Contact: oliver@omurray.dev
+From: Australia
+Location: United States
+
+/* SITE */
+Site: https://omurray.dev
+Language: English
+Stack: Next.js, React, TypeScript, Tailwind, Vercel

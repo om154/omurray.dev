@@ -1,5 +1,7 @@
 import Navigation from 'src/components/Navigation'
 import PageContainer from 'src/components/shared/PageContainer'
+import JsonLd from 'src/components/seo/JsonLd'
+import { personSchema, websiteSchema } from 'src/lib/structuredData'
 import { Fragment_Mono, Inter, Lora } from 'next/font/google'
 import { Metadata, Viewport } from 'next'
 import { Analytics } from '@vercel/analytics/react'
@@ -34,13 +36,19 @@ export const viewport: Viewport = {
   ],
 }
 
+const description =
+  'Oliver Murray is a software engineer from Australia, building products at early-stage startups in the US. Explore his projects, travels, and hobbies.'
+
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NODE_ENV === "production" ? 'https://omurray.dev' : 'http://localhost:3000'),
   title: {
     template: 'Oliver Murray | %s',
     default: 'Oliver Murray',
   },
-  description: 'Meet Oliver!',
+  description,
+  alternates: {
+    canonical: '/',
+  },
   generator: 'Next.js',
   applicationName: 'Oliver Murray',
   appleWebApp: {
@@ -62,11 +70,9 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
-    nocache: true,
     googleBot: {
       index: true,
-      follow: false,
-      noimageindex: true,
+      follow: true,
       'max-video-preview': -1,
       'max-image-preview': 'large',
       'max-snippet': -1,
@@ -77,10 +83,19 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Oliver Murray',
     siteName: 'Oliver Murray',
-    description: 'Meet Oliver!',
+    description,
     url: 'https://omurray.dev',
     locale: 'en_US',
     type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Oliver Murray',
+    description,
+    creator: '@OliMurray7',
+  },
+  verification: {
+    google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION,
   },
 }
 
@@ -95,9 +110,17 @@ export default function RootLayout({
         <meta charSet="utf-8" />
       </head>
       <body>
+        <JsonLd data={personSchema()} />
+        <JsonLd data={websiteSchema()} />
+        <a
+          href="#main-content"
+          className="absolute left-2 top-2 z-50 -translate-y-20 rounded bg-white px-4 py-2 text-primary-900 shadow transition-transform focus:translate-y-0"
+        >
+          Skip to Content
+        </a>
         <PageContainer>
           <Navigation />
-          {children}
+          <main id="main-content">{children}</main>
         </PageContainer>
         <Analytics />
         <SpeedInsights />

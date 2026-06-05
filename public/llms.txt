@@ -1,0 +1,18 @@
+# Oliver Murray
+
+> Personal website of Oliver Murray, a software engineer from Australia building products at early-stage startups in the US.
+
+## Pages
+
+- [Home](https://omurray.dev): Introduction to Oliver Murray
+- [About](https://omurray.dev/about): Oliver's background - moved from Australia to the US in 2021 to work at early-stage startups
+- [Projects](https://omurray.dev/projects): Products and side projects, including Trail Challenge (https://trailchallenge.com), comedy.fyi, Backyard, Fireside, and thinvalue.poker
+- [Resources](https://omurray.dev/resources): Articles, podcasts, and videos worth sharing
+- [Travel](https://omurray.dev/travel): Places Oliver has travelled
+- [Hobbies](https://omurray.dev/hobbies): Running and hiking, making coffee, natural wine, and sports
+
+## Contact
+
+- Email: oliver@omurray.dev
+- GitHub: https://github.com/om154
+- LinkedIn: https://www.linkedin.com/in/murrayo/

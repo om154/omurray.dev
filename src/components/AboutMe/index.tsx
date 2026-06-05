@@ -170,7 +170,7 @@ const AboutMe = () => (
   <Section alignTop>
     <div className="box-border w-full">
       <div className="mb-4 text-left">
-        <H2>About me</H2>
+        <H2 as="h1">About me</H2>
       </div>
       <AboutMeHero imgSrc={aboutMeImg} animationDuration={0.35}>
         <P>

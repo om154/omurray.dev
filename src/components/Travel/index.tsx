@@ -37,7 +37,7 @@ const Travel = () => (
   <Section>
     <div className="box-border w-full">
       <div className="mb-2 text-left">
-        <H2>Adventures</H2>
+        <H2 as="h1">Adventures</H2>
       </div>
       <div className="box-border w-full">
         <P className='text-neutral-900/90'>

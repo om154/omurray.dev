@@ -1,0 +1,4 @@
+Contact: mailto:oliver@omurray.dev
+Expires: 2027-06-05T00:00:00.000Z
+Preferred-Languages: en
+Canonical: https://omurray.dev/.well-known/security.txt

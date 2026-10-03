@@ -1,17 +1,17 @@
 const fontSizes = {
-  xs: 12,
-  sm: 14,
-  md: 16,
-  lg: 18,
-  xl: 20,
-  '2xl': 24,
-  '3xl': 30,
-  '4xl': 36,
-  '5xl': 48,
-  '6xl': 64,
-  '7xl': 72,
-  '8xl': 80,
-  '9xl': 96
+  xs: '0.75rem',
+  sm: '0.875rem',
+  md: '1rem',
+  lg: '1.125rem',
+  xl: '1.25rem',
+  '2xl': '1.5rem',
+  '3xl': '1.875rem',
+  '4xl': '2.25rem',
+  '5xl': '3rem',
+  '6xl': '4rem',
+  '7xl': '4.5rem',
+  '8xl': '5rem',
+  '9xl': '6rem'
 };
 
 const fontWeights = {

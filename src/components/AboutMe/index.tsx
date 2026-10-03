@@ -29,7 +29,7 @@ export function calculateAge(birthday: string) {
   return age;
 }
 
-interface AboutMeCardProps extends AboutMeCard {
+interface AboutMeCardProps extends AboutMeCardModel {
   index: number;
 }
 
@@ -45,14 +45,14 @@ const AboutMeCard = ({
     className="flex flex-col justify-between px-5 pt-3 pb-5 font-sans transition-colors duration-200 ease-in-out rounded-lg bg-neutral-100 hover:bg-neutral-200"
   >
     <div>
-      <div className="mb-2 text-sm text-left font-regular text-neutral-600">
+      <div className="mb-2 text-sm text-left font-regular text-neutral-700">
         {year}
       </div>
-      <P>{content}</P>
+      <P as="div">{content}</P>
     </div>
     <div>
       {stage ? (
-        <div className="mt-2 text-sm text-right text-neutral-600">{stage}</div>
+        <div className="mt-2 text-sm text-right text-neutral-700">{stage}</div>
       ) : (
         <div />
       )}
@@ -63,14 +63,14 @@ const AboutMeCard = ({
   </AnimateDown>
 );
 
-interface AboutMeCard {
+interface AboutMeCardModel {
   content: ReactNode;
   year: string;
   stage?: string;
   Pill: ReactNode;
 }
 
-const cards: AboutMeCard[] = [
+const cards: AboutMeCardModel[] = [
   // Punchup
   {
     content: (
@@ -185,7 +185,7 @@ const AboutMe = () => (
         </div>
         <div className="w-full mt-2 mb-4 border-t border-neutral-300" />
         <div className="w-full text-left md:mt-2">
-          <H3>Companies I've worked for</H3>
+          <H3 as="h2">Companies I've worked for</H3>
         </div>
         <div className="grid grid-cols-1 gap-4 mt-4 sm:grid-flow-row-dense lg:grid-cols-2">
           {cards.map((c, i) => (

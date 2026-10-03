@@ -19,16 +19,15 @@ interface ListItemProps {
 
 const LinkListItem = ({ title, path, active, onMouseEnter, onMouseLeave }: ListItemProps) => (
   <li
-    role="menuitem"
     className='select-none contents'
     onMouseEnter={onMouseEnter}
     onMouseLeave={onMouseLeave}
   >
-    <Link href={path} className={classNames(
-      'px-2 py-1 font-sans transition-colors duration-200 ease-linear no-underline text-[15px] md:text-md font-regular outline-none select-none rounded-lg hover:text-primary-900 leading-5',
+    <Link href={path} aria-current={active ? 'page' : undefined} className={classNames(
+      'px-2 py-1 font-sans transition-colors duration-200 ease-linear no-underline text-[0.9375rem] md:text-md select-none rounded-lg hover:text-primary-900 leading-5',
       {
-        'text-primary-900': active,
-        'text-neutral-600': !active
+        'text-primary-900 font-medium': active,
+        'text-neutral-700 font-regular': !active
       }
     )}>{title}</Link>
   </li>
@@ -61,38 +60,36 @@ const Navigation = () => {
   }
 
   return (
-    <div className="sticky top-0 z-10 flex items-center justify-center py-4 isolate md:justify-between">
-      <AnimateDown>
+    <header className="sticky top-0 z-10 flex items-center justify-center py-4 pointer-events-none isolate md:justify-between">
+      <AnimateDown className='pointer-events-auto'>
         <nav
-          role="navigation"
           aria-label='Main menu'
           className='w-full px-2 py-1 border border-solid rounded-lg shadow-md border-neutral-300 bg-white/70 backdrop-blur-md'
         >
+          <div aria-hidden className={classNames(
+            'absolute left-0 -z-10 h-7 rounded bg-neutral-200 transition-[width,transform,opacity]',
+          )} style={
+            {
+              // default to show no transition
+              transitionDuration: '0ms',
+              // display the hover state if hovering is true and width is set
+              ...(hovering ? {
+                opacity: 0.9
+              } : {}),
+              ...(width ? { width: `${width}px` } : {}),
+              // only display the transform transition if the offset changes (not if it goes null -> defined)
+              ...(previousXOffset !== null && xOffset !== null ? { transitionDuration: '150ms', } : {}),
+              // always translate based on the offset, if defined
+              ...(xOffset ? {
+                transform: `translate(${xOffset}px)`
+              } : {}),
+            }
+          } />
           <ul
-            role="menu"
             className='flex flex-row flex-wrap justify-around list-none'
             onMouseLeave={() => hovering && setHovering(false)}
             onMouseEnter={() => !hovering && setHovering(true)}
           >
-            <div className={classNames(
-              'absolute left-0 -z-10 h-7 rounded bg-neutral-200 transition-[width,transform,opacity]',
-            )} style={
-              {
-                // default to show no transition
-                transitionDuration: '0ms',
-                // display the hover state if hovering is true and width is set
-                ...(hovering ? {
-                  opacity: 0.9
-                } : {}),
-                ...(width ? { width: `${width}px` } : {}),
-                // only display the transform transition if the offset changes (not if it goes null -> defined)
-                ...(previousXOffset !== null && xOffset !== null ? { transitionDuration: '150ms', } : {}),
-                // always translate based on the offset, if defined
-                ...(xOffset ? {
-                  transform: `translate(${xOffset}px)`
-                } : {}),
-              }
-            } />
             <LinkListItem onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} title="Home" path="/" active={pathName === '/'} />
             <LinkListItem onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} title="About" path="/about" active={pathName === '/about'} />
             <LinkListItem onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} title="Projects" path="/projects" active={pathName === '/projects'} />
@@ -101,15 +98,15 @@ const Navigation = () => {
           </ul>
         </nav>
       </AnimateDown>
-      <div className='hidden ml-2 md:flex'>
+      <div className='hidden ml-2 pointer-events-auto md:flex'>
         <AnimateFadeIn
           delay={.6}
-          className="box-border flex justify-center w-full mx-auto text-center rounded-lg bg-white/70"
+          className="box-border flex justify-center w-full mx-auto text-center rounded-lg bg-white/70 backdrop-blur-md"
         >
           <ContactLinks />
         </AnimateFadeIn>
       </div>
-    </div>
+    </header>
   );
 };
 

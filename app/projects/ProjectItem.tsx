@@ -34,9 +34,9 @@ const ProjectItem = ({
             rel="noreferrer"
           >
             <AnimateFadeIn duration={0.35}>
-              <h3 className="overflow-hidden text-ellipsis box-border font-mono text-lg leading-tight lg:text-xl underline decoration-primary-700 decoration-1 hover:decoration-primary-800 transition-[color,text-decoration] duration-300 ease">
+              <h2 className="overflow-hidden text-ellipsis box-border font-mono text-lg leading-tight lg:text-xl underline decoration-primary-700 decoration-1 hover:decoration-primary-800 transition-[color,text-decoration] duration-300 ease">
                 {url.replace(/^https:\/\//, "")}
-              </h3>
+              </h2>
             </AnimateFadeIn>
           </Link>
         </div>
@@ -50,7 +50,7 @@ const ProjectItem = ({
       </div>
       <div>
         <div className="w-full my-3 border-t border-neutral-300" />
-        <div className="self-end text-black/40">
+        <div className="self-end text-neutral-700">
           {technologies.map((t, i) => (
             <span key={`tech-${i}`}>
               {i > 0 && <span>・</span>}

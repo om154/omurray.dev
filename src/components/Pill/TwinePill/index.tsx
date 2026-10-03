@@ -18,13 +18,13 @@ const TwinePill = ({ className }: TwinePillProps) => (
       <TwineLogo />
     </div>
     <div className='flex items-center h-8 row'>
-      <Link className="relative flex w-6 h-6 ml-2 mr-1 text-neutral-800 transition-transform duration-200 hover:-translate-y-0.5 ease" href={twineLandingPageUrl} data-testid="glimpse-external-link" target="_blank" rel="noreferrer">
+      <Link className="relative flex w-6 h-6 ml-2 mr-1 text-neutral-800 transition-transform duration-200 hover:-translate-y-0.5 ease" href={twineLandingPageUrl} aria-label="twine website (archived)" data-testid="glimpse-external-link" target="_blank" rel="noreferrer">
         <ExternalLinkIcon />
       </Link>
-      <Link className="flex ml-2 mr-1 transition-transform duration-200 hover:-translate-y-0.5 ease" href="https://www.linkedin.com/company/wearetwine" target="_blank" rel="noreferrer">
+      <Link className="flex ml-2 mr-1 transition-transform duration-200 hover:-translate-y-0.5 ease" href="https://www.linkedin.com/company/wearetwine" aria-label="twine on LinkedIn" target="_blank" rel="noreferrer">
         <LinkedInLogo />
       </Link>
-      <Link className="relative flex w-5 h-5 ml-2 transition-transform duration-200 hover:-translate-y-0.5 ease" href="https://www.crunchbase.com/organization/twine-121c" target="_blank" rel="noreferrer">
+      <Link className="relative flex w-5 h-5 ml-2 transition-transform duration-200 hover:-translate-y-0.5 ease" href="https://www.crunchbase.com/organization/twine-121c" aria-label="twine on Crunchbase" target="_blank" rel="noreferrer">
         <CrunchbaseLogo />
       </Link>
     </div>

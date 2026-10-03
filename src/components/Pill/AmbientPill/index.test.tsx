@@ -1,22 +1,22 @@
-import GlimpsePill from ".";
+import AmbientPill from ".";
 import { render } from "@testing-library/react";
 
-describe("Shippit Pill", () => {
+describe("Ambient Pill", () => {
   it("should render", () => {
-    render(<GlimpsePill />);
+    render(<AmbientPill />);
   });
 
   describe("external link", () => {
     it("should have the correct url", () => {
-      const { getByTestId } = render(<GlimpsePill />);
+      const { getByTestId } = render(<AmbientPill />);
       expect(getByTestId("glimpse-external-link")).toHaveAttribute(
         "href",
-        "https://web.archive.org/web/20231201103631/https://www.joinglimpse.com/",
+        "https://www.ambient.us/",
       );
     });
 
     it("should open in a new tab", () => {
-      const { getByTestId } = render(<GlimpsePill />);
+      const { getByTestId } = render(<AmbientPill />);
       expect(getByTestId("glimpse-external-link")).toHaveAttribute(
         "target",
         "_blank",

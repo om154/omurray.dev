@@ -7,9 +7,7 @@ describe('Greeting', () => {
   });
 
   it('shows a welcoming greeting', () => {
-    const { getByText } = render(<Greeting />);
-    getByText(/Hey, my name is/);
-    getByText(/Oliver/);
-    getByText(/I'm a software engineer who loves building great products./);
+    const { getByRole } = render(<Greeting />);
+    expect(getByRole('heading', { level: 1 })).toHaveTextContent("Hey, my name is Oliver 👋🏻 Welcome to my website! I'm a software engineer who loves building great products.");
   });
 });

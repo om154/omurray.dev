@@ -21,11 +21,11 @@ const Greeting = () => (
           In my spare time I enjoy{' '}
           <AccentLink href='/hobbies'>running</AccentLink>
           {' '}and{' '}
-          <AccentLink href='/hobbies' accentColor='rgb(110,163,71)'>hiking ⛰️</AccentLink>
+          <AccentLink href='/hobbies' accentColor='#4F7A33'>hiking ⛰️</AccentLink>
           {' '}In the morning, you can find me drinking{' '}
           <AccentLink href='/hobbies' accentColor='rgb(80,62,51)'>filter coffee ☕️</AccentLink>
           {' '}or in the evening,{' '}
-          <AccentLink href='/hobbies' accentColor='rgb(243,119,32)'>natural wine 🍊</AccentLink>
+          <AccentLink href='/hobbies' accentColor='#B85309'>natural wine 🍊</AccentLink>
         </H1>
       </div>
       <div className="box-border w-full max-w-5xl mx-auto mt-6 text-left lg:px-4 text-primary-900">

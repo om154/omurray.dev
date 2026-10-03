@@ -12,6 +12,52 @@ export const metadata: Metadata = {
   },
 }
 
+const data = [
+  {
+    date: '12-06-2023',
+    items: [
+      {
+        label: 'Ensure to balance consumption with creation',  // my specified summary/name
+        title: 'The Release Ratio: How to Make Use of Everything You Know', // the actual name of the resource
+        authors: [
+          'Lawrence Yeo'
+        ],
+        url: 'https://moretothat.com/release-ratio/',
+        themes: [
+          'learning',
+          'thinking',
+        ]
+      },
+      {
+        label: '🧠 The Psychology of Design — 106 Cognitive Biases & Principles That Affect Your UX',
+        title: 'Growth Design',
+        authors: [
+          'Dan Benoni',
+          'Louis-Xavier Lavallee'
+        ],
+        url: 'https://growth.design/psychology',
+        themes: [
+          'psychology',
+          'design',
+        ]
+      },
+      {
+        label: 'Delegation, Working Remotely, Coaching, levelshealth.com and more',
+        title: 'Sam Corcos on The Tim Ferriss Show',
+        url: 'https://youtu.be/MtrkDoQFArU?si=oWyawfBj0mpgDa6z',
+        authors: [
+          'Tim Ferriss',
+          'Sam Corcos'
+        ],
+        themes: [
+          'delegation',
+          'remote work',
+        ]
+      }
+    ]
+  }
+]
+
 export default function Page() {
   const handleAuthors = (authors: string[]) => {
     if (authors.length <= 0) {
@@ -70,49 +116,3 @@ export default function Page() {
     </Section>
   )
 }
-
-const data = [
-  {
-    date: '12-06-2023',
-    items: [
-      {
-        label: 'Ensure to balance consumption with creation',  // my specified summary/name
-        title: 'The Release Ratio: How to Make Use of Everything You Know', // the actual name of the resource
-        authors: [
-          'Lawrence Yeo'
-        ],
-        url: 'https://moretothat.com/release-ratio/',
-        themes: [
-          'learning',
-          'thinking',
-        ]
-      },
-      {
-        label: '🧠 The Psychology of Design — 106 Cognitive Biases & Principles That Affect Your UX',
-        title: 'Growth Design',
-        authors: [
-          'Dan Benoni',
-          'Louis-Xavier Lavallee'
-        ],
-        url: 'https://growth.design/psychology',
-        themes: [
-          'psychology',
-          'design',
-        ]
-      },
-      {
-        label: 'Delegation, Working Remotely, Coaching, levelshealth.com and more',
-        title: 'Sam Corcos on The Tim Ferriss Show',
-        url: 'https://youtu.be/MtrkDoQFArU?si=oWyawfBj0mpgDa6z',
-        authors: [
-          'Tim Ferriss',
-          'Sam Corcos'
-        ],
-        themes: [
-          'delegation',
-          'remote work',
-        ]
-      }
-    ]
-  }
-]

@@ -19,6 +19,7 @@ const PunchupPill = ({ className }: PunchupPillProps) => (
       <Link
         className="relative flex w-6 h-6 ml-2 mr-1 text-neutral-800 transition-transform duration-200 hover:-translate-y-0.5 ease"
         href="https://punchup.live/"
+        aria-label="Punchup website"
         data-testid="punchup-external-link"
         target="_blank"
         rel="noreferrer"
@@ -28,6 +29,7 @@ const PunchupPill = ({ className }: PunchupPillProps) => (
       <Link
         className="flex ml-2 mr-1 transition-transform duration-200 hover:-translate-y-0.5 ease"
         href="https://www.linkedin.com/company/punchup-live/"
+        aria-label="Punchup on LinkedIn"
         target="_blank"
         rel="noreferrer"
       >
@@ -36,6 +38,7 @@ const PunchupPill = ({ className }: PunchupPillProps) => (
       <Link
         className="relative flex w-5 h-5 ml-2 transition-transform duration-200 hover:-translate-y-0.5 ease"
         href="https://www.crunchbase.com/organization/punchup-live"
+        aria-label="Punchup on Crunchbase"
         target="_blank"
         rel="noreferrer"
       >

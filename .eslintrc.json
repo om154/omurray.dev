@@ -2,8 +2,10 @@
   "extends": [
     "airbnb-typescript",
     "airbnb/hooks",
+    "plugin:jsx-a11y/recommended",
     "plugin:jest/recommended",
-    "plugin:jest/style"
+    "plugin:jest/style",
+    "prettier"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -11,6 +13,8 @@
     "project": "./tsconfig.json"
   },
   "plugins": [
+    "react",
+    "jsx-a11y",
     "jest",
     "jest-formatting",
     "simple-import-sort",
@@ -20,6 +24,7 @@
   "rules": {
     "@typescript-eslint/comma-dangle": "off",
     "@typescript-eslint/no-unused-vars": ["warn"],
+    "@typescript-eslint/no-redeclare": ["error", { "builtinGlobals": false }],
     "import/prefer-default-export": "off",
     "react/jsx-props-no-spreading": "off",
     "react/jsx-uses-react": "off",

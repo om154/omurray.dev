@@ -22,13 +22,13 @@ const AmbientPill = ({ className }: TwinePillProps) => (
       </div>
     </div>
     <div className='flex items-center h-8 row'>
-      <Link className="relative flex w-6 h-6 ml-2 mr-1 text-neutral-800 transition-transform duration-200 hover:-translate-y-0.5 ease" href={ambientLandingPageUrl} data-testid="glimpse-external-link" target="_blank" rel="noreferrer">
+      <Link className="relative flex w-6 h-6 ml-2 mr-1 text-neutral-800 transition-transform duration-200 hover:-translate-y-0.5 ease" href={ambientLandingPageUrl} aria-label="Ambient website" data-testid="glimpse-external-link" target="_blank" rel="noreferrer">
         <ExternalLinkIcon />
       </Link>
-      <Link className="flex ml-2 mr-1 transition-transform duration-200 hover:-translate-y-0.5 ease" href="https://www.linkedin.com/company/we-are-ambient/" target="_blank" rel="noreferrer">
+      <Link className="flex ml-2 mr-1 transition-transform duration-200 hover:-translate-y-0.5 ease" href="https://www.linkedin.com/company/we-are-ambient/" aria-label="Ambient on LinkedIn" target="_blank" rel="noreferrer">
         <LinkedInLogo />
       </Link>
-      <Link className="relative flex w-5 h-5 ml-2 transition-transform duration-200 hover:-translate-y-0.5 ease" href="https://www.crunchbase.com/organization/ambient-6921" target="_blank" rel="noreferrer">
+      <Link className="relative flex w-5 h-5 ml-2 transition-transform duration-200 hover:-translate-y-0.5 ease" href="https://www.crunchbase.com/organization/ambient-6921" aria-label="Ambient on Crunchbase" target="_blank" rel="noreferrer">
         <CrunchbaseLogo />
       </Link>
     </div>

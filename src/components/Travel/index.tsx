@@ -16,18 +16,15 @@ const TravelCard = ({ location, index }: TravelCardProps) => {
   const formattedDateTime = dateTime.toLocaleDateString('default', { month: 'long', year: 'numeric' })
 
   return (
-    <AnimateDown delay={(index + 1) * .02} >
-      <div className='relative overflow-hidden rounded-lg group'>
-        <div className='text-[15px] text-left md:text-md absolute z-10 w-full px-3 md:px-4 pt-[6px] pb-4 font-bold text-[transparent] rounded-tl-lg rounded-tr-lg border group-hover:border group-hover:border-primary-400/20 border-solid group-hover:bg-primary-300 group-hover:text-white bg-[transparent] transition-colors duration-200 select-none'>
-          <time className='leading-none' dateTime={arrivalDateTime}>{formattedDateTime}</time>
-        </div>
-        <div className='relative z-20 flex flex-col justify-start p-3 transition-[colors, transform] duration-200 ease-in-out rounded-lg group-hover:translate-y-9 aspect-square bg-neutral-100 group-hover:bg-neutral-200 group-active:bg-neutral-300'>
-          {countryFlagEmoji && <div className='text-[36px] select-none'>{countryFlagEmoji}</div>}
-        </div>
-        <div className='absolute z-30 w-full bottom-3 left-3 max-w-[130px] tracking-normal font-medium'>
-          <div className='break-normal text-md'>{city}, </div>
-          <div className='whitespace-nowrap text-md'>{country}</div>
-        </div>
+    <AnimateDown
+      delay={(index + 1) * .02}
+      className='flex flex-col justify-between self-stretch w-full min-w-0 p-3 transition-colors duration-200 ease-in-out rounded-lg aspect-square bg-neutral-100 hover:bg-neutral-200 active:bg-neutral-300'
+    >
+      {countryFlagEmoji && <div className='text-[2.25rem] select-none'>{countryFlagEmoji}</div>}
+      <div className='tracking-normal font-medium'>
+        <div className='break-normal text-md'>{city}, </div>
+        <div className='whitespace-nowrap text-md'>{country}</div>
+        <time className='block mt-1 text-sm font-regular text-neutral-700' dateTime={arrivalDateTime}>{formattedDateTime}</time>
       </div>
     </AnimateDown>
   )
@@ -45,21 +42,16 @@ const Travel = () => (
         </P>
         <div className='grid grid-cols-1 gap-4 mt-4 isolate sm:grid-cols-2 sm:grid-flow-row-dense md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-8'>
           {travelData.map((l, i) => <TravelCard key={`${l.city}-${l.country}`} location={l} index={i} />)}
-          <AnimateDown delay={(travelData.length + 1) * .02} >
-            <div className='relative overflow-hidden rounded-lg group'>
-              <div className='absolute z-10 w-full px-4 pt-2 pb-4 font-bold text-[transparent] rounded-tl-lg rounded-tr-lg group-hover:bg-primary-300 group-hover:text-white bg-[transparent] transition-colors duration-200 select-none'>
-                October 2021
-              </div>
-              <div
-                className='relative z-20 flex flex-col justify-between p-3 transition-[colors, transform] duration-200 ease-in-out rounded-lg group-hover:translate-y-9 aspect-square bg-neutral-100'
-              >
-                <div className='pt-2 pl-1 select-none'>
-                  <PlaneTakeoffIcon height={32} width={32} className='text-neutral-900' />
-                </div>
-              </div>
-              <div className='absolute z-30 w-full bottom-3 left-3 max-w-[130px]'>
-                <div className='whitespace-nowrap'>Left Melbourne!</div>
-              </div>
+          <AnimateDown
+            delay={(travelData.length + 1) * .02}
+            className='flex flex-col justify-between self-stretch w-full min-w-0 p-3 rounded-lg aspect-square bg-neutral-100'
+          >
+            <div className='pt-2 pl-1 select-none'>
+              <PlaneTakeoffIcon height={32} width={32} className='text-neutral-900' />
+            </div>
+            <div>
+              <div>Left Melbourne!</div>
+              <time className='block mt-1 text-sm text-neutral-700' dateTime='2021-10'>October 2021</time>
             </div>
           </AnimateDown>
         </div>

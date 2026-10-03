@@ -35,7 +35,7 @@ const ProjectItem = ({
           >
             <AnimateFadeIn duration={0.35}>
               <h3 className="overflow-hidden text-ellipsis box-border font-mono text-lg leading-tight lg:text-xl underline decoration-primary-700 decoration-1 hover:decoration-primary-800 transition-[color,text-decoration] duration-300 ease">
-                {url}
+                {url.replace(/^https:\/\//, "")}
               </h3>
             </AnimateFadeIn>
           </Link>

@@ -7,6 +7,7 @@ import JsonLd from "src/components/seo/JsonLd";
 import Section from "src/components/Section";
 import { projectsItemListSchema } from "src/lib/structuredData";
 import backyardImg from "public/static/img/backyard.png";
+import camberwellImg from "public/static/img/camberwell.png";
 import comedyFyiImg from "public/static/img/comedyFyi.png";
 import firesideImg from "public/static/img/fireside.png";
 import omurrayDevImg from "public/static/img/omurrayDev.png";
@@ -16,13 +17,22 @@ import trailchallengeImg from "public/static/img/trailchallenge.png";
 export const metadata: Metadata = {
   title: "Projects",
   description:
-    "A selection of products and side projects Oliver has built - Trail Challenge, comedy.fyi, Backyard, Fireside, and more.",
+    "A selection of products and side projects Oliver has built - Camberwell Co., Trail Challenge, comedy.fyi, Backyard, Fireside, and more.",
   alternates: {
     canonical: "/projects",
   },
 };
 
 const items: ProjectItemModel[] = [
+  {
+    paragraphs: [
+      "You run your business. We help it succeed online.",
+      "Camberwell Co. brings e-commerce and software expertise to businesses as a subscription, and builds software around the way they work.",
+    ],
+    technologies: ["Astro", "TypeScript", "Tailwind", "Cloudflare"],
+    url: "https://camberwellcompany.com",
+    imagePath: camberwellImg,
+  },
   {
     paragraphs: [
       "Discover and complete all of your city's best trails.",

@@ -1,106 +1,156 @@
-'use client'
+'use client';
 
 import classNames from 'classnames';
-import Link from "next/link"
-import { usePathname } from 'next/navigation'
-import { MouseEventHandler, useEffect, useState } from 'react';
-import ContactLinks from './ContactLinks';
-import AnimateFadeIn from '../animations/AnimateFadeIn';
-import AnimateDown from '../animations/AnimateDown';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import { type MouseEventHandler, useEffect, useState } from 'react';
 import { usePreviousPersistent } from 'src/hooks/usePreviousPersistent';
+import AnimateDown from '../animations/AnimateDown';
+import AnimateFadeIn from '../animations/AnimateFadeIn';
+import ContactLinks from './ContactLinks';
 
 interface ListItemProps {
-  title: string
-  path: string
-  active: boolean
-  onMouseEnter: MouseEventHandler<HTMLLIElement>
-  onMouseLeave: MouseEventHandler<HTMLLIElement>
+  title: string;
+  path: string;
+  active: boolean;
+  onMouseEnter: MouseEventHandler<HTMLLIElement>;
+  onMouseLeave: MouseEventHandler<HTMLLIElement>;
 }
 
-const LinkListItem = ({ title, path, active, onMouseEnter, onMouseLeave }: ListItemProps) => (
+const LinkListItem = ({
+  title,
+  path,
+  active,
+  onMouseEnter,
+  onMouseLeave,
+}: ListItemProps) => (
   <li
-    className='select-none contents'
+    className="select-none contents"
     onMouseEnter={onMouseEnter}
     onMouseLeave={onMouseLeave}
   >
-    <Link href={path} aria-current={active ? 'page' : undefined} className={classNames(
-      'px-2 py-1 font-sans transition-colors duration-200 ease-linear no-underline text-[0.9375rem] md:text-md select-none rounded-lg hover:text-primary-900 leading-5',
-      {
-        'text-primary-900 font-medium': active,
-        'text-neutral-700 font-regular': !active
-      }
-    )}>{title}</Link>
+    <Link
+      href={path}
+      aria-current={active ? 'page' : undefined}
+      className={classNames(
+        'px-2 py-1 font-sans transition-colors duration-200 ease-linear no-underline text-[0.9375rem] md:text-md select-none rounded-lg hover:text-primary-900 leading-5',
+        {
+          'text-primary-900 font-medium': active,
+          'text-neutral-700 font-regular': !active,
+        },
+      )}
+    >
+      {title}
+    </Link>
   </li>
 );
 
 const Navigation = () => {
   const [hovering, setHovering] = useState<boolean>(false);
-  const [xOffset, setXOffset] = useState<number | null>(null)
-  const [width, setWidth] = useState<number | null>(null)
+  const [xOffset, setXOffset] = useState<number | null>(null);
+  const [width, setWidth] = useState<number | null>(null);
   const pathName = usePathname();
 
-  const previousXOffset = usePreviousPersistent(xOffset)
+  const previousXOffset = usePreviousPersistent(xOffset);
 
   const handleMouseEnter: MouseEventHandler<HTMLLIElement> = (event) => {
     const eventTarget = event.target as HTMLLIElement;
 
     if (eventTarget) {
       if (eventTarget.offsetLeft) {
-        setXOffset(eventTarget.offsetLeft)
+        setXOffset(eventTarget.offsetLeft);
       }
       if (eventTarget.clientWidth) {
-        setWidth(eventTarget.clientWidth)
+        setWidth(eventTarget.clientWidth);
       }
     }
-  }
+  };
 
   const handleMouseLeave: MouseEventHandler<HTMLLIElement> = (event) => {
-    setXOffset(null)
-    setWidth(null)
-  }
+    setXOffset(null);
+    setWidth(null);
+  };
 
   return (
     <header className="sticky top-0 z-10 flex items-center justify-center py-4 pointer-events-none isolate md:justify-between">
-      <AnimateDown className='pointer-events-auto'>
+      <AnimateDown className="pointer-events-auto">
         <nav
-          aria-label='Main menu'
-          className='w-full px-2 py-1 border border-solid rounded-lg shadow-md border-neutral-300 bg-white/70 backdrop-blur-md'
+          aria-label="Main menu"
+          className="w-full px-2 py-1 border border-solid rounded-lg shadow-md border-neutral-300 bg-white/70 backdrop-blur-md"
         >
-          <div aria-hidden className={classNames(
-            'absolute left-0 -z-10 h-7 rounded bg-neutral-200 transition-[width,transform,opacity]',
-          )} style={
-            {
+          <div
+            aria-hidden
+            className={classNames(
+              'absolute left-0 -z-10 h-7 rounded bg-neutral-200 transition-[width,transform,opacity]',
+            )}
+            style={{
               // default to show no transition
               transitionDuration: '0ms',
               // display the hover state if hovering is true and width is set
-              ...(hovering ? {
-                opacity: 0.9
-              } : {}),
+              ...(hovering
+                ? {
+                    opacity: 0.9,
+                  }
+                : {}),
               ...(width ? { width: `${width}px` } : {}),
               // only display the transform transition if the offset changes (not if it goes null -> defined)
-              ...(previousXOffset !== null && xOffset !== null ? { transitionDuration: '150ms', } : {}),
+              ...(previousXOffset !== null && xOffset !== null
+                ? { transitionDuration: '150ms' }
+                : {}),
               // always translate based on the offset, if defined
-              ...(xOffset ? {
-                transform: `translate(${xOffset}px)`
-              } : {}),
-            }
-          } />
+              ...(xOffset
+                ? {
+                    transform: `translate(${xOffset}px)`,
+                  }
+                : {}),
+            }}
+          />
           <ul
-            className='flex flex-row flex-wrap justify-around list-none'
+            className="flex flex-row flex-wrap justify-around list-none"
             onMouseLeave={() => hovering && setHovering(false)}
             onMouseEnter={() => !hovering && setHovering(true)}
           >
-            <LinkListItem onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} title="Home" path="/" active={pathName === '/'} />
-            <LinkListItem onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} title="About" path="/about" active={pathName === '/about'} />
-            <LinkListItem onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} title="Projects" path="/projects" active={pathName === '/projects'} />
-            <LinkListItem onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} title="Travel" path="/travel" active={pathName === '/travel'} />
-            <LinkListItem onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} title="Hobbies" path="/hobbies" active={pathName === '/hobbies'} />
+            <LinkListItem
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+              title="Home"
+              path="/"
+              active={pathName === '/'}
+            />
+            <LinkListItem
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+              title="About"
+              path="/about"
+              active={pathName === '/about'}
+            />
+            <LinkListItem
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+              title="Projects"
+              path="/projects"
+              active={pathName === '/projects'}
+            />
+            <LinkListItem
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+              title="Travel"
+              path="/travel"
+              active={pathName === '/travel'}
+            />
+            <LinkListItem
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+              title="Hobbies"
+              path="/hobbies"
+              active={pathName === '/hobbies'}
+            />
           </ul>
         </nav>
       </AnimateDown>
-      <div className='hidden ml-2 pointer-events-auto md:flex'>
+      <div className="hidden ml-2 pointer-events-auto md:flex">
         <AnimateFadeIn
-          delay={.6}
+          delay={0.6}
           className="box-border flex justify-center w-full mx-auto text-center rounded-lg bg-white/70 backdrop-blur-md"
         >
           <ContactLinks />

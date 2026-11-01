@@ -1,5 +1,5 @@
 export interface HeroProps {
-  imgSrc?: string
-  animationDelay?: number
-  animationDuration?: number
+  imgSrc?: string;
+  animationDelay?: number;
+  animationDuration?: number;
 }

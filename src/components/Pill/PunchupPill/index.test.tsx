@@ -9,12 +9,18 @@ describe('Punchup Pill', () => {
   describe('external link', () => {
     it('should have the correct url', () => {
       const { getByTestId } = render(<PunchupPill />);
-      expect(getByTestId('punchup-external-link')).toHaveAttribute('href', 'https://punchup.live/');
+      expect(getByTestId('punchup-external-link')).toHaveAttribute(
+        'href',
+        'https://punchup.live/',
+      );
     });
 
     it('should open in a new tab', () => {
       const { getByTestId } = render(<PunchupPill />);
-      expect(getByTestId('punchup-external-link')).toHaveAttribute('target', '_blank');
+      expect(getByTestId('punchup-external-link')).toHaveAttribute(
+        'target',
+        '_blank',
+      );
     });
   });
 });

@@ -1,13 +1,18 @@
 interface Props {
-  width?: number
-  height?: number
-  opacity?: number
-  className?: string
+  width?: number;
+  height?: number;
+  opacity?: number;
+  className?: string;
 }
 
-const CRUNCHBASE_BLUE = '#146AFF'
+const CRUNCHBASE_BLUE = '#146AFF';
 
-const CrunchbaseLogo = ({ width = 20, height = 20, opacity = 1, className }: Props) => (
+const CrunchbaseLogo = ({
+  width = 20,
+  height = 20,
+  opacity = 1,
+  className,
+}: Props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width={width}
@@ -15,11 +20,11 @@ const CrunchbaseLogo = ({ width = 20, height = 20, opacity = 1, className }: Pro
     className={className}
     viewBox="0 0 32 32"
   >
-    <title>{"crunchbase"}</title>
+    <title>{'crunchbase'}</title>
     <path
       d="M28.802 0H3.198A3.212 3.212 0 0 0 0 3.198v25.604A3.212 3.212 0 0 0 3.198 32h25.604A3.212 3.212 0 0 0 32 28.802V3.198A3.212 3.212 0 0 0 28.802 0z"
       style={{
-        fill: "#fff",
+        fill: '#fff',
       }}
     />
     <path
@@ -27,6 +32,6 @@ const CrunchbaseLogo = ({ width = 20, height = 20, opacity = 1, className }: Pro
       style={{ fill: CRUNCHBASE_BLUE, opacity }}
     />
   </svg>
-)
+);
 
-export default CrunchbaseLogo
+export default CrunchbaseLogo;

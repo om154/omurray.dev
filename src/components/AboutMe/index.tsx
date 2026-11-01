@@ -1,21 +1,20 @@
-import { H2, H3, P } from "../shared/Text";
-
-import AboutMeHero from "../Hero/AboutMe";
-import AccenturePill from "../Pill/AccenturePill";
-import AmbientPill from "../Pill/AmbientPill";
-import AnimateDown from "../animations/AnimateDown";
-import ContactLinks from "../Navigation/ContactLinks";
-import ExternalLink from "../shared/ExternalLink";
-import GlimpsePill from "../Pill/GlimpsePill";
-import PunchupPill from "../Pill/PunchupPill";
-import { ReactNode } from "react";
-import Section from "../Section";
-import ShippitPill from "../Pill/ShippitPill";
-import TwinePill from "../Pill/TwinePill";
-import aboutMeImg from "public/static/img/oliver.jpeg";
+import aboutMeImg from 'public/static/img/oliver.jpeg';
+import type { ReactNode } from 'react';
+import AnimateDown from '../animations/AnimateDown';
+import AboutMeHero from '../Hero/AboutMe';
+import ContactLinks from '../Navigation/ContactLinks';
+import AccenturePill from '../Pill/AccenturePill';
+import AmbientPill from '../Pill/AmbientPill';
+import GlimpsePill from '../Pill/GlimpsePill';
+import PunchupPill from '../Pill/PunchupPill';
+import ShippitPill from '../Pill/ShippitPill';
+import TwinePill from '../Pill/TwinePill';
+import Section from '../Section';
+import ExternalLink from '../shared/ExternalLink';
+import { H2, H3, P } from '../shared/Text';
 
 export function calculateAge(birthday: string) {
-  const splitDate = birthday.split("-");
+  const splitDate = birthday.split('-');
   const birthYear = Number(splitDate[2]);
   const birthMonth = Number(splitDate[1]);
   const birthDay = Number(splitDate[0]);
@@ -84,8 +83,8 @@ const cards: AboutMeCardModel[] = [
         <div className="mt-1" />
       </>
     ),
-    year: "2024 – present",
-    stage: "Seed stage, Social Leverage",
+    year: '2024 – present',
+    stage: 'Seed stage, Social Leverage',
     Pill: <PunchupPill />,
   },
   // twine
@@ -99,13 +98,13 @@ const cards: AboutMeCardModel[] = [
         <div className="mt-1" />
         <ExternalLink href="https://www.twine.us/ambient">
           twine Ambient
-        </ExternalLink>{" "}
+        </ExternalLink>{' '}
         is our AI Chief of Staff that summarizes, threads, and shares important
         context from all across your business.
       </>
     ),
-    year: "2022 – 2023",
-    stage: "Seed stage, Zoom Ventures",
+    year: '2022 – 2023',
+    stage: 'Seed stage, Zoom Ventures',
     Pill: (
       <div className="flex flex-col w-full gap-2 my-1 md:flex-row lg:flex-col">
         <AmbientPill className="select-none " />
@@ -117,13 +116,13 @@ const cards: AboutMeCardModel[] = [
   {
     content: (
       <>
-        At{" "}
+        At{' '}
         <ExternalLink
           href="https://web.archive.org/web/20231201103631/https://www.joinglimpse.com/"
           className="inline whitespace-break-spaces"
         >
           Glimpse
-        </ExternalLink>{" "}
+        </ExternalLink>{' '}
         I joined 4 ex-Duke students as the company's first external hire. I
         defined our platform's architecture and shipped new features to scale
         and refine our video chat platform. <div className="mt-1 " />I also lead
@@ -131,37 +130,37 @@ const cards: AboutMeCardModel[] = [
         for acquisition.
       </>
     ),
-    year: "2021 – 2022",
-    stage: "Seed stage, Y Combinator",
+    year: '2021 – 2022',
+    stage: 'Seed stage, Y Combinator',
     Pill: <GlimpsePill className="mt-1 select-none lg:m-0" />,
   },
   // Shippit
   {
     content: (
       <>
-        I previously worked in Engineering at a Sydney-based start-up named{" "}
-        <ExternalLink href="https://www.shippit.com/">Shippit</ExternalLink>.{" "}
+        I previously worked in Engineering at a Sydney-based start-up named{' '}
+        <ExternalLink href="https://www.shippit.com/">Shippit</ExternalLink>.{' '}
         Their multi-carrier shipping software for ecommerce companies
         streamlines shipping & fulfilment for some of Australia's biggest
         retailers.
       </>
     ),
-    year: "2020 – 2021",
-    stage: "Series B, Tiger Global",
+    year: '2020 – 2021',
+    stage: 'Series B, Tiger Global',
     Pill: <ShippitPill className="my-1 select-none lg:m-0" />,
   },
   // Accenture
   {
     content: (
       <>
-        At{" "}
-        <ExternalLink href="https://www.accenture.com/">Accenture</ExternalLink>{" "}
+        At{' '}
+        <ExternalLink href="https://www.accenture.com/">Accenture</ExternalLink>{' '}
         I worked on multiple projects developing large-scale enterprise
         applications to help clients effectively capture, manage and analyze
         their data from dozens of sources.
       </>
     ),
-    year: "2018 – 2020",
+    year: '2018 – 2020',
     Pill: <AccenturePill className="my-1 select-none lg:my-0 lg:ml-1" />,
   },
 ];

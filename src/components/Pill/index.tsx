@@ -1,15 +1,18 @@
 import cn from 'classnames';
-import { ChildrenProp } from '../../utils/props';
+import type { ChildrenProp } from '../../utils/props';
 
 interface PillProps {
-  className?: string
+  className?: string;
 }
 
 const Pill = ({ children, className }: ChildrenProp & PillProps) => (
-  <div className={cn('w-full px-3 py-2 font-bold rounded-lg shadow-md bg-white text-primary-900', className)}>
-    <div className="flex items-center justify-between">
-      {children}
-    </div>
+  <div
+    className={cn(
+      'w-full px-3 py-2 font-bold rounded-lg shadow-md bg-white text-primary-900',
+      className,
+    )}
+  >
+    <div className="flex items-center justify-between">{children}</div>
   </div>
 );
 

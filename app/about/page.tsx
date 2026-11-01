@@ -1,5 +1,5 @@
-import AboutMe from "src/components/AboutMe"
-import { Metadata } from 'next'
+import type { Metadata } from 'next';
+import AboutMe from 'src/components/AboutMe';
 
 export const metadata: Metadata = {
   title: 'About me',
@@ -8,8 +8,8 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/about',
   },
-}
+};
 
 export default function Page() {
-  return <AboutMe />
+  return <AboutMe />;
 }

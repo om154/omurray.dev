@@ -21,7 +21,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "biome lint",
+    "lint": "biome check",
     "test": "jest",
     "unit-test": "yarn test --watchAll=false",
     "format": "biome check --write"

@@ -9,12 +9,18 @@ describe('Shippit Pill', () => {
   describe('external link', () => {
     it('should have the correct url', () => {
       const { getByTestId } = render(<ShippitPill />);
-      expect(getByTestId('shippit-external-link')).toHaveAttribute('href', 'https://www.shippit.com/');
+      expect(getByTestId('shippit-external-link')).toHaveAttribute(
+        'href',
+        'https://www.shippit.com/',
+      );
     });
 
     it('should open in a new tab', () => {
       const { getByTestId } = render(<ShippitPill />);
-      expect(getByTestId('shippit-external-link')).toHaveAttribute('target', '_blank');
+      expect(getByTestId('shippit-external-link')).toHaveAttribute(
+        'target',
+        '_blank',
+      );
     });
   });
 });

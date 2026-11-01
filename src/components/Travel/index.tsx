@@ -10,15 +10,7 @@ interface TravelCardProps {
 }
 
 const TravelCard = ({ location, index }: TravelCardProps) => {
-  const {
-    city,
-    state,
-    stateAbbreviation,
-    country,
-    countryAbbreviation,
-    countryFlagEmoji,
-    arrivalDateTime,
-  } = location;
+  const { city, country, countryFlagEmoji, arrivalDateTime } = location;
 
   const dateTime = new Date(arrivalDateTime);
   const formattedDateTime = dateTime.toLocaleDateString('default', {

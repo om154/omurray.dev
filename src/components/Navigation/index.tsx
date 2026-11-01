@@ -3,7 +3,7 @@
 import classNames from 'classnames';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { type MouseEventHandler, useEffect, useState } from 'react';
+import { type MouseEventHandler, useState } from 'react';
 import { usePreviousPersistent } from 'src/hooks/usePreviousPersistent';
 import AnimateDown from '../animations/AnimateDown';
 import AnimateFadeIn from '../animations/AnimateFadeIn';
@@ -66,7 +66,7 @@ const Navigation = () => {
     }
   };
 
-  const handleMouseLeave: MouseEventHandler<HTMLLIElement> = (event) => {
+  const handleMouseLeave: MouseEventHandler<HTMLLIElement> = () => {
     setXOffset(null);
     setWidth(null);
   };

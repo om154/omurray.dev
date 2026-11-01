@@ -6,7 +6,6 @@ import firesideImg from 'public/static/img/fireside.png';
 import omurrayDevImg from 'public/static/img/omurrayDev.png';
 import thinValueImg from 'public/static/img/thinvaluePoker.png';
 import trailchallengeImg from 'public/static/img/trailchallenge.png';
-import Item, { InterestItem } from 'src/components/Hobbies/Item';
 import Section from 'src/components/Section';
 import JsonLd from 'src/components/seo/JsonLd';
 import { H2, P } from 'src/components/shared/Text';

@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "engines": {
-    "node": "^24.0.0"
+    "node": "^26.0.0"
   },
   "packageManager": "yarn@1.22.19",
   "dependencies": {
@@ -50,7 +50,7 @@
     "@testing-library/react": "^14.0.0",
     "@testing-library/user-event": "^14.4.3",
     "@types/jest": "^29.5.1",
-    "@types/node": "^24.12.3",
+    "@types/node": "^26.6.6",
     "@types/react": "^18.2.0",
     "@types/react-dom": "^18.2.1",
     "@typescript-eslint/eslint-plugin": "^6.21.0",

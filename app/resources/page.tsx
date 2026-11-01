@@ -81,7 +81,7 @@ export default function Page() {
                 })}
               </h2>
               <ul className="flex flex-col gap-2 py-3">
-                {d.items.map(({ title, url, label, authors, themes }) => (
+                {d.items.map(({ url, label, authors, themes }) => (
                   <li key={url} className="flex flex-row justify-between">
                     <div className="flex flex-col">
                       <Link

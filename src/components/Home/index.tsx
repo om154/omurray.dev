@@ -1,5 +1,5 @@
 import Greeting from '../Greeting';
-import PhotoHero, { PhotoHeroModel } from '../PhotoHero';
+import PhotoHero from '../PhotoHero';
 import { photoHeroes } from './photoHeroes';
 
 const Home = () => {

@@ -6,6 +6,7 @@ interface Props {
 
 const GitHubLogo = ({ width = 20, height = 20, className }: Props) => (
   <svg
+    aria-hidden="true"
     className={className}
     width={width}
     height={height}

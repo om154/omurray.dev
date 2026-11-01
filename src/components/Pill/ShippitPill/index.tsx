@@ -18,7 +18,7 @@ const ShippitPill = ({ className }: ShippitPillProps) => (
         src={shippitLogo}
         height={28}
         width={75}
-        alt="shippit-logo"
+        alt="Shippit"
         className="transition-transform duration-200 row hover:scale-[1.05] ease"
       />
     </div>

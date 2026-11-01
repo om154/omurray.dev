@@ -17,7 +17,7 @@ const TwineLogo = ({ width = 60, height = 32, className }: Props) => (
       className,
     )}
   >
-    <title>twine-logo</title>
+    <title>twine</title>
     <path
       fill="#4A2BC7"
       fillRule="evenodd"

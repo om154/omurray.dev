@@ -20,7 +20,7 @@ const CrunchbaseLogo = ({
     className={className}
     viewBox="0 0 32 32"
   >
-    <title>{'crunchbase'}</title>
+    <title>Crunchbase</title>
     <path
       d="M28.802 0H3.198A3.212 3.212 0 0 0 0 3.198v25.604A3.212 3.212 0 0 0 3.198 32h25.604A3.212 3.212 0 0 0 32 28.802V3.198A3.212 3.212 0 0 0 28.802 0z"
       style={{

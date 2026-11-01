@@ -15,7 +15,7 @@
     "postcss": "^8.4.25",
     "react": "^19.3.1",
     "react-dom": "^19.3.1",
-    "typescript": "^5.0.4"
+    "typescript": "^6.0.3"
   },
   "scripts": {
     "dev": "next dev",

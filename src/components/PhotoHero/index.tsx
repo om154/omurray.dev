@@ -78,7 +78,7 @@ const PhotoHero = ({ data, animationDelay }: Props) => {
             alt={`Photo 5 from ${title}`}
             height={150}
             width={95}
-            className="object-cover object-center rounded-xl h-[150px] w-[95px] rounded-tl-sm"
+            className="object-cover object-center rounded-xl h-[150px] w-[95px] rounded-tl-xs"
           />
         </div>
       </div>

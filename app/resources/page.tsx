@@ -86,7 +86,7 @@ export default function Page() {
                     <div className="flex flex-col">
                       <Link
                         href={url}
-                        className="text-primary-700 decoration-primary-700 hover:decoration-primary-600 hover:text-primary-600 transition-colors duration-300 ease-in-out underline-offset-[2px] break-inside-avoid"
+                        className="text-primary-700 decoration-primary-700 hover:decoration-primary-600 hover:text-primary-600 transition-colors duration-300 ease-in-out underline-offset-2 break-inside-avoid"
                       >
                         {label}
                       </Link>

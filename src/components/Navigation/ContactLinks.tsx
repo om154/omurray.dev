@@ -13,7 +13,7 @@ const ContactLinks = () => {
           target="_blank"
           rel="noreferrer"
         >
-          <EmailIcon className="transition-colors duration-200 ease-linear fill-[inherit]" />
+          <EmailIcon className="transition-colors duration-200 ease-linear fill-inherit" />
           <span className="sr-only">Send an email to Oliver</span>
         </Link>
       )}
@@ -24,7 +24,7 @@ const ContactLinks = () => {
           target="_blank"
           rel="noreferrer"
         >
-          <LinkedInLogo className="transition-colors duration-200 ease-linear fill-[inherit]" />
+          <LinkedInLogo className="transition-colors duration-200 ease-linear fill-inherit" />
           <span className="sr-only">URL for Oliver's LinkedIn profile</span>
         </Link>
       )}
@@ -35,7 +35,7 @@ const ContactLinks = () => {
           target="_blank"
           rel="noreferrer"
         >
-          <GitHubLogo className="transition-colors duration-200 ease-linear fill-[inherit]" />
+          <GitHubLogo className="transition-colors duration-200 ease-linear fill-inherit" />
           <span className="sr-only">URL for Oliver's GitHub profile</span>
         </Link>
       )}

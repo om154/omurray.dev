@@ -81,7 +81,7 @@ const Navigation = () => {
           <div
             aria-hidden
             className={classNames(
-              'absolute left-0 -z-10 h-7 rounded bg-neutral-200 transition-[width,transform,opacity]',
+              'absolute left-0 -z-10 h-7 rounded-sm bg-neutral-200 transition-[width,transform,opacity]',
             )}
             style={{
               // default to show no transition

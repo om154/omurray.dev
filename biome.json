@@ -32,20 +32,5 @@
       "react": "recommended",
       "test": "recommended"
     }
-  },
-  "overrides": [
-    {
-      "includes": ["**/*.css"],
-      "linter": {
-        "rules": {
-          "suspicious": {
-            "noUnknownAtRules": "off"
-          },
-          "correctness": {
-            "noUnknownFunction": "off"
-          }
-        }
-      }
-    }
-  ]
+  }
 }

@@ -129,7 +129,7 @@ export default function RootLayout({
         <JsonLd data={websiteSchema()} />
         <a
           href="#main-content"
-          className="absolute left-2 top-2 z-50 -translate-y-20 rounded bg-white px-4 py-2 text-primary-900 shadow transition-transform focus:translate-y-0"
+          className="absolute left-2 top-2 z-50 -translate-y-20 rounded-sm bg-white px-4 py-2 text-primary-900 shadow-sm transition-transform focus:translate-y-0"
         >
           Skip to Content
         </a>

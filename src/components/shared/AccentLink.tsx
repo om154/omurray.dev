@@ -13,8 +13,8 @@ const AccentLink = ({ href, accentColor, children }: AccentLinkProps) => {
     : undefined;
 
   const className = accentColor
-    ? 'inline-block text-primary-600 decoration-[transparent] hover:decoration-[var(--accent-color)] hover:text-[var(--accent-color)] transition-colors duration-300 ease-in-out underline-offset-[6px] break-inside-avoid'
-    : 'inline-block text-primary-600 decoration-[transparent] hover:decoration-primary-700 hover:text-primary-700 transition-colors duration-300 ease-in-out underline-offset-[6px] break-inside-avoid';
+    ? 'inline-block text-primary-600 decoration-transparent hover:decoration-(--accent-color) hover:text-(--accent-color) transition-colors duration-300 ease-in-out underline-offset-6 break-inside-avoid'
+    : 'inline-block text-primary-600 decoration-transparent hover:decoration-primary-700 hover:text-primary-700 transition-colors duration-300 ease-in-out underline-offset-6 break-inside-avoid';
 
   return (
     <Link href={href} className={className} style={style}>

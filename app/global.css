@@ -1,6 +1,118 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --font-*: initial;
+  --font-sans:
+    ui-sans-serif, system-ui, -apple-system, var(--font-inter), Roboto,
+    sans-serif;
+  --font-serif: var(--font-lora), Roboto, sans-serif;
+  --font-mono: var(--font-fragment-mono), Roboto, mono;
+
+  --text-*: initial;
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-md: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+  --text-5xl: 3rem;
+  --text-6xl: 4rem;
+  --text-7xl: 4.5rem;
+  --text-8xl: 5rem;
+  --text-9xl: 6rem;
+
+  --font-weight-*: initial;
+  --font-weight-extralight: 200;
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semiBold: 600;
+  --font-weight-bold: 700;
+
+  --breakpoint-*: initial;
+  --breakpoint-sm: 320px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1440px;
+  --breakpoint-2xl: 1920px;
+
+  --color-*: initial;
+  --color-neutral-100: #f9fafb;
+  --color-neutral-200: #f6f8f9;
+  --color-neutral-300: #eff2f5;
+  --color-neutral-400: #dae0e7;
+  --color-neutral-500: #afc0d0;
+  --color-neutral-600: #95acc1;
+  --color-neutral-700: #557390;
+  --color-neutral-800: #4e637e;
+  --color-neutral-900: #2b3645;
+  --color-neutral-1000: #181f27;
+  --color-primary-50: #ffffff;
+  --color-primary-100: #ffffff;
+  --color-primary-200: #d5e6fb;
+  --color-primary-300: #a6cbf7;
+  --color-primary-400: #77b0f3;
+  --color-primary-500: #4895ef;
+  --color-primary-600: #197aeb;
+  --color-primary-700: #1162c0;
+  --color-primary-800: #0d4a91;
+  --color-primary-900: #093262;
+  --color-primary-1000: #051a33;
+  --color-royal-blue-50: #ffffff;
+  --color-royal-blue-100: #fefeff;
+  --color-royal-blue-200: #cfd7fb;
+  --color-royal-blue-300: #a1b0f6;
+  --color-royal-blue-400: #7288f2;
+  --color-royal-blue-500: #4361ee;
+  --color-royal-blue-600: #153ae9;
+  --color-royal-blue-700: #112fba;
+  --color-royal-blue-800: #0d238b;
+  --color-royal-blue-900: #08175d;
+  --color-sky-blue-50: #ffffff;
+  --color-sky-blue-100: #ffffff;
+  --color-sky-blue-200: #d9f4fc;
+  --color-sky-blue-300: #aae5f8;
+  --color-sky-blue-400: #7bd7f4;
+  --color-sky-blue-500: #4cc9f0;
+  --color-sky-blue-600: #1dbbec;
+  --color-sky-blue-700: #119ac5;
+  --color-sky-blue-800: #0d7696;
+  --color-sky-blue-900: #095167;
+  --color-violet-50: #f6bbee;
+  --color-violet-100: #f4a4e8;
+  --color-violet-200: #ee77dc;
+  --color-violet-300: #e84ad1;
+  --color-violet-400: #e21dc5;
+  --color-violet-500: #b5179e;
+  --color-violet-600: #881176;
+  --color-violet-700: #5b0c4f;
+  --color-violet-800: #2d0627;
+  --color-violet-900: #000000;
+  --color-pink-50: #ffffff;
+  --color-pink-100: #feeaf3;
+  --color-pink-200: #fcb9d8;
+  --color-pink-300: #fb87bc;
+  --color-pink-400: #f956a1;
+  --color-pink-500: #f72585;
+  --color-pink-600: #e1086b;
+  --color-pink-700: #b00654;
+  --color-pink-800: #7e053c;
+  --color-pink-900: #4d0325;
+  --color-purple-50: #cca4f9;
+  --color-purple-100: #be8cf8;
+  --color-purple-200: #a35cf5;
+  --color-purple-300: #882cf2;
+  --color-purple-400: #6e0edd;
+  --color-purple-500: #560bad;
+  --color-purple-600: #3e087d;
+  --color-purple-700: #26054d;
+  --color-purple-800: #0e021d;
+  --color-purple-900: #000000;
+  --color-white: #ffffff;
+  --color-black: #000000;
+}
 
 @keyframes fade-down {
   from {
@@ -22,19 +134,20 @@
   }
 }
 
-.animate-fade-down {
+@utility animate-fade-down {
   animation: fade-down var(--anim-duration, 0.4s) ease-out both;
   animation-delay: var(--anim-delay, 0ms);
+
+  @media (prefers-reduced-motion: reduce) {
+    animation: none;
+  }
 }
 
-.animate-fade-in {
+@utility animate-fade-in {
   animation: fade-in var(--anim-duration, 0.4s) ease-out both;
   animation-delay: var(--anim-delay, 0ms);
-}
 
-@media (prefers-reduced-motion: reduce) {
-  .animate-fade-down,
-  .animate-fade-in {
+  @media (prefers-reduced-motion: reduce) {
     animation: none;
   }
 }
@@ -58,7 +171,7 @@
   }
 
   :focus-visible {
-    outline: 2px solid theme("colors.primary.700");
+    outline: 2px solid var(--color-primary-700);
     outline-offset: 2px;
   }
 

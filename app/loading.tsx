@@ -7,17 +7,17 @@ export default function RootLoading() {
         <Section className="items-center h-full bg-transparent">
           <div className="box-border w-full max-w-5xl mx-auto text-left lg:px-4 text-primary-900 md:min-h-[460px]">
             <div className="flex flex-col items-center justify-center h-full gap-4 lg:px-4">
-              <div className="w-full h-5 rounded-sm bg-neutral-200 animate-pulse" />
-              <div className="w-full h-5 rounded-sm bg-neutral-200 animate-pulse" />
-              <div className="w-full h-5 rounded-sm bg-neutral-200 animate-pulse" />
+              <div className="w-full h-5 rounded-xs bg-neutral-200 animate-pulse" />
+              <div className="w-full h-5 rounded-xs bg-neutral-200 animate-pulse" />
+              <div className="w-full h-5 rounded-xs bg-neutral-200 animate-pulse" />
               <div />
-              <div className="w-full h-5 rounded-sm bg-neutral-200 animate-pulse" />
-              <div className="w-full h-5 rounded-sm bg-neutral-200 animate-pulse" />
-              <div className="w-full h-5 rounded-sm bg-neutral-200 animate-pulse" />
+              <div className="w-full h-5 rounded-xs bg-neutral-200 animate-pulse" />
+              <div className="w-full h-5 rounded-xs bg-neutral-200 animate-pulse" />
+              <div className="w-full h-5 rounded-xs bg-neutral-200 animate-pulse" />
               <div />
-              <div className="w-full h-5 rounded-sm bg-neutral-200 animate-pulse" />
-              <div className="w-full h-5 rounded-sm bg-neutral-200 animate-pulse" />
-              <div className="w-full h-5 rounded-sm bg-neutral-200 animate-pulse" />
+              <div className="w-full h-5 rounded-xs bg-neutral-200 animate-pulse" />
+              <div className="w-full h-5 rounded-xs bg-neutral-200 animate-pulse" />
+              <div className="w-full h-5 rounded-xs bg-neutral-200 animate-pulse" />
             </div>
           </div>
         </Section>

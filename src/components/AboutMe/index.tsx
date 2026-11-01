@@ -182,8 +182,7 @@ const AboutMe = () => (
         <div className="flex flex-row justify-end w-full mt-2 md:hidden">
           <ContactLinks />
         </div>
-        <div className="w-full mt-2 mb-4 border-t border-neutral-300" />
-        <div className="w-full text-left md:mt-2">
+        <div className="w-full mt-6 text-left md:mt-8">
           <H3 as="h2">Companies I've worked for</H3>
         </div>
         <div className="grid grid-cols-1 gap-4 mt-4 sm:grid-flow-row-dense lg:grid-cols-2">

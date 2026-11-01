@@ -48,16 +48,13 @@ const ProjectItem = ({
           ))}
         </div>
       </div>
-      <div>
-        <div className="w-full my-3 border-t border-neutral-300" />
-        <div className="self-end text-neutral-700">
-          {technologies.map((t, i) => (
-            <span key={`tech-${i}`}>
-              {i > 0 && <span>・</span>}
-              {t}
-            </span>
-          ))}
-        </div>
+      <div className="mt-3 text-neutral-700">
+        {technologies.map((t, i) => (
+          <span key={`tech-${i}`}>
+            {i > 0 && <span>・</span>}
+            {t}
+          </span>
+        ))}
       </div>
     </div>
     <div className="relative flex justify-center order-first h-60 md:h-full md:w-[20%] xl:w-[40%] md:shrink-0 shadow-md rounded-md">

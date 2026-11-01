@@ -1,36 +1,35 @@
-import { H2, P } from "src/components/shared/Text";
-import Item, { InterestItem } from "src/components/Hobbies/Item";
-import ProjectItem, { ProjectItemModel } from "./ProjectItem";
-
-import { Metadata } from "next";
-import JsonLd from "src/components/seo/JsonLd";
-import Section from "src/components/Section";
-import { projectsItemListSchema } from "src/lib/structuredData";
-import backyardImg from "public/static/img/backyard.png";
-import camberwellImg from "public/static/img/camberwell.png";
-import comedyFyiImg from "public/static/img/comedyFyi.png";
-import firesideImg from "public/static/img/fireside.png";
-import omurrayDevImg from "public/static/img/omurrayDev.png";
-import thinValueImg from "public/static/img/thinvaluePoker.png";
-import trailchallengeImg from "public/static/img/trailchallenge.png";
+import type { Metadata } from 'next';
+import backyardImg from 'public/static/img/backyard.png';
+import camberwellImg from 'public/static/img/camberwell.png';
+import comedyFyiImg from 'public/static/img/comedyFyi.png';
+import firesideImg from 'public/static/img/fireside.png';
+import omurrayDevImg from 'public/static/img/omurrayDev.png';
+import thinValueImg from 'public/static/img/thinvaluePoker.png';
+import trailchallengeImg from 'public/static/img/trailchallenge.png';
+import Item, { InterestItem } from 'src/components/Hobbies/Item';
+import Section from 'src/components/Section';
+import JsonLd from 'src/components/seo/JsonLd';
+import { H2, P } from 'src/components/shared/Text';
+import { projectsItemListSchema } from 'src/lib/structuredData';
+import ProjectItem, { type ProjectItemModel } from './ProjectItem';
 
 export const metadata: Metadata = {
-  title: "Projects",
+  title: 'Projects',
   description:
-    "A selection of products and side projects Oliver has built - Camberwell Co., Trail Challenge, comedy.fyi, Backyard, Fireside, and more.",
+    'A selection of products and side projects Oliver has built - Camberwell Co., Trail Challenge, comedy.fyi, Backyard, Fireside, and more.',
   alternates: {
-    canonical: "/projects",
+    canonical: '/projects',
   },
 };
 
 const items: ProjectItemModel[] = [
   {
     paragraphs: [
-      "You run your business. We help it succeed online.",
-      "Camberwell Co. brings e-commerce and software expertise to businesses as a subscription, and builds software around the way they work.",
+      'You run your business. We help it succeed online.',
+      'Camberwell Co. brings e-commerce and software expertise to businesses as a subscription, and builds software around the way they work.',
     ],
-    technologies: ["Astro", "TypeScript", "Tailwind", "Cloudflare"],
-    url: "https://camberwellcompany.com",
+    technologies: ['Astro', 'TypeScript', 'Tailwind', 'Cloudflare'],
+    url: 'https://camberwellcompany.com',
     imagePath: camberwellImg,
   },
   {
@@ -39,87 +38,87 @@ const items: ProjectItemModel[] = [
       "Find every trail in your town, track your progress in real time, and earn rewards once you've completed them all.",
     ],
     technologies: [
-      "Astro",
-      "TypeScript",
-      "Tailwind",
-      "Cloudflare",
-      "Expo",
-      "React Native",
-      "Tamagui",
+      'Astro',
+      'TypeScript',
+      'Tailwind',
+      'Cloudflare',
+      'Expo',
+      'React Native',
+      'Tamagui',
     ],
-    url: "https://trailchallenge.com",
+    url: 'https://trailchallenge.com',
     imagePath: trailchallengeImg,
   },
   {
     paragraphs: [
       "A platform to find tickets to shows by the United States' best comedians.",
-      "For any show, you can find a link to buy tickets and see other shows nearby on a map.",
+      'For any show, you can find a link to buy tickets and see other shows nearby on a map.',
     ],
     technologies: [
-      "Next.js",
-      "React",
-      "TypeScript",
-      "Tailwind",
-      "Mapbox",
-      "Vercel",
+      'Next.js',
+      'React',
+      'TypeScript',
+      'Tailwind',
+      'Mapbox',
+      'Vercel',
     ],
-    url: "https://comedy.fyi",
+    url: 'https://comedy.fyi',
     imagePath: comedyFyiImg,
   },
   {
     paragraphs: [
-      "Backyard is a platform that allows anyone to rent space, or make money renting out their space for storage.",
+      'Backyard is a platform that allows anyone to rent space, or make money renting out their space for storage.',
     ],
     technologies: [
-      "React",
-      "Remix",
-      "Vite",
-      "TypeScript",
-      "Tailwind",
-      "Supabase",
-      "Postgres",
-      "Severless on AWS (sst)",
+      'React',
+      'Remix',
+      'Vite',
+      'TypeScript',
+      'Tailwind',
+      'Supabase',
+      'Postgres',
+      'Severless on AWS (sst)',
     ],
-    url: "https://usebackyard.com",
+    url: 'https://usebackyard.com',
     imagePath: backyardImg,
   },
   {
     paragraphs: [
-      "Fireside helps you record a podcast with your loved ones. We generate nostalgic, sentimental questions for you and faciliate recording and storage so you can focus on their stories.",
+      'Fireside helps you record a podcast with your loved ones. We generate nostalgic, sentimental questions for you and faciliate recording and storage so you can focus on their stories.',
     ],
     technologies: [
-      "React",
-      "Remix",
-      "TypeScript",
-      "Tailwind",
-      "Neon",
-      "Severless on AWS (sst)",
+      'React',
+      'Remix',
+      'TypeScript',
+      'Tailwind',
+      'Neon',
+      'Severless on AWS (sst)',
     ],
-    url: "https://recordfireside.com",
+    url: 'https://recordfireside.com',
     imagePath: firesideImg,
   },
   {
     paragraphs: [
-      "A personal website for my brother, Lachlan, who is an amatuer poker player working to get staked as a professional.",
+      'A personal website for my brother, Lachlan, who is an amatuer poker player working to get staked as a professional.',
     ],
-    technologies: ["Next.js", "React", "TypeScript", "Tailwind", "Vercel"],
-    url: "https://thinvalue.poker",
+    technologies: ['Next.js', 'React', 'TypeScript', 'Tailwind', 'Vercel'],
+    url: 'https://thinvalue.poker',
     imagePath: thinValueImg,
   },
   {
     paragraphs: [
       "You're here! 🎉",
-      "A personal website about me including my travels, projects and hobbies.",
+      'A personal website about me including my travels, projects and hobbies.',
     ],
     technologies: [
-      "Next.js",
-      "React",
-      "TypeScript",
-      "Tailwind",
-      "Framer",
-      "Vercel",
+      'Next.js',
+      'React',
+      'TypeScript',
+      'Tailwind',
+      'Framer',
+      'Vercel',
     ],
-    url: "https://omurray.dev",
+    url: 'https://omurray.dev',
     imagePath: omurrayDevImg,
   },
 ];

@@ -11,7 +11,7 @@ const fontSizes = {
   '6xl': '4rem',
   '7xl': '4.5rem',
   '8xl': '5rem',
-  '9xl': '6rem'
+  '9xl': '6rem',
 };
 
 const fontWeights = {
@@ -20,7 +20,7 @@ const fontWeights = {
   regular: 400,
   medium: 500,
   semiBold: 600,
-  bold: 700
+  bold: 700,
 };
 
 // CommonJS Module Export for Tailwindcss

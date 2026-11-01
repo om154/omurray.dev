@@ -1,5 +1,5 @@
 interface Props {
-  data: Record<string, unknown>
+  data: Record<string, unknown>;
 }
 
 const JsonLd = ({ data }: Props) => {
@@ -9,7 +9,7 @@ const JsonLd = ({ data }: Props) => {
       // biome-ignore lint/security/noDangerouslySetInnerHtml: JSON-LD needs a raw script body
       dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
     />
-  )
-}
+  );
+};
 
-export default JsonLd
+export default JsonLd;

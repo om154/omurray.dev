@@ -1,10 +1,10 @@
-const SITE_URL = 'https://omurray.dev'
+const SITE_URL = 'https://omurray.dev';
 
 const sameAs = [
   process.env.NEXT_PUBLIC_GITHUB_URL,
   process.env.NEXT_PUBLIC_LINKEDIN_URL,
   process.env.NEXT_PUBLIC_TWITTER_URL,
-].filter(Boolean) as string[]
+].filter(Boolean) as string[];
 
 export const personSchema = () => ({
   '@context': 'https://schema.org',
@@ -17,7 +17,7 @@ export const personSchema = () => ({
   nationality: 'Australia',
   email: `mailto:${process.env.NEXT_PUBLIC_USER_EMAIL_ADDRESS}`,
   sameAs,
-})
+});
 
 export const websiteSchema = () => ({
   '@context': 'https://schema.org',
@@ -27,7 +27,7 @@ export const websiteSchema = () => ({
   url: SITE_URL,
   inLanguage: 'en-US',
   publisher: { '@id': `${SITE_URL}/#person` },
-})
+});
 
 export const profilePageSchema = () => ({
   '@context': 'https://schema.org',
@@ -36,11 +36,11 @@ export const profilePageSchema = () => ({
   url: SITE_URL,
   name: 'Oliver Murray',
   mainEntity: { '@id': `${SITE_URL}/#person` },
-})
+});
 
 interface ProjectListItem {
-  url: string
-  paragraphs: string[]
+  url: string;
+  paragraphs: string[];
 }
 
 export const projectsItemListSchema = (items: ProjectListItem[]) => ({
@@ -59,4 +59,4 @@ export const projectsItemListSchema = (items: ProjectListItem[]) => ({
       creator: { '@id': `${SITE_URL}/#person` },
     },
   })),
-})
+});

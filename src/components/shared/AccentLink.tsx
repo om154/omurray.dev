@@ -1,5 +1,5 @@
-import Link from "next/link";
-import { ReactNode, CSSProperties } from "react";
+import Link from 'next/link';
+import type { CSSProperties, ReactNode } from 'react';
 
 interface AccentLinkProps {
   href: string;

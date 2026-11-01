@@ -1,32 +1,32 @@
-import Navigation from 'src/components/Navigation'
-import PageContainer from 'src/components/shared/PageContainer'
-import JsonLd from 'src/components/seo/JsonLd'
-import { personSchema, websiteSchema } from 'src/lib/structuredData'
-import { Fragment_Mono, Inter, Lora } from 'next/font/google'
-import { Metadata, Viewport } from 'next'
-import { Analytics } from '@vercel/analytics/react'
-import { SpeedInsights } from '@vercel/speed-insights/next'
+import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/next';
+import type { Metadata, Viewport } from 'next';
+import { Fragment_Mono, Inter, Lora } from 'next/font/google';
+import Navigation from 'src/components/Navigation';
+import JsonLd from 'src/components/seo/JsonLd';
+import PageContainer from 'src/components/shared/PageContainer';
+import { personSchema, websiteSchema } from 'src/lib/structuredData';
 
-import './global.css'
+import './global.css';
 
 const inter = Inter({
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-inter',
-})
+});
 
 const lora = Lora({
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-lora',
-})
+});
 
 const fragmentMono = Fragment_Mono({
   subsets: ['latin'],
   display: 'swap',
-  weight: "400",
+  weight: '400',
   variable: '--font-fragment-mono',
-})
+});
 
 export const viewport: Viewport = {
   colorScheme: 'light',
@@ -34,13 +34,17 @@ export const viewport: Viewport = {
     { media: '(prefers-color-scheme: light)', color: '#0074DC' },
     { media: '(prefers-color-scheme: dark)', color: 'black' },
   ],
-}
+};
 
 const description =
-  'Oliver Murray is a software engineer from Australia, building products at early-stage startups in the US. Explore his projects, travels, and hobbies.'
+  'Oliver Murray is a software engineer from Australia, building products at early-stage startups in the US. Explore his projects, travels, and hobbies.';
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NODE_ENV === "production" ? 'https://omurray.dev' : 'http://localhost:3000'),
+  metadataBase: new URL(
+    process.env.NODE_ENV === 'production'
+      ? 'https://omurray.dev'
+      : 'http://localhost:3000',
+  ),
   title: {
     template: 'Oliver Murray | %s',
     default: 'Oliver Murray',
@@ -54,10 +58,18 @@ export const metadata: Metadata = {
   appleWebApp: {
     capable: true,
     title: 'Oliver Murray',
-    statusBarStyle: 'default'
+    statusBarStyle: 'default',
   },
   referrer: 'origin-when-cross-origin',
-  keywords: ['Oliver', 'Murray', 'Oliver Murray', 'Software Engineer', 'Next.js', 'React', 'JavaScript'],
+  keywords: [
+    'Oliver',
+    'Murray',
+    'Oliver Murray',
+    'Software Engineer',
+    'Next.js',
+    'React',
+    'JavaScript',
+  ],
   authors: [{ name: 'Oliver', url: 'https://omurray.dev' }],
   creator: 'Oliver Murray',
   publisher: 'Oliver Murray',
@@ -97,15 +109,18 @@ export const metadata: Metadata = {
   verification: {
     google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION,
   },
-}
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${inter.variable} ${lora.variable} ${fragmentMono.variable}`}>
+    <html
+      lang="en"
+      className={`${inter.variable} ${lora.variable} ${fragmentMono.variable}`}
+    >
       <head>
         <meta charSet="utf-8" />
       </head>
@@ -126,5 +141,5 @@ export default function RootLayout({
         <SpeedInsights />
       </body>
     </html>
-  )
+  );
 }

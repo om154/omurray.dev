@@ -1,5 +1,5 @@
-import Travel from "src/components/Travel"
-import { Metadata } from 'next'
+import type { Metadata } from 'next';
+import Travel from 'src/components/Travel';
 
 export const metadata: Metadata = {
   title: 'Travel',
@@ -8,8 +8,8 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/travel',
   },
-}
+};
 
 export default function Page() {
-  return <Travel />
+  return <Travel />;
 }

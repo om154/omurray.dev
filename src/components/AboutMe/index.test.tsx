@@ -6,7 +6,9 @@ describe('getAge', () => {
     const date = new Date();
     date.setFullYear(date.getUTCFullYear() - 21);
 
-    const age = calculateAge(`${date.getUTCDay()}-${date.getUTCMonth()}-${date.getUTCFullYear()}`);
+    const age = calculateAge(
+      `${date.getUTCDay()}-${date.getUTCMonth()}-${date.getUTCFullYear()}`,
+    );
     expect(age).toBe(21);
   });
 });

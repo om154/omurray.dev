@@ -1,11 +1,11 @@
-import CrunchbaseLogo from "../CrunchbaseLogo";
-import ExternalLinkIcon from "../ExternalLinkIcon";
-import Image from "next/image";
-import Link from "next/link";
-import LinkedInLogo from "src/components/shared/LinkedInLogo";
-import Pill from "..";
-import cn from "classnames";
-import glimpseLogo from "public/static/img/glimpse.webp";
+import cn from 'classnames';
+import Image from 'next/image';
+import Link from 'next/link';
+import glimpseLogo from 'public/static/img/glimpse.webp';
+import LinkedInLogo from 'src/components/shared/LinkedInLogo';
+import Pill from '..';
+import CrunchbaseLogo from '../CrunchbaseLogo';
+import ExternalLinkIcon from '../ExternalLinkIcon';
 
 interface GlimpsePillProps {
   className?: string;
@@ -22,7 +22,7 @@ const GlimpseLogo = () => (
 );
 
 const GlimpsePill = ({ className }: GlimpsePillProps) => (
-  <Pill className={cn("bg-white", className)}>
+  <Pill className={cn('bg-white', className)}>
     <div className="relative flex items-center row h-[32px] w-[80px]">
       <GlimpseLogo />
     </div>

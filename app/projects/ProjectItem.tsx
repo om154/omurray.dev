@@ -1,8 +1,8 @@
-import AnimateDown from "src/components/animations/AnimateDown";
-import AnimateFadeIn from "src/components/animations/AnimateFadeIn";
-import Image from "next/image";
-import Link from "next/link";
-import { P } from "src/components/shared/Text";
+import Image from 'next/image';
+import Link from 'next/link';
+import AnimateDown from 'src/components/animations/AnimateDown';
+import AnimateFadeIn from 'src/components/animations/AnimateFadeIn';
+import { P } from 'src/components/shared/Text';
 
 export interface ProjectItemModel {
   url: string;
@@ -35,7 +35,7 @@ const ProjectItem = ({
           >
             <AnimateFadeIn duration={0.35}>
               <h2 className="overflow-hidden text-ellipsis box-border font-mono text-lg leading-tight lg:text-xl underline decoration-primary-700 decoration-1 hover:decoration-primary-800 transition-[color,text-decoration] duration-300 ease">
-                {url.replace(/^https:\/\//, "")}
+                {url.replace(/^https:\/\//, '')}
               </h2>
             </AnimateFadeIn>
           </Link>
@@ -65,7 +65,7 @@ const ProjectItem = ({
         src={imagePath}
         fill
         placeholder="blur"
-        alt={`Screenshot of the ${new URL(url).hostname.replace(/^www\./, "")} website`}
+        alt={`Screenshot of the ${new URL(url).hostname.replace(/^www\./, '')} website`}
         className="object-cover object-top max-w-full rounded-md select-none"
       />
     </div>

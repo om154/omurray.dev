@@ -1,13 +1,18 @@
-import classNames from "classnames"
+import classNames from 'classnames';
 
 interface Props {
-  width?: number
-  height?: number
-  fill?: string
-  className?: string
+  width?: number;
+  height?: number;
+  fill?: string;
+  className?: string;
 }
 
-const AmbientLogo = ({ width = 104.896, height = 22, fill = '#fff', className }: Props) => (
+const AmbientLogo = ({
+  width = 104.896,
+  height = 22,
+  fill = '#fff',
+  className,
+}: Props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 1341 300"
@@ -16,7 +21,7 @@ const AmbientLogo = ({ width = 104.896, height = 22, fill = '#fff', className }:
     height={height}
     className={classNames(
       'transition-transform duration-200 row hover:scale-[1.05] ease z-20',
-      className
+      className,
     )}
   >
     <path
@@ -26,6 +31,6 @@ const AmbientLogo = ({ width = 104.896, height = 22, fill = '#fff', className }:
       clipRule="evenodd"
     />
   </svg>
-)
+);
 
-export default AmbientLogo
+export default AmbientLogo;

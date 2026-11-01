@@ -1,5 +1,5 @@
-import cn from "classnames";
-import { ReactNode } from "react";
+import cn from 'classnames';
+import type { ReactNode } from 'react';
 
 interface ExternalLinkProps {
   href: string;
@@ -14,7 +14,7 @@ const ExternalLink = ({ href, className, children }: ExternalLinkProps) => (
     rel="noreferrer"
     className={cn(
       'decoration-primary-800 decoration-1 underline-offset-2 hover:decoration-primary-900 hover:text-primary-900',
-      className
+      className,
     )}
   >
     {children}

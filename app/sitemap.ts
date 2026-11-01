@@ -1,9 +1,9 @@
-import { MetadataRoute } from 'next'
+import type { MetadataRoute } from 'next';
 
 const routes: {
-  path: string
-  changeFrequency: MetadataRoute.Sitemap[number]['changeFrequency']
-  priority: number
+  path: string;
+  changeFrequency: MetadataRoute.Sitemap[number]['changeFrequency'];
+  priority: number;
 }[] = [
   { path: '', changeFrequency: 'monthly', priority: 1.0 },
   { path: '/about', changeFrequency: 'yearly', priority: 0.8 },
@@ -11,7 +11,7 @@ const routes: {
   { path: '/resources', changeFrequency: 'weekly', priority: 0.6 },
   { path: '/hobbies', changeFrequency: 'yearly', priority: 0.5 },
   { path: '/travel', changeFrequency: 'yearly', priority: 0.5 },
-]
+];
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return routes.map(({ path, changeFrequency, priority }) => ({
@@ -19,5 +19,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: new Date(),
     changeFrequency,
     priority,
-  }))
+  }));
 }

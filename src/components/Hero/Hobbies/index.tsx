@@ -1,13 +1,19 @@
 import Image from 'next/image';
-import { ChildrenProp } from '../../../utils/props';
-import { HeroProps } from '../props';
 import AnimateDown from 'src/components/animations/AnimateDown';
+import type { ChildrenProp } from '../../../utils/props';
+import type { HeroProps } from '../props';
 
 interface InterestsHeroProps extends HeroProps {
-  alt: string
+  alt: string;
 }
 
-const InterestsHero = ({ imgSrc, alt, children, animationDelay, animationDuration }: InterestsHeroProps & ChildrenProp) => (
+const InterestsHero = ({
+  imgSrc,
+  alt,
+  children,
+  animationDelay,
+  animationDuration,
+}: InterestsHeroProps & ChildrenProp) => (
   <AnimateDown
     delay={animationDelay}
     duration={animationDuration}
@@ -16,11 +22,17 @@ const InterestsHero = ({ imgSrc, alt, children, animationDelay, animationDuratio
     <div className="flex flex-col justify-start flex-1 order-last mt-4 lg:m-0">
       {children}
     </div>
-    {imgSrc &&
+    {imgSrc && (
       <div className="relative flex justify-center order-first h-60 md:h-full md:w-[20%] xl:w-[40%]">
-        <Image src={imgSrc} fill placeholder='blur' alt={alt} className="object-cover object-center max-w-full rounded-md select-none md:object-top" />
+        <Image
+          src={imgSrc}
+          fill
+          placeholder="blur"
+          alt={alt}
+          className="object-cover object-center max-w-full rounded-md select-none md:object-top"
+        />
       </div>
-    }
+    )}
   </AnimateDown>
 );
 

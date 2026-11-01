@@ -23,3 +23,6 @@ yarn-error.log*
 .firebase
 .vercel
 .next
+
+# next.js
+next-env.d.ts

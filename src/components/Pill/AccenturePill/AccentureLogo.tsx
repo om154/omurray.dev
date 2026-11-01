@@ -18,6 +18,7 @@ const AccentureLogo = ({ width = 75, height = 32, className }: Props) => (
       className,
     )}
   >
+    <title>Accenture</title>
     <path
       d="m95.1 12 9.4-3.5-9.4-3.6V0l16.1 6.5v4L95.1 17z"
       style={{

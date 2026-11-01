@@ -8,6 +8,7 @@ const LINKEDIN_BLUE: string = '#0a66c2';
 
 const LinkedInLogo = ({ width = 18, height = 18, className }: Props) => (
   <svg
+    aria-hidden="true"
     xmlns="http://www.w3.org/2000/svg"
     fill={LINKEDIN_BLUE}
     className={className}

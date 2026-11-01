@@ -6,6 +6,7 @@ interface Props {
 
 const EmailIcon = ({ width = 20, height = 20, className }: Props) => (
   <svg
+    aria-hidden="true"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 1920 1920"
     width={width}

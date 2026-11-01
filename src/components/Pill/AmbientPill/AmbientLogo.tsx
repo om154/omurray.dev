@@ -24,6 +24,7 @@ const AmbientLogo = ({
       className,
     )}
   >
+    <title>Ambient</title>
     <path
       fill={fill}
       fillRule="evenodd"

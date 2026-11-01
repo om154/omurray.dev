@@ -5,7 +5,7 @@
   "engines": {
     "node": "^26.0.0"
   },
-  "packageManager": "yarn@1.22.19",
+  "packageManager": "pnpm@12.16.1",
   "dependencies": {
     "@vercel/analytics": "^2.0.1",
     "@vercel/speed-insights": "^2.0.0",
@@ -23,7 +23,7 @@
     "start": "next start",
     "lint": "biome check",
     "test": "jest",
-    "unit-test": "yarn test --watchAll=false",
+    "unit-test": "pnpm test --watchAll=false",
     "format": "biome check --write"
   },
   "browserslist": {

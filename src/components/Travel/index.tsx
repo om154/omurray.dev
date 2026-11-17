@@ -54,7 +54,11 @@ const Travel = () => (
         </P>
         <div className="grid grid-cols-1 gap-4 mt-4 isolate sm:grid-cols-2 sm:grid-flow-row-dense md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-8">
           {travelData.map((l, i) => (
-            <TravelCard key={`${l.city}-${l.country}`} location={l} index={i} />
+            <TravelCard
+              key={`${l.city}-${l.country}-${l.arrivalDateTime}`}
+              location={l}
+              index={i}
+            />
           ))}
           <AnimateDown
             delay={(travelData.length + 1) * 0.02}

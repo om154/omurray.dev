@@ -8,6 +8,11 @@ import oregonImg2 from 'public/static/img/bend/2.jpeg';
 import oregonImg3 from 'public/static/img/bend/3.jpeg';
 import oregonImg4 from 'public/static/img/bend/4.jpeg';
 import oregonImg5 from 'public/static/img/bend/5.jpeg';
+import capeTownImg1 from 'public/static/img/capetown/1.jpeg';
+import capeTownImg2 from 'public/static/img/capetown/2.jpeg';
+import capeTownImg3 from 'public/static/img/capetown/3.jpeg';
+import capeTownImg4 from 'public/static/img/capetown/4.jpeg';
+import capeTownImg5 from 'public/static/img/capetown/5.jpeg';
 import fijiImg1 from 'public/static/img/fiji/1.jpeg';
 import fijiImg2 from 'public/static/img/fiji/2.jpeg';
 import fijiImg3 from 'public/static/img/fiji/3.jpeg';
@@ -76,6 +81,19 @@ export const photoHeroes: PhotoHeroModel[] = [
     year: '2023',
     emoji: '🇳🇴',
     imgSrc: [norwayImg1, norwayImg2, norwayImg3, norwayImg4, norwayImg5],
+  },
+  {
+    title: 'Cape Town',
+    month: 'March',
+    year: '2023',
+    emoji: '🇿🇦',
+    imgSrc: [
+      capeTownImg1,
+      capeTownImg2,
+      capeTownImg3,
+      capeTownImg4,
+      capeTownImg5,
+    ],
   },
   {
     title: 'Japan',

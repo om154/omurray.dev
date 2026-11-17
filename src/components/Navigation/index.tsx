@@ -71,6 +71,8 @@ const Navigation = () => {
     setWidth(null);
   };
 
+  if (/^\/writing\/[^/]+/.test(pathName)) return null;
+
   return (
     <header className="sticky top-0 z-10 flex items-center justify-center py-4 -mx-4 pointer-events-none isolate md:mx-0 md:justify-between">
       <AnimateDown className="max-w-full pointer-events-auto">

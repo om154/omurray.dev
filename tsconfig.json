@@ -2,7 +2,7 @@
   "compilerOptions": {
     "target": "ES2017",
     "lib": ["dom", "esnext"],
-    "types": ["node", "jest", "@testing-library/jest-dom"],
+    "types": ["node", "jest", "@testing-library/jest-dom", "mdx"],
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,

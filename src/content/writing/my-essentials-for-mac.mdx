@@ -1,0 +1,100 @@
+
+## Raycast
+
+[Raycast](https://www.raycast.com/) is the #1 piece of software I recommend to anyone using a MacBook. I think they even support Windows now too. I use it for all the following and more:
+
+- Calculator
+- Clipboard history
+- Color picker
+- Emoji picker with symbols and AI search
+- Hotkeys – global keyboard shortcuts to open any app, e.g. ⌥ + C for Chrome
+- Quicklinks – shortcuts for frequently used paths, files, and URLs
+- Snippets – text expansion
+- Window management – move and resize windows
+- Team time – e.g. 🇺🇸 SF / 🇺🇸 NY / 🇮🇹 Italy / 🇺🇾 Uruguay
+- Dictation
+- AI chats, Quick AI – ⌥ + Space and a chat window is open
+- Extensions – there's a marketplace of extensions for almost every single tool you can imagine
+
+Taking the time to setup and learn to use Raycast will save you significant time and will honestly bring you joy throughout the day. The calculator especially is fantastic for making quick calculations when something comes to mind. For example: $100 USD to AUD, or 99°F to °C, "Days until Christmas", "Days until August 29".
+
+## Other Apps
+
+- [CleanShot X](https://cleanshot.com/) for screenshots & recordings, or [Loom](https://www.loom.com/) if you prefer it
+- [PixelSnap](https://pixelsnap.com/) for measuring things on your screen
+- [Space Rabbit](https://space-rabbit.app/): switch spaces instantly, with no macOS animation
+- [Bear](https://bear.app/) or [Obsidian](https://obsidian.md/) for notes
+- [Defaults](https://www.glaze.app/app/defaults-G62ohp) from Glaze for all kinds of macOS settings that are hidden or hard to find
+- [OTP Auth](https://apps.apple.com/us/app/otp-auth/id659877384) for iOS and macOS: premium adds iCloud sync, and it allows export and backups
+- [2FHey](https://sofriendly.gumroad.com/l/2fhey?layout=profile) to auto-fill 2FA codes in any browser
+- [HandBrake](https://handbrake.fr/) for converting videos
+- [Ghostty](https://ghostty.org/) for a super-fast terminal with GPU acceleration and native UI
+- [Oh My Zsh](https://ohmyz.sh/) for terminal helpers, plugins & themes to make it look nice
+- [Claude Code](https://code.claude.com/docs/en/overview) particularly Opus 5.5 for software development
+- [herdr](https://herdr.dev/) for running & managing your coding agents in the terminal
+- [Conductor](https://docs.conductor.build/) for running & managing your coding agents in a GUI
+
+### If you're not using Raycast
+
+- [Paraspeech](https://paraspeech.com/) or [Wispr Flow](https://wisprflow.ai/) for dictation
+- [Cold Turkey Blocker](https://getcoldturkey.com/) to block distracting websites & apps on a schedule
+- [Magnet](https://magnet.crowdcafe.com/) for window management
+
+### Depending on your setup
+
+- [SteerMouse](https://plentycom.jp/en/steermouse/) for customization if you use a mouse
+- [MonitorControl](https://github.com/MonitorControl/MonitorControl#readme) or [BetterDisplay Pro](https://betterdisplay.pro/) if you use an external monitor. See [this thread on r/mac](https://www.reddit.com/r/mac/comments/16hnmgw/external_monitor_control_monitorcontrol_lunar_or/) to compare them.
+- [Unclack](https://unclack.app/) if you use a mechanical keyboard
+
+## Other software
+
+### VPN
+
+[Mullvad VPN](https://mullvad.net/en) is the most privacy-focused VPN I could find. If you can't use them, try and find at least one that says they keep no logs of your activity. A lot of free VPNs sell your traffic and behavior.
+
+### Password manager
+
+You must use a password manager. Any of these is fine:
+
+- 1Password: very easy and user friendly, $50/year
+- Apple's Keychain, on iPhone and Mac with iCloud
+- Bitwarden: free
+- Proton Pass
+- NordPass, which pairs with NordVPN
+- `pass`, the Unix utility on the command line. This is what I use, and I back it up manually.
+
+## Hardware
+
+- [Roost Stand](https://www.therooststand.com/) combined with an external keyboard is great for keeping your laptop at eye-level
+- [Logitech MX Master 4](https://www.logitech.com/en-us/shop/p/mx-master-4.910-007558) or [Logitech G502](https://www.logitechg.com/en-us/shop/p/g502-hero-gaming-mouse.910-005469) (configure it with [SteerMouse](https://plentycom.jp/en/steermouse/), not LogiOptions)
+- [Backblaze](https://www.backblaze.com/), if you want simple, easy cloud backups and/or;
+- An external drive for Time Machine backups
+- [Anker Nano Chargers](https://www.anker.com/anker-nano) are the slimmest and smallest chargers that still have a high power output
+
+## Keyboard modifications
+
+### Make the trackpad cursor move faster
+
+```sh
+defaults write -g com.apple.trackpad.scaling -float 3.0
+```
+
+### Speed up the key repeat (optional)
+
+Machine gun backspace.
+
+```sh
+defaults write NSGlobalDomain KeyRepeat -int 1
+```
+
+### Invert the scroll direction (optional)
+
+```sh
+defaults write -g com.apple.swipescrolldirection -bool false
+```
+
+### Remove the accent menu when you hold down a key (optional)
+
+```sh
+defaults write -g ApplePressAndHoldEnabled -bool false
+```

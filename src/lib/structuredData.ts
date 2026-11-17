@@ -43,6 +43,23 @@ interface ProjectListItem {
   paragraphs: string[];
 }
 
+export const blogPostingSchema = (post: {
+  slug: string;
+  title: string;
+  description: string;
+  publishedAt: string;
+}) => ({
+  '@context': 'https://schema.org',
+  '@type': 'BlogPosting',
+  '@id': `${SITE_URL}/writing/${post.slug}#post`,
+  headline: post.title,
+  description: post.description,
+  datePublished: post.publishedAt,
+  url: `${SITE_URL}/writing/${post.slug}`,
+  mainEntityOfPage: `${SITE_URL}/writing/${post.slug}`,
+  author: { '@id': `${SITE_URL}/#person` },
+});
+
 export const projectsItemListSchema = (items: ProjectListItem[]) => ({
   '@context': 'https://schema.org',
   '@type': 'ItemList',

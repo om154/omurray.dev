@@ -29,6 +29,22 @@ export async function generateMetadata({
     alternates: {
       canonical: `/writing/${post.slug}`,
     },
+    openGraph: {
+      type: 'article',
+      title: post.title,
+      description: post.description,
+      url: `/writing/${post.slug}`,
+      siteName: 'Oliver Murray',
+      locale: 'en_US',
+      publishedTime: post.publishedAt,
+      authors: ['Oliver Murray'],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: post.title,
+      description: post.description,
+      creator: '@OliMurray7',
+    },
   };
 }
 

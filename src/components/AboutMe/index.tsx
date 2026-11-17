@@ -168,10 +168,11 @@ const cards: AboutMeCardModel[] = [
 const AboutMe = () => (
   <Section alignTop>
     <div className="box-border w-full">
-      <div className="mb-4 text-left">
-        <H2 as="h1">About me</H2>
-      </div>
-      <AboutMeHero imgSrc={aboutMeImg} animationDuration={0.35}>
+      <AboutMeHero
+        imgSrc={aboutMeImg}
+        title={<H2 as="h1">About me</H2>}
+        animationDuration={0.35}
+      >
         <P>
           Hey 👋🏻 I&apos;m Oliver, a
           {process.env.NEXT_PUBLIC_DATE_OF_BIRTH &&

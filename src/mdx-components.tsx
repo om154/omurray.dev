@@ -1,5 +1,6 @@
 import type { MDXComponents } from 'mdx/types';
 import ExternalLink from 'src/components/shared/ExternalLink';
+import CodeBlock from 'src/components/Writing/CodeBlock';
 
 const components: MDXComponents = {
   h2: ({ children }) => (
@@ -36,11 +37,7 @@ const components: MDXComponents = {
       {children}
     </code>
   ),
-  pre: ({ children }) => (
-    <pre className="mt-4 overflow-x-auto rounded-lg bg-neutral-100 p-4 text-sm leading-6">
-      {children}
-    </pre>
-  ),
+  pre: ({ children }) => <CodeBlock>{children}</CodeBlock>,
 };
 
 export function useMDXComponents(): MDXComponents {

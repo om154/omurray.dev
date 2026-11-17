@@ -15,11 +15,10 @@ const AboutMeHero = ({
     className="grid grid-flow-row pb-4 lg:grid-flow-col md:py-0 md:px-0 lg:space-x-12 md:p-0 md:mb-6 md:justify-around md:flex-row"
   >
     {imgSrc && (
-      <div className="lg:relative hidden mb-4 lg:w-[25em] lg:justify-start lg:mb-0 lg:flex">
+      <div className="hidden mb-4 lg:block lg:w-[25em] lg:shrink-0 lg:self-start lg:sticky lg:top-24 lg:mb-0">
         <Image
-          fill
           placeholder="blur"
-          className="object-cover object-center rounded-md select-none"
+          className="w-full h-auto aspect-[4/5] object-cover object-center rounded-md select-none"
           src={imgSrc}
           alt="Oliver Murray"
         />

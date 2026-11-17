@@ -57,13 +57,12 @@ const ProjectItem = ({
         ))}
       </div>
     </div>
-    <div className="relative flex justify-center order-first h-60 md:h-full md:w-[20%] xl:w-[40%] md:shrink-0 shadow-md rounded-md">
+    <div className="order-first md:w-[30%] md:shrink-0 md:self-start xl:w-[40%]">
       <Image
         src={imagePath}
-        fill
         placeholder="blur"
         alt={`Screenshot of the ${new URL(url).hostname.replace(/^www\./, '')} website`}
-        className="object-cover object-top max-w-full rounded-md select-none"
+        className="w-full h-60 object-cover object-top rounded-md select-none md:h-auto md:aspect-square [mask-image:linear-gradient(to_bottom,black_75%,transparent)]"
       />
     </div>
   </AnimateDown>

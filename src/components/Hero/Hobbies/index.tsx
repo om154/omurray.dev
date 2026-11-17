@@ -23,13 +23,12 @@ const InterestsHero = ({
       {children}
     </div>
     {imgSrc && (
-      <div className="relative flex justify-center order-first h-60 md:h-full md:w-[20%] xl:w-[40%]">
+      <div className="order-first md:w-[30%] md:shrink-0 md:self-start xl:w-[40%]">
         <Image
           src={imgSrc}
-          fill
           placeholder="blur"
           alt={alt}
-          className="object-cover object-center max-w-full rounded-md select-none md:object-top"
+          className="w-full h-60 object-cover object-center rounded-md select-none md:h-auto md:aspect-[4/5]"
         />
       </div>
     )}

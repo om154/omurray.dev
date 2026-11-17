@@ -76,7 +76,7 @@ const Navigation = () => {
       <AnimateDown className="pointer-events-auto">
         <nav
           aria-label="Main menu"
-          className="w-full px-2 py-1 border border-solid rounded-lg shadow-md border-neutral-300 bg-white/70 backdrop-blur-md"
+          className="w-full px-2 py-1 border border-solid rounded-lg shadow-md border-neutral-300 bg-white/90 backdrop-blur-md"
         >
           <div
             aria-hidden
@@ -151,7 +151,7 @@ const Navigation = () => {
       <div className="hidden ml-2 pointer-events-auto md:flex">
         <AnimateFadeIn
           delay={0.6}
-          className="box-border flex justify-center w-full mx-auto text-center rounded-lg bg-white/70 backdrop-blur-md"
+          className="box-border flex justify-center w-full mx-auto text-center border border-solid rounded-lg shadow-md border-neutral-300 bg-white/90 backdrop-blur-md"
         >
           <ContactLinks />
         </AnimateFadeIn>

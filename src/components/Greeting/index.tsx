@@ -17,7 +17,7 @@ const Greeting = () => (
         </H1>
       </div>
       <div className="box-border w-full max-w-5xl mx-auto mt-6 text-left lg:px-4 text-primary-900">
-        <H1 as="p" className="mt-0">
+        <H1 as="p" className="mt-0 text-neutral-700">
           In my spare time I enjoy{' '}
           <AccentLink href="/hobbies">running</AccentLink> and{' '}
           <AccentLink href="/hobbies" accentColor="#4F7A33">
@@ -34,7 +34,7 @@ const Greeting = () => (
         </H1>
       </div>
       <div className="box-border w-full max-w-5xl mx-auto mt-6 text-left lg:px-4 text-primary-900">
-        <H1 as="p" className="mt-0">
+        <H1 as="p" className="mt-0 text-neutral-700">
           I travel a lot, so I spend plenty of time exploring and meeting people
           in{' '}
           <AccentLink href="/travel" accentColor="rgb(34,85,192)">

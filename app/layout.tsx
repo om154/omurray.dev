@@ -1,7 +1,8 @@
 import { Analytics } from '@vercel/analytics/next';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import type { Metadata, Viewport } from 'next';
-import { Fragment_Mono, Inter, Lora } from 'next/font/google';
+import { Fragment_Mono, Inter } from 'next/font/google';
+import localFont from 'next/font/local';
 import Navigation from 'src/components/Navigation';
 import JsonLd from 'src/components/seo/JsonLd';
 import PageContainer from 'src/components/shared/PageContainer';
@@ -15,10 +16,11 @@ const inter = Inter({
   variable: '--font-inter',
 });
 
-const lora = Lora({
-  subsets: ['latin'],
+const allo = localFont({
+  src: './fonts/AlloVariableFriendly.woff2',
+  weight: '100 900',
   display: 'swap',
-  variable: '--font-lora',
+  variable: '--font-allo',
 });
 
 const fragmentMono = Fragment_Mono({
@@ -119,7 +121,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${lora.variable} ${fragmentMono.variable}`}
+      className={`${inter.variable} ${allo.variable} ${fragmentMono.variable}`}
     >
       <head>
         <meta charSet="utf-8" />

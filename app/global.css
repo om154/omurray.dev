@@ -5,7 +5,8 @@
   --font-sans:
     ui-sans-serif, system-ui, -apple-system, var(--font-inter), Roboto,
     sans-serif;
-  --font-serif: var(--font-lora), ui-serif, Georgia, serif;
+  --font-heading: var(--font-allo), ui-sans-serif, system-ui, sans-serif;
+  --font-heading--font-feature-settings: "ss01";
   --font-mono: var(--font-fragment-mono), ui-monospace, monospace;
 
   --text-*: initial;
@@ -168,6 +169,18 @@
     -moz-text-size-adjust: none;
     -webkit-text-size-adjust: none;
     -ms-text-size-adjust: none;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-heading);
+    font-feature-settings: var(--font-heading--font-feature-settings);
+    font-weight: var(--font-weight-medium);
+    text-wrap: balance;
   }
 
   :focus-visible {

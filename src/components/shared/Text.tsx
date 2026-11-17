@@ -19,7 +19,7 @@ export const H1 = ({
   <AnimateFadeIn duration={TEXT_ANIMATION_DURATION}>
     <Tag
       className={cn(
-        'font-serif font-light box-border text-2xl leading-tight tracking-tight lg:text-3xl',
+        'font-heading font-medium box-border text-2xl leading-[1.2] tracking-[-0.02em] text-pretty md:text-3xl lg:text-4xl',
         className,
       )}
     >
@@ -36,7 +36,7 @@ export const H2 = ({
   <AnimateFadeIn duration={TEXT_ANIMATION_DURATION}>
     <Tag
       className={cn(
-        'font-serif font-light box-border text-neutral-900 text-3xl leading-tight tracking-tight md:text-6xl',
+        'font-heading font-semiBold box-border text-neutral-1000 text-4xl leading-none tracking-[-0.03em] md:text-6xl',
         className,
       )}
     >
@@ -53,7 +53,7 @@ export const H3 = ({
   <AnimateFadeIn duration={TEXT_ANIMATION_DURATION}>
     <Tag
       className={cn(
-        'font-serif font-light box-border text-lg leading-tight tracking-tight md:text-xl lg:text-2xl',
+        'font-heading font-semiBold box-border text-lg leading-tight tracking-[-0.01em] md:text-xl lg:text-2xl',
         className,
       )}
     >
@@ -70,7 +70,7 @@ export const H4 = ({
   <AnimateFadeIn duration={TEXT_ANIMATION_DURATION}>
     <Tag
       className={cn(
-        'font-serif font-light box-border text-md leading-tight tracking-tight md:text-2xl lg:text-xl',
+        'font-heading font-semiBold box-border text-md leading-tight tracking-[-0.01em] md:text-2xl lg:text-xl',
         className,
       )}
     >

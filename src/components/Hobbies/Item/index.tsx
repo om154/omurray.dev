@@ -17,7 +17,7 @@ const Item = ({
   animationDelay,
 }: ItemProps) => (
   <InterestsHero imgSrc={imagePath} alt={title} animationDelay={animationDelay}>
-    <h2 className="font-sans text-2xl font-medium text-left text-primary-800 md:text-left tracking-regular">
+    <h2 className="font-heading text-2xl font-semiBold text-left text-primary-800 md:text-left tracking-[-0.01em]">
       {title}
     </h2>
     <div className="mt-1">

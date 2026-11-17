@@ -41,7 +41,7 @@ export default async function Page({ params }: PageProps) {
   return (
     <Section alignTop>
       <JsonLd data={blogPostingSchema(post)} />
-      <article className="w-full max-w-2xl self-start pb-12 text-neutral-900">
+      <article className="w-full max-w-2xl pb-12 text-neutral-900">
         <Link
           href="/writing"
           className="text-sm no-underline text-neutral-700 hover:text-primary-800"

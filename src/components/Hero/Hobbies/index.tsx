@@ -27,6 +27,7 @@ const InterestsHero = ({
         <Image
           src={imgSrc}
           placeholder="blur"
+          sizes="(min-width: 1280px) 260px, (min-width: 768px) 30vw, 100vw"
           alt={alt}
           className="w-full h-60 object-cover object-center rounded-lg outline-1 -outline-offset-1 outline-black/10 select-none md:h-auto md:aspect-[4/5]"
         />

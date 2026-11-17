@@ -18,6 +18,7 @@ const AboutMeHero = ({
       <div className="hidden mb-4 lg:block lg:w-[25em] lg:shrink-0 lg:self-start lg:sticky lg:top-24 lg:mb-0">
         <Image
           placeholder="blur"
+          sizes="400px"
           className="w-full h-auto aspect-[4/5] object-cover object-center rounded-lg outline-1 -outline-offset-1 outline-black/10 select-none"
           src={imgSrc}
           alt="Oliver Murray"

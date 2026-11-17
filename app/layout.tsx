@@ -1,5 +1,3 @@
-import { Analytics } from '@vercel/analytics/next';
-import { SpeedInsights } from '@vercel/speed-insights/next';
 import type { Metadata, Viewport } from 'next';
 import { Fragment_Mono, Inter } from 'next/font/google';
 import localFont from 'next/font/local';
@@ -139,8 +137,6 @@ export default function RootLayout({
           <Navigation />
           <main id="main-content">{children}</main>
         </PageContainer>
-        <Analytics />
-        <SpeedInsights />
       </body>
     </html>
   );

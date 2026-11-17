@@ -48,7 +48,7 @@ const Travel = () => (
       </div>
       <div className="box-border w-full">
         <P className="text-neutral-900/90">
-          Over the last couple of years I've been fortunate enough to visit a
+          Over the last couple of years I've been fortunate enough to visit
           lots of different countries and cities. Here's a list of some of the
           places I've been to.
         </P>

@@ -20,7 +20,7 @@ const items: InterestItem[] = [
     title: '☕️ Making coffee',
     paragraphs: [
       "I have always loved coffee, but learning to make pour over coffee opened up a whole experience of Melbourne's coffee scene. I really enjoy learning about the intricacies of coffee brewing and roasting.",
-      "Pour over brewing produces a very light, clean cup of coffee ands tends to be much less acidic than espresso. It's now a daily habit to make pour over using a v60, even whilst traveling!",
+      "Pour over brewing produces a very light, clean cup of coffee and tends to be much less acidic than espresso. It's now a daily habit to make pour over using a v60, even whilst traveling!",
       'Some of my favourite coffee roasters in Melbourne are Market Lane and Seven Seeds. I am always looking for suggestions, so please send them my way!',
     ],
     imagePath: coffeeImg,
@@ -30,7 +30,7 @@ const items: InterestItem[] = [
     paragraphs: [
       "The phrase 'natural wine' generally refers to wine made with minimal intervention. This means avoiding using pesticides, chemicals and any other additives. Natural winemakers also tend not to filter their wines, resulting in a cloudy and unique, orange-looking colour 🍊",
       'Most are made to drink (not to cellar) and often taste crisp, fresh & fruity... sometimes a bit crazy!',
-      "There are dozens, but some  Australian producers I've liked are Lucy M, Brave New and Momento Mori. Try them and you'll see what I mean! ✌🏻",
+      "There are dozens, but some Australian producers I've liked are Lucy M, Brave New and Momento Mori. Try them and you'll see what I mean! ✌🏻",
     ],
     imagePath: wineImg,
   },

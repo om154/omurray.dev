@@ -20,7 +20,7 @@ const AboutMeHero = ({
     duration={animationDuration}
     className="grid grid-flow-row pb-4 lg:grid-flow-col md:py-0 md:px-0 lg:space-x-12 md:p-0 md:mb-6 md:justify-around md:flex-row"
   >
-    <div className="mb-4 lg:w-[25em] lg:shrink-0 lg:self-start lg:sticky lg:top-24 lg:mb-0">
+    <div className="mb-4 lg:w-[25em] lg:shrink-0 lg:self-start lg:sticky lg:top-16 lg:mb-0">
       {title}
       {imgSrc && (
         <Image
@@ -32,7 +32,9 @@ const AboutMeHero = ({
         />
       )}
     </div>
-    <div className="flex flex-col items-center justify-center">{children}</div>
+    <div className="flex flex-col items-center justify-center lg:pt-20">
+      {children}
+    </div>
   </AnimateFadeIn>
 );
 

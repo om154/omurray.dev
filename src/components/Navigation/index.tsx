@@ -134,6 +134,13 @@ const Navigation = () => {
             <LinkListItem
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
+              title="Writing"
+              path="/writing"
+              active={pathName.startsWith('/writing')}
+            />
+            <LinkListItem
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
               title="Travel"
               path="/travel"
               active={pathName === '/travel'}

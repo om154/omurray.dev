@@ -33,7 +33,7 @@ const LinkListItem = ({
       href={path}
       aria-current={active ? 'page' : undefined}
       className={classNames(
-        'px-2 py-1 font-sans transition-colors duration-200 ease-linear no-underline text-[0.9375rem] md:text-md select-none rounded-lg hover:text-primary-900 leading-5',
+        'px-1 py-1 font-sans whitespace-nowrap transition-colors duration-200 ease-linear no-underline text-sm md:px-2 md:text-md select-none rounded-lg hover:text-primary-900 leading-5',
         {
           'text-primary-900 font-medium': active,
           'text-neutral-700 font-regular': !active,
@@ -72,11 +72,11 @@ const Navigation = () => {
   };
 
   return (
-    <header className="sticky top-0 z-10 flex items-center justify-center py-4 pointer-events-none isolate md:justify-between">
-      <AnimateDown className="pointer-events-auto">
+    <header className="sticky top-0 z-10 flex items-center justify-center py-4 -mx-4 pointer-events-none isolate md:mx-0 md:justify-between">
+      <AnimateDown className="max-w-full pointer-events-auto">
         <nav
           aria-label="Main menu"
-          className="w-full px-2 py-1 border border-solid rounded-lg shadow-md border-neutral-300 bg-white/90 backdrop-blur-md"
+          className="w-full px-1 py-1 border border-solid rounded-lg shadow-md md:px-2 border-neutral-300 bg-white/90 backdrop-blur-md"
         >
           <div
             aria-hidden
@@ -106,7 +106,7 @@ const Navigation = () => {
             }}
           />
           <ul
-            className="flex flex-row flex-wrap justify-around list-none"
+            className="flex flex-row justify-between overflow-x-auto list-none"
             onMouseLeave={() => hovering && setHovering(false)}
             onMouseEnter={() => !hovering && setHovering(true)}
           >

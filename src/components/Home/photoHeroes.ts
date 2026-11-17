@@ -8,6 +8,11 @@ import oregonImg2 from 'public/static/img/bend/2.jpeg';
 import oregonImg3 from 'public/static/img/bend/3.jpeg';
 import oregonImg4 from 'public/static/img/bend/4.jpeg';
 import oregonImg5 from 'public/static/img/bend/5.jpeg';
+import fijiImg1 from 'public/static/img/fiji/1.jpeg';
+import fijiImg2 from 'public/static/img/fiji/2.jpeg';
+import fijiImg3 from 'public/static/img/fiji/3.jpeg';
+import fijiImg4 from 'public/static/img/fiji/4.jpeg';
+import fijiImg5 from 'public/static/img/fiji/5.jpeg';
 import italyImg1 from 'public/static/img/italy/1.jpeg';
 import italyImg2 from 'public/static/img/italy/2.jpeg';
 import italyImg3 from 'public/static/img/italy/3.jpeg';
@@ -57,6 +62,13 @@ export const photoHeroes: PhotoHeroModel[] = [
       newZealandImg4,
       newZealandImg5,
     ],
+  },
+  {
+    title: 'Fiji',
+    month: 'February',
+    year: '2025',
+    emoji: '🇫🇯',
+    imgSrc: [fijiImg1, fijiImg2, fijiImg3, fijiImg4, fijiImg5],
   },
   {
     title: 'Norway',

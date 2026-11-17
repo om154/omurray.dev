@@ -16,6 +16,7 @@ const TravelCard = ({ location, index }: TravelCardProps) => {
   const formattedDateTime = dateTime.toLocaleDateString('default', {
     month: 'long',
     year: 'numeric',
+    timeZone: 'UTC',
   });
 
   return (

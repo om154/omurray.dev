@@ -18,6 +18,11 @@ import japanImg2 from 'public/static/img/japan/2.jpeg';
 import japanImg3 from 'public/static/img/japan/3.jpeg';
 import japanImg4 from 'public/static/img/japan/4.jpeg';
 import japanImg5 from 'public/static/img/japan/5.jpeg';
+import newZealandImg1 from 'public/static/img/newzealand/1.jpeg';
+import newZealandImg2 from 'public/static/img/newzealand/2.jpeg';
+import newZealandImg3 from 'public/static/img/newzealand/3.jpeg';
+import newZealandImg4 from 'public/static/img/newzealand/4.jpeg';
+import newZealandImg5 from 'public/static/img/newzealand/5.jpeg';
 import norwayImg1 from 'public/static/img/norway/1.jpeg';
 import norwayImg2 from 'public/static/img/norway/2.jpeg';
 import norwayImg3 from 'public/static/img/norway/3.jpeg';
@@ -39,6 +44,19 @@ export const photoHeroes: PhotoHeroModel[] = [
     year: '2026',
     emoji: '🇮🇹',
     imgSrc: [italyImg1, italyImg2, italyImg3, italyImg4, italyImg5],
+  },
+  {
+    title: 'New Zealand',
+    month: 'February',
+    year: '2025',
+    emoji: '🇳🇿',
+    imgSrc: [
+      newZealandImg1,
+      newZealandImg2,
+      newZealandImg3,
+      newZealandImg4,
+      newZealandImg5,
+    ],
   },
   {
     title: 'Norway',

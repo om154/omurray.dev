@@ -2,6 +2,7 @@ import Link from 'next/link';
 import LinkedInLogo from '../shared/LinkedInLogo';
 import EmailIcon from './EmailIcon';
 import GitHubLogo from './GitHubLogo';
+import XLogo from './XLogo';
 
 const ContactLinks = () => {
   return (
@@ -37,6 +38,17 @@ const ContactLinks = () => {
         >
           <GitHubLogo className="transition-colors duration-200 ease-linear fill-inherit" />
           <span className="sr-only">URL for Oliver's GitHub profile</span>
+        </Link>
+      )}
+      {process.env.NEXT_PUBLIC_TWITTER_URL && (
+        <Link
+          className="flex p-1 m-1 fill-neutral-700 hover:fill-primary-900"
+          href={process.env.NEXT_PUBLIC_TWITTER_URL as string}
+          target="_blank"
+          rel="noreferrer"
+        >
+          <XLogo className="transition-colors duration-200 ease-linear fill-inherit" />
+          <span className="sr-only">URL for Oliver's X profile</span>
         </Link>
       )}
     </>

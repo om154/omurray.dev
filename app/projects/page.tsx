@@ -121,7 +121,7 @@ export default function Page() {
       <JsonLd data={projectsItemListSchema(items)} />
       <div className="w-full text-left">
         <H2 as="h1">Projects</H2>
-        <P className="mt-2 text-neutral-900/90">
+        <P className="mt-3 text-lg text-neutral-900/90">
           A few things I've been working on lately
         </P>
       </div>

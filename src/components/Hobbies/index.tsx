@@ -49,7 +49,9 @@ const Hobbies = () => (
   <Section alignTop>
     <div className="w-full mb-2 text-left">
       <H2 as="h1">Hobbies</H2>
-      <P className="mt-2 text-neutral-900/90">Most days you can find me...</P>
+      <P className="mt-3 text-lg text-neutral-900/90">
+        Most days you can find me...
+      </P>
     </div>
     <div className="box-border grid grid-cols-1 gap-4 md:grid-flow-row-dense md:auto-rows-fr md:grid-cols-1 xl:grid-cols-4">
       {items.map((item: InterestItem, index: number) => (

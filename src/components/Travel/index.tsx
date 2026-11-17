@@ -47,10 +47,10 @@ const Travel = () => (
         <H2 as="h1">Adventures</H2>
       </div>
       <div className="box-border w-full">
-        <P className="text-neutral-900/90">
-          Over the last couple of years I've been fortunate enough to visit
-          lots of different countries and cities. Here's a list of some of the
-          places I've been to.
+        <P className="mt-1 text-lg text-neutral-900/90">
+          Over the last couple of years I've been fortunate enough to visit lots
+          of different countries and cities. Here's a list of some of the places
+          I've been to.
         </P>
         <div className="grid grid-cols-1 gap-4 mt-4 isolate sm:grid-cols-2 sm:grid-flow-row-dense md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-8">
           {travelData.map((l, i) => (

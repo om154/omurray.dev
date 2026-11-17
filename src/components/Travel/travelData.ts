@@ -10,6 +10,38 @@ export interface TravelLocation {
 
 export const travelData: TravelLocation[] = [
   {
+    city: 'Phoenix',
+    state: 'Arizona',
+    stateAbbreviation: 'AZ',
+    country: 'United States',
+    countryAbbreviation: 'U.S.',
+    countryFlagEmoji: '🇺🇸',
+    arrivalDateTime: '2026-10-17T00:00:00.000Z',
+  },
+  {
+    city: 'Santa Rosa',
+    state: 'California',
+    stateAbbreviation: 'CA',
+    country: 'United States',
+    countryAbbreviation: 'U.S.',
+    countryFlagEmoji: '🇺🇸',
+    arrivalDateTime: '2026-09-04T00:00:00.000Z',
+  },
+  {
+    city: 'Zurich',
+    country: 'Switzerland',
+    countryAbbreviation: 'CH',
+    countryFlagEmoji: '🇨🇭',
+    arrivalDateTime: '2026-08-15T00:00:00.000Z',
+  },
+  {
+    city: 'Dublin',
+    country: 'Ireland',
+    countryAbbreviation: 'IE',
+    countryFlagEmoji: '🇮🇪',
+    arrivalDateTime: '2026-06-26T00:00:00.000Z',
+  },
+  {
     city: 'Houston',
     state: 'Texas',
     stateAbbreviation: 'TX',

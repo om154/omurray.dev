@@ -62,7 +62,7 @@ const ProjectItem = ({
         src={imagePath}
         placeholder="blur"
         alt={`Screenshot of the ${new URL(url).hostname.replace(/^www\./, '')} website`}
-        className="w-full h-60 object-cover object-top rounded-md select-none md:h-auto md:aspect-square [mask-image:linear-gradient(to_bottom,black_75%,transparent)]"
+        className="w-full h-60 object-cover object-top rounded-lg outline-1 -outline-offset-1 outline-black/10 select-none md:h-auto md:aspect-square [mask-image:linear-gradient(to_bottom,black_75%,transparent)]"
       />
     </div>
   </AnimateDown>

@@ -28,7 +28,7 @@ const InterestsHero = ({
           src={imgSrc}
           placeholder="blur"
           alt={alt}
-          className="w-full h-60 object-cover object-center rounded-md select-none md:h-auto md:aspect-[4/5]"
+          className="w-full h-60 object-cover object-center rounded-lg outline-1 -outline-offset-1 outline-black/10 select-none md:h-auto md:aspect-[4/5]"
         />
       </div>
     )}

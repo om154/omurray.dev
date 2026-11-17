@@ -41,7 +41,7 @@ const AboutMeCard = ({
 }: AboutMeCardProps) => (
   <AnimateDown
     delay={0.1 + index * 0.1}
-    className="flex flex-col justify-between px-5 pt-3 pb-5 font-sans transition-colors duration-200 ease-in-out rounded-lg bg-neutral-100 hover:bg-neutral-200"
+    className="flex flex-col justify-between px-5 pt-3 pb-5 font-sans rounded-lg bg-neutral-100"
   >
     <div>
       <div className="mb-2 text-sm text-left font-regular text-neutral-700">

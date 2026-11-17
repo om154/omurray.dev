@@ -21,7 +21,7 @@ const TravelCard = ({ location, index }: TravelCardProps) => {
   return (
     <AnimateDown
       delay={(index + 1) * 0.02}
-      className="flex flex-col justify-between self-stretch w-full min-w-0 p-3 transition-colors duration-200 ease-in-out rounded-lg aspect-square bg-neutral-100 hover:bg-neutral-200 active:bg-neutral-300"
+      className="flex flex-col justify-between self-stretch w-full min-w-0 p-3 rounded-lg aspect-square bg-neutral-100"
     >
       {countryFlagEmoji && (
         <div className="text-[2.25rem] select-none">{countryFlagEmoji}</div>

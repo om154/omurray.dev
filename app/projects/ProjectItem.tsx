@@ -22,14 +22,14 @@ const ProjectItem = ({
 }: ProjectItemProps) => (
   <AnimateDown
     delay={animationDelay}
-    className="flex flex-col w-full px-6 py-4 overflow-hidden transition-colors duration-200 ease-in-out rounded-lg md:flex-row-reverse md:gap-8 xl:col-span-2 bg-neutral-100 hover:bg-neutral-200 lg:justify-between md:px-8 md:py-6 xl:max-w-5xl xl:m-auto xl:h-full"
+    className="relative flex flex-col w-full px-6 py-4 overflow-hidden has-[a:focus-visible]:outline-2 has-[a:focus-visible]:outline-primary-700 transition-colors duration-200 ease-in-out rounded-lg md:flex-row-reverse md:gap-8 xl:col-span-2 bg-neutral-100 hover:bg-neutral-200 lg:justify-between md:px-8 md:py-6 xl:max-w-5xl xl:m-auto xl:h-full"
   >
     <div className="flex flex-col justify-between flex-1 order-last mt-4 md:m-0">
       <div>
         <div className="flex flex-row justify-start">
           <Link
             href={url}
-            className="overflow-hidden text-center text-ellipsis text-primary-700 md:text-left hover:text-primary-800 font-extrabold"
+            className="overflow-hidden text-center text-ellipsis text-primary-700 md:text-left hover:text-primary-800 font-extrabold after:absolute after:inset-0 after:z-10 focus-visible:outline-none"
             target="_blank"
             rel="noreferrer"
           >

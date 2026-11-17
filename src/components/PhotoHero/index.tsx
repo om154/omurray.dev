@@ -42,7 +42,7 @@ const PhotoHero = ({ data, animationDelay }: Props) => {
             src={imgSrc[0]}
             placeholder="blur"
             alt={`Photo 1 from ${title}`}
-            height={64}
+            height={104}
             width={208}
             className="hidden md:block object-cover object-center rounded-xl h-[104px]"
           />
@@ -50,15 +50,15 @@ const PhotoHero = ({ data, animationDelay }: Props) => {
             src={imgSrc[1]}
             placeholder="blur"
             alt={`Photo 2 from ${title}`}
-            height={128}
+            height={208}
             width={208}
-            className="object-cover object-center rounded-xl h-[158px] md:h-[208px]"
+            className="object-cover object-center rounded-xl h-[208px]"
           />
           <Image
             src={imgSrc[2]}
             placeholder="blur"
             alt={`Photo 3 from ${title}`}
-            height={85}
+            height={160}
             width={85}
             className="hidden md:block object-cover object-center rounded-[100px] h-[160px] self-end"
           />

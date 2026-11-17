@@ -16,7 +16,7 @@ const ShippitPill = ({ className }: ShippitPillProps) => (
     <div className="relative flex items-center w-full h-8 row">
       <Image
         src={shippitLogo}
-        height={28}
+        height={27}
         width={75}
         alt="Shippit"
         className="transition-transform duration-200 row hover:scale-[1.05] ease"

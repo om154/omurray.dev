@@ -1,3 +1,8 @@
+import austriaImg1 from 'public/static/img/austria/1.jpeg';
+import austriaImg2 from 'public/static/img/austria/2.jpeg';
+import austriaImg3 from 'public/static/img/austria/3.jpeg';
+import austriaImg4 from 'public/static/img/austria/4.jpeg';
+import austriaImg5 from 'public/static/img/austria/5.jpeg';
 import oregonImg1 from 'public/static/img/bend/1.jpeg';
 import oregonImg2 from 'public/static/img/bend/2.jpeg';
 import oregonImg3 from 'public/static/img/bend/3.jpeg';
@@ -16,6 +21,13 @@ import norwayImg5 from 'public/static/img/norway/5.jpeg';
 import type { PhotoHeroModel } from '../PhotoHero';
 
 export const photoHeroes: PhotoHeroModel[] = [
+  {
+    title: 'Austria',
+    month: 'August',
+    year: '2026',
+    emoji: '🇦🇹',
+    imgSrc: [austriaImg1, austriaImg2, austriaImg3, austriaImg4, austriaImg5],
+  },
   {
     title: 'Norway',
     month: 'June',

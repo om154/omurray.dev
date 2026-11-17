@@ -104,7 +104,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Oliver Murray',
     description,
-    creator: '@OliMurray7',
+    creator: '@olhmr',
   },
   verification: {
     google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION,
